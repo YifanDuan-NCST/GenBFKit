@@ -1,0 +1,20 @@
+# -*- coding: utf-8 -*-
+# GenBFKit Database Builder - Requirements
+#
+# Core dependencies for the database builder module
+# Install with: pip install -r requirements.txt
+
+# Database
+sqlalchemy>=2.0.0
+psycopg2-binary>=2.9.9
+# For async support (optional but recommended)
+asyncpg>=0.29.0
+
+# Web Framework
+fastapi>=0.109.0
+uvicorn[standard]>=0.27.0
+pydantic>=2.5.0
+pydantic-settings>=2.1.0
+
+# Utilities
+python-multipart>=0.0.6

@@ -1,0 +1,1068 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GenBFKit 数据库构建工具</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        :root {
+            --primary: #2563eb;
+            --primary-dark: #1d4ed8;
+            --success: #16a34a;
+            --warning: #ca8a04;
+            --danger: #dc2626;
+            --bg: #f8fafc;
+            --card-bg: #ffffff;
+            --border: #e2e8f0;
+            --text: #1e293b;
+            --text-muted: #64748b;
+        }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: var(--bg); color: var(--text); }
+        .navbar {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            color: white;
+            padding: 1rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .navbar h1 { font-size: 1.5rem; font-weight: 600; display: flex; align-items: center; gap: 0.5rem; }
+        .navbar .badge {
+            background: rgba(255,255,255,0.2);
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.875rem;
+            backdrop-filter: blur(4px);
+        }
+        .navbar .version { font-size: 0.75rem; opacity: 0.8; }
+        .container { max-width: 1400px; margin: 0 auto; padding: 2rem; }
+        .card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border: 1px solid var(--border);
+        }
+        .card-title {
+            font-size: 1.125rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--text);
+        }
+        .card-title .icon { font-size: 1.25rem; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; }
+        .stat-card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            padding: 1.5rem;
+            border: 1px solid var(--border);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .stat-card:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.15); }
+        .stat-card .label { color: var(--text-muted); font-size: 0.875rem; margin-bottom: 0.5rem; }
+        .stat-card .value { font-size: 2.5rem; font-weight: 700; color: var(--primary); line-height: 1; }
+        .stat-card .sub { color: var(--text-muted); font-size: 0.75rem; margin-top: 0.5rem; }
+        .stat-card .icon-bg { position: absolute; right: 1rem; top: 1rem; font-size: 2rem; opacity: 0.1; }
+        .btn {
+            display: inline-flex; align-items: center; gap: 0.5rem;
+            padding: 0.625rem 1.25rem; border-radius: 8px; font-size: 0.875rem;
+            font-weight: 500; border: none; cursor: pointer; transition: all 0.2s;
+        }
+        .btn-primary { background: var(--primary); color: white; }
+        .btn-primary:hover { background: var(--primary-dark); transform: translateY(-1px); }
+        .btn-success { background: var(--success); color: white; }
+        .btn-success:hover { background: #15803d; }
+        .btn-danger { background: var(--danger); color: white; }
+        .btn-danger:hover { background: #b91c1c; }
+        .btn-outline { background: transparent; border: 1px solid var(--border); color: var(--text); }
+        .btn-outline:hover { background: var(--bg); }
+        .btn-sm { padding: 0.375rem 0.75rem; font-size: 0.8125rem; }
+        .btn-group { display: flex; gap: 1rem; flex-wrap: wrap; }
+        .form-group { margin-bottom: 1rem; }
+        .form-group label { display: block; font-size: 0.875rem; font-weight: 500; margin-bottom: 0.5rem; }
+        .form-group input, .form-group select {
+            width: 100%; max-width: 400px; padding: 0.625rem;
+            border: 1px solid var(--border); border-radius: 8px;
+            font-size: 0.875rem; transition: border-color 0.2s, box-shadow 0.2s;
+        }
+        .form-group input:focus, .form-group select:focus {
+            outline: none; border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+        }
+        .table-wrapper { overflow-x: auto; }
+        table { width: 100%; border-collapse: collapse; font-size: 0.875rem; }
+        th, td { padding: 0.75rem 1rem; text-align: left; border-bottom: 1px solid var(--border); }
+        th { background: var(--bg); font-weight: 600; color: var(--text-muted); white-space: nowrap; position: sticky; top: 0; z-index: 2; }
+        tbody tr { cursor: pointer; transition: background 0.15s; }
+        tbody tr:hover { background: #f0f4ff; }
+        tbody tr:hover td:first-child code { color: var(--primary-dark); }
+        .badge-status { display: inline-flex; align-items: center; gap: 0.25rem; padding: 0.125rem 0.5rem; border-radius: 9999px; font-size: 0.75rem; font-weight: 500; }
+        .badge-success { background: #dcfce7; color: #166534; }
+        .badge-warning { background: #fef9c3; color: #854d0e; }
+        .badge-danger { background: #fee2e2; color: #991b1b; }
+        .badge-info { background: #dbeafe; color: #1e40af; }
+        .badge-purple { background: #f3e8ff; color: #6b21a8; }
+        .tabs { display: flex; gap: 0.25rem; border-bottom: 1px solid var(--border); margin-bottom: 1.5rem; overflow-x: auto; }
+        .tab { padding: 0.75rem 1.25rem; font-size: 0.875rem; font-weight: 500; color: var(--text-muted); border: none; background: none; cursor: pointer; border-bottom: 2px solid transparent; margin-bottom: -1px; white-space: nowrap; }
+        .tab:hover { color: var(--text); }
+        .tab.active { color: var(--primary); border-bottom-color: var(--primary); }
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+        .tree-view { padding: 1rem 0; }
+        .tree-item { padding: 0.5rem 0; display: flex; align-items: center; gap: 0.5rem; cursor: pointer; border-radius: 6px; transition: background 0.2s; }
+        .tree-item:hover { background: var(--bg); }
+        .tree-item .toggle { cursor: pointer; width: 1.25rem; color: var(--text-muted); transition: transform 0.2s; flex-shrink: 0; }
+        .tree-item .toggle.expanded { transform: rotate(90deg); }
+        .tree-item .name { font-weight: 500; }
+        .tree-item .zh { color: var(--text-muted); font-size: 0.875rem; }
+        .tree-item .count { color: var(--text-muted); font-size: 0.75rem; background: var(--bg); padding: 0.125rem 0.5rem; border-radius: 9999px; }
+        .tree-children { padding-left: 1rem; border-left: 1px dashed var(--border); margin-left: 0.5rem; }
+        .progress-bar { height: 8px; background: var(--border); border-radius: 4px; overflow: hidden; margin: 1rem 0; }
+        .progress-bar .fill { height: 100%; background: linear-gradient(90deg, var(--primary), var(--success)); transition: width 0.3s; }
+        .alert { padding: 1rem; border-radius: 8px; margin: 1rem 0; display: flex; align-items: center; gap: 0.5rem; }
+        .alert-success { background: #dcfce7; color: #166534; border: 1px solid #bbf7d0; }
+        .alert-error { background: #fee2e2; color: #991b1b; border: 1px solid #fecaca; }
+        .alert-info { background: #dbeafe; color: #1e40af; border: 1px solid #bfdbfe; }
+        .alert-warning { background: #fef9c3; color: #854d0e; border: 1px solid #fde047; }
+        .modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 1000; align-items: center; justify-content: center; backdrop-filter: blur(4px); }
+        .modal.active { display: flex; }
+        .modal-content { background: white; border-radius: 12px; max-width: 1100px; width: 95%; max-height: 90vh; overflow: auto; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25); }
+        .modal-header { padding: 1.25rem 1.5rem; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; }
+        .modal-header h3 { font-size: 1.125rem; font-weight: 600; }
+        .modal-body { padding: 1.5rem; max-height: 75vh; overflow-y: auto; }
+        .modal-footer { padding: 1rem 1.5rem; border-top: 1px solid var(--border); display: flex; justify-content: flex-end; gap: 1rem; }
+        .code-block { background: #1e293b; color: #e2e8f0; padding: 1rem; border-radius: 8px; font-family: 'Monaco', 'Menlo', monospace; font-size: 0.8125rem; overflow-x: auto; white-space: pre; line-height: 1.5; max-height: 300px; overflow-y: auto; }
+        .loading { display: flex; align-items: center; gap: 0.5rem; color: var(--text-muted); }
+        .spinner { width: 1rem; height: 1rem; border: 2px solid var(--border); border-top-color: var(--primary); border-radius: 50%; animation: spin 0.8s linear infinite; }
+        @keyframes spin { to { transform: rotate(360deg); } }
+        .pool-type-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1rem; }
+        .pool-type-card { border: 1px solid var(--border); border-radius: 10px; padding: 1rem; transition: transform 0.2s, box-shadow 0.2s; }
+        .pool-type-card:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+        .pool-type-card .header { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem; }
+        .pool-type-card .icon { font-size: 1.75rem; }
+        .pool-type-card .name { font-weight: 600; font-size: 0.9375rem; }
+        .pool-type-card .name-zh { color: var(--text-muted); font-size: 0.8125rem; }
+        .pool-type-card .meta { display: flex; gap: 1rem; font-size: 0.8125rem; color: var(--text-muted); margin-bottom: 0.75rem; }
+        .pool-type-card .columns { display: flex; flex-wrap: wrap; gap: 0.25rem; }
+        .pool-type-card .column-tag { background: var(--bg); padding: 0.125rem 0.375rem; border-radius: 4px; font-size: 0.75rem; color: var(--text-muted); }
+        .footer { text-align: center; padding: 2rem; color: var(--text-muted); font-size: 0.875rem; }
+        .empty-state { text-align: center; padding: 3rem 1rem; color: var(--text-muted); }
+        .empty-state .icon { font-size: 3rem; margin-bottom: 1rem; opacity: 0.5; }
+        .db-config { background: var(--bg); border-radius: 8px; padding: 1rem; margin-bottom: 1rem; }
+        .db-config-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; }
+        .db-config-item label { font-size: 0.75rem; color: var(--text-muted); display: block; margin-bottom: 0.25rem; }
+        .db-config-item span { font-size: 0.875rem; font-weight: 500; }
+        .highlight { color: var(--primary); font-weight: 500; }
+        .info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-bottom: 1.5rem; }
+        .info-item { background: var(--bg); border-radius: 8px; padding: 1rem; }
+        .info-item label { font-size: 0.75rem; color: var(--text-muted); display: block; margin-bottom: 0.25rem; }
+        .info-item .value { font-size: 1rem; font-weight: 600; }
+        /* Data preview table */
+        .data-preview-section { margin-top: 1.5rem; }
+        .data-preview-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem; }
+        .data-preview-header h4 { font-size: 0.9375rem; font-weight: 600; }
+        .data-preview-table-wrap { overflow-x: auto; border: 1px solid var(--border); border-radius: 8px; }
+        .data-preview-table { width: 100%; border-collapse: collapse; font-size: 0.8rem; }
+        .data-preview-table th { background: #f1f5f9; color: var(--text-muted); font-weight: 600; padding: 0.5rem 0.75rem; text-align: left; border-bottom: 1px solid var(--border); position: sticky; top: 0; }
+        .data-preview-table td { padding: 0.5rem 0.75rem; border-bottom: 1px solid var(--border); max-width: 200px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-family: 'Monaco', 'Menlo', monospace; }
+        .data-preview-table tr:last-child td { border-bottom: none; }
+        .data-preview-table tr:hover td { background: #f8fafc; }
+        .json-cell { color: #7c3aed; font-size: 0.75rem; }
+        .null-cell { color: #94a3b8; font-style: italic; }
+        /* Generation progress */
+        .gen-progress-card { margin-top: 1rem; border: 1px solid #bfdbfe; background: #f0f9ff; }
+        .gen-progress-header { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem; font-weight: 600; }
+        .gen-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 0.75rem; margin-top: 0.75rem; }
+        .gen-stat { background: white; border-radius: 6px; padding: 0.75rem; text-align: center; }
+        .gen-stat .label { font-size: 0.7rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; }
+        .gen-stat .value { font-size: 1.25rem; font-weight: 700; margin-top: 0.25rem; }
+        /* Search bar */
+        .search-bar { display: flex; gap: 0.75rem; margin-bottom: 1rem; flex-wrap: wrap; align-items: center; }
+        .search-bar input { flex: 1; min-width: 200px; }
+        .search-bar select { min-width: 160px; }
+        @media (max-width: 768px) {
+            .container { padding: 1rem; }
+            .grid { grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+            .navbar { padding: 1rem; }
+            .btn-group { flex-direction: column; }
+            .btn { width: 100%; justify-content: center; }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <h1>
+            <span>🔥</span>
+            GenBFKit 数据库构建工具
+            <span class="version">v1.0.0</span>
+        </h1>
+        <span class="badge" id="dbStatus">
+            <span class="spinner" style="width:0.75rem;height:0.75rem;border-width:2px;"></span>
+            检查中...
+        </span>
+    </nav>
+
+    <div class="container">
+        <!-- 数据库连接配置 -->
+        <div class="card">
+            <div class="card-title"><span class="icon">⚙️</span> 数据库配置</div>
+            <div class="db-config-grid">
+                <div class="db-config-item">
+                    <label>主机</label>
+                    <span id="cfgHost">-</span>
+                </div>
+                <div class="db-config-item">
+                    <label>端口</label>
+                    <span id="cfgPort">-</span>
+                </div>
+                <div class="db-config-item">
+                    <label>数据库</label>
+                    <span id="cfgDatabase">-</span>
+                </div>
+                <div class="db-config-item">
+                    <label>用户名</label>
+                    <span id="cfgUsername">-</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 概览统计 -->
+        <div class="grid">
+            <div class="stat-card" style="position:relative;">
+                <div class="label">工种数量</div>
+                <div class="value" id="statWorkTypes" style="color:#059669;">-</div>
+                <div class="sub">Work Types</div>
+                <span class="icon-bg">👷</span>
+            </div>
+            <div class="stat-card" style="position:relative;">
+                <div class="label">数据类别</div>
+                <div class="value" id="statCategories" style="color:#7c3aed;">-</div>
+                <div class="sub">Data Categories</div>
+                <span class="icon-bg">📂</span>
+            </div>
+            <div class="stat-card" style="position:relative;">
+                <div class="label">数据集</div>
+                <div class="value" id="statDatasets" style="color:#db2777;">-</div>
+                <div class="sub">Datasets</div>
+                <span class="icon-bg">📊</span>
+            </div>
+            <div class="stat-card" style="position:relative;">
+                <div class="label">物理表数</div>
+                <div class="value" id="statTables" style="color:#ea580c;">-</div>
+                <div class="sub" id="statRecords">- 条记录</div>
+                <span class="icon-bg">🗄️</span>
+            </div>
+        </div>
+
+        <!-- 操作面板 -->
+        <div class="card">
+            <div class="card-title"><span class="icon">🚀</span> 快速操作</div>
+            <div class="btn-group">
+                <button class="btn btn-success" onclick="fullBuild()">
+                    <span>🚀</span> 一体化构建
+                </button>
+                <button class="btn btn-primary" onclick="incrementalImport()">
+                    <span>📥</span> 增量导入
+                </button>
+                <button class="btn btn-outline" onclick="rebuildPoolTables()">
+                    <span>🔨</span> 重建池表
+                </button>
+                <button class="btn btn-outline" onclick="backfillChinese()">
+                    <span>🔤</span> 回填中文
+                </button>
+                <button class="btn btn-outline" onclick="exportSQL()">
+                    <span>📝</span> 导出 SQL
+                </button>
+                <button class="btn btn-primary" onclick="generateMockData()">
+                    <span>🎲</span> 生成虚拟数据
+                </button>
+            </div>
+            <!-- 生成进度区域 -->
+            <div id="genProgressArea" style="display:none; margin-top:1rem;">
+                <div class="gen-progress-card card" style="margin-bottom:0;">
+                    <div class="gen-progress-header">
+                        <span class="spinner" id="genSpinner"></span>
+                        <span id="genProgressText">正在生成虚拟数据...</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="fill" id="genProgressFill" style="width:0%"></div>
+                    </div>
+                    <div id="genProgressDetail" style="font-size:0.8125rem;color:var(--text-muted);margin-bottom:0.75rem;"></div>
+                    <div class="gen-stats" id="genStats"></div>
+                </div>
+            </div>
+            <div id="buildProgress" style="display:none; margin-top:1rem;">
+                <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:0.5rem;">
+                    <span id="progressText">正在构建表...</span>
+                    <span id="progressPercent" style="color:var(--primary);font-weight:500;">0%</span>
+                </div>
+                <div class="progress-bar"><div class="fill" id="progressFill" style="width:0%"></div></div>
+                <div id="progressDetail" style="font-size:0.8125rem;color:var(--text-muted);margin-top:0.5rem;"></div>
+            </div>
+        </div>
+
+        <!-- 选项卡 -->
+        <div class="tabs">
+            <button class="tab active" data-tab="tables">📋 数据表列表</button>
+            <button class="tab" data-tab="schema">🗃️ 数据池 Schema</button>
+            <button class="tab" data-tab="tree">🌲 数据集树</button>
+        </div>
+
+        <!-- 数据表列表 -->
+        <div class="tab-content active" id="tab-tables">
+            <div class="card">
+                <!-- 搜索栏 -->
+                <div class="search-bar">
+                    <input type="text" id="searchInput" placeholder="🔍 搜索表名、数据集中文名..." oninput="debounceFilter()">
+                    <select id="filterPoolType" onchange="loadTables()">
+                        <option value="">全部数据池类型</option>
+                    </select>
+                    <select id="filterWorkType" onchange="loadTables()">
+                        <option value="">全部工种</option>
+                    </select>
+                    <button class="btn btn-primary btn-sm" onclick="filterTables()">
+                        <span>🔍</span> 搜索
+                    </button>
+                    <button class="btn btn-outline btn-sm" onclick="resetFilters()">
+                        <span>🔄</span> 重置
+                    </button>
+                </div>
+                <!-- 表格 -->
+                <div class="table-wrapper">
+                    <table id="tablesTable">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>表名</th>
+                                <th>工种</th>
+                                <th>数据池类型</th>
+                                <th>数据集中文名</th>
+                                <th>行数</th>
+                                <th>列数</th>
+                                <th>操作</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tablesBody">
+                            <tr><td colspan="8" class="empty-state"><div class="spinner" style="margin:0 auto;"></div>加载中...</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- 分页信息 -->
+                <div id="paginationInfo" style="margin-top:1rem;font-size:0.8125rem;color:var(--text-muted);text-align:center;"></div>
+            </div>
+        </div>
+
+        <!-- 数据池 Schema -->
+        <div class="tab-content" id="tab-schema">
+            <div class="card">
+                <div class="card-title">📦 9种数据池类型定义</div>
+                <p style="color:var(--text-muted);font-size:0.875rem;margin-bottom:1rem;">
+                    每种数据池类型对应不同的列结构，用于存储不同类型的数据。
+                </p>
+                <div class="pool-type-grid" id="poolTypeGrid">
+                    <div class="empty-state"><div class="spinner" style="margin:0 auto;"></div>加载中...</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 数据集树 -->
+        <div class="tab-content" id="tab-tree">
+            <div class="card">
+                <div class="card-title">🌳 数据集层级结构</div>
+                <p style="color:var(--text-muted);font-size:0.875rem;margin-bottom:1rem;">
+                    展示工种 → 数据类别 → 数据池 → 数据集的完整层级关系。
+                </p>
+                <div class="tree-view" id="datasetTree">
+                    <div class="empty-state"><div class="spinner" style="margin:0 auto;"></div>加载中...</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 表详情 + 数据预览弹窗 -->
+    <div class="modal" id="tableModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modalTitle">表详情</h3>
+                <button onclick="closeModal()" style="border:none;background:none;font-size:1.5rem;cursor:pointer;padding:0;">&times;</button>
+            </div>
+            <div class="modal-body" id="modalBody">
+                <div style="display:flex;align-items:center;gap:0.5rem;">
+                    <div class="spinner"></div><span style="color:var(--text-muted);">加载中...</span>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-outline btn-sm" onclick="copySQL()">
+                    <span>📋</span> 复制 SQL
+                </button>
+                <button class="btn btn-primary btn-sm" onclick="closeModal()">关闭</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>🔥 GenBFKit 数据库构建工具 v1.0.0 | 高炉炼铁开源数据整合框架</p>
+        <p style="margin-top:0.5rem;">Built with SQLAlchemy + FastAPI + PostgreSQL</p>
+    </div>
+
+    <script>
+    // ================================================================
+    // 全局状态
+    // ================================================================
+    const API_BASE = '/api';
+    let currentTables = [];
+    let currentSQL = '';
+    let buildInProgress = false;
+    let genRunning = false;
+    let genPollInterval = null;
+    let _filterTimer = null;
+
+    // ================================================================
+    // Tab 切换
+    // ================================================================
+    document.querySelectorAll('.tab').forEach(tab => {
+        tab.addEventListener('click', () => {
+            document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+            document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+            tab.classList.add('active');
+            document.getElementById('tab-' + tab.dataset.tab).classList.add('active');
+        });
+    });
+
+    // ================================================================
+    // 初始化
+    // ================================================================
+    async function init() {
+        await checkHealth();
+        await loadConnectionInfo();
+        await refreshStats();
+        await loadPoolTypes();
+        await loadTables();
+        // 检查是否有生成任务在运行
+        await pollGenerationStatus();
+    }
+
+    // ================================================================
+    // 健康检查
+    // ================================================================
+    async function checkHealth() {
+        const statusEl = document.getElementById('dbStatus');
+        try {
+            const res = await fetch(API_BASE + '/health');
+            const data = await res.json();
+            if (data.status === 'healthy') {
+                statusEl.innerHTML = '✅ 已连接';
+                statusEl.style.background = 'rgba(22, 163, 74, 0.3)';
+            } else if (data.status === 'partial') {
+                statusEl.innerHTML = '⚠️ 部分就绪';
+                statusEl.style.background = 'rgba(202, 138, 4, 0.3)';
+            } else {
+                statusEl.innerHTML = '❌ 未初始化';
+                statusEl.style.background = 'rgba(220, 38, 38, 0.3)';
+            }
+        } catch (e) {
+            statusEl.innerHTML = '❌ 连接失败';
+            statusEl.style.background = 'rgba(220, 38, 38, 0.3)';
+        }
+    }
+
+    // ================================================================
+    // 加载连接信息
+    // ================================================================
+    async function loadConnectionInfo() {
+        try {
+            const res = await fetch(API_BASE + '/connection');
+            const data = await res.json();
+            document.getElementById('cfgHost').textContent = data.host || '-';
+            document.getElementById('cfgPort').textContent = data.port || '-';
+            document.getElementById('cfgDatabase').textContent = data.database || '-';
+            document.getElementById('cfgUsername').textContent = data.username || '-';
+        } catch (e) {
+            console.error('Failed to load connection info:', e);
+        }
+    }
+
+    // ================================================================
+    // 刷新统计
+    // ================================================================
+    async function refreshStats() {
+        try {
+            const res = await fetch(API_BASE + '/stats');
+            const data = await res.json();
+            document.getElementById('statWorkTypes').textContent = data.total_work_types || 0;
+            document.getElementById('statCategories').textContent = data.total_categories || 0;
+            document.getElementById('statDatasets').textContent = data.total_datasets || 0;
+            document.getElementById('statTables').textContent = data.total_tables || 0;
+            document.getElementById('statRecords').textContent = formatNumber(data.total_records || 0) + ' 条记录';
+            updateFilters(data);
+        } catch (e) {
+            console.error('Failed to load stats:', e);
+        }
+    }
+
+    // 格式化数字
+    function formatNumber(n) {
+        if (n >= 1000000) return (n / 1000000).toFixed(1) + 'M';
+        if (n >= 1000) return (n / 1000).toFixed(1) + 'K';
+        return n;
+    }
+
+    // ================================================================
+    // 更新过滤器选项
+    // ================================================================
+    function updateFilters(data) {
+        const poolSelect = document.getElementById('filterPoolType');
+        const workSelect = document.getElementById('filterWorkType');
+        poolSelect.innerHTML = '<option value="">全部数据池类型</option>';
+        if (data.pool_types_stats) {
+            data.pool_types_stats.forEach(p => {
+                const selected = poolSelect.dataset.value === p.pool_type ? 'selected' : '';
+                poolSelect.innerHTML += `<option value="${esc(p.pool_type)}" ${selected}>${esc(p.pool_type_zh || p.pool_type)}</option>`;
+            });
+        }
+        workSelect.innerHTML = '<option value="">全部工种</option>';
+        if (data.work_types_stats) {
+            data.work_types_stats.forEach(w => {
+                const label = w.work_type_zh ? `${w.work_type_en} (${w.work_type_zh})` : w.work_type_en;
+                const selected = workSelect.dataset.value === w.work_type_en ? 'selected' : '';
+                workSelect.innerHTML += `<option value="${esc(w.work_type_en)}" ${selected}>${esc(label)}</option>`;
+            });
+        }
+    }
+
+    // ================================================================
+    // 操作类函数
+    // ================================================================
+    async function fullBuild() {
+        if (!confirm('确认一体化构建？这将自动完成：初始化元数据表 → 增量导入 → 自适应建表。')) return;
+        const jsonPath = prompt('请输入 JSON 数据文件路径:', 'prebuilt_full.json');
+        if (!jsonPath) return;
+        showLoading(true);
+        try {
+            const res = await fetch(API_BASE + '/full-build?json_path=' + encodeURIComponent(jsonPath), { method: 'POST' });
+            const data = await res.json();
+            showLoading(false);
+            if (data.success) {
+                const imp = data.import_stats || {};
+                const build = data.build_response || {};
+                const rebuild = data.rebuild_response || {};
+                showAlert('success', `✅ 一体化构建完成！新增数据集 ${imp.datasets || 0} 个，新建表 ${build.tables_created || 0} 张`);
+            } else {
+                showAlert('error', '❌ 一体化构建失败: ' + data.message);
+            }
+            await refreshStats();
+            await loadTables();
+            await loadPoolTypes();
+            await checkHealth();
+        } catch (e) {
+            showLoading(false);
+            showAlert('error', '❌ 一体化构建失败: ' + e.message);
+        }
+    }
+
+    async function incrementalImport() {
+        if (!confirm('确认执行增量导入？这将自动检测新增数据集和属性变更。')) return;
+        const jsonPath = prompt('请输入 JSON 数据文件路径:', 'prebuilt_full.json');
+        if (!jsonPath) return;
+        showLoading(true);
+        try {
+            const res = await fetch(API_BASE + '/incremental-import?json_path=' + encodeURIComponent(jsonPath), { method: 'POST' });
+            const data = await res.json();
+            showLoading(false);
+            if (data.success) {
+                const imp = data.import_stats || {};
+                const rebuildTypes = data.rebuild_pool_types || [];
+                showAlert('success', `✅ 增量导入完成！新增数据集 ${imp.datasets || 0} 个，属性变更池类型 ${rebuildTypes.length} 个`);
+            } else {
+                showAlert('error', '❌ 增量导入失败: ' + data.message);
+            }
+            await refreshStats();
+            await loadTables();
+            await loadPoolTypes();
+        } catch (e) {
+            showLoading(false);
+            showAlert('error', '❌ 增量导入失败: ' + e.message);
+        }
+    }
+
+    async function rebuildPoolTables() {
+        const poolTypes = prompt('请输入需要重建的池类型（多个用逗号分隔）:\n例如: Continuous_time-series_data,Binary_status_data');
+        if (!poolTypes || !poolTypes.trim()) return;
+        const types = poolTypes.split(',').map(t => t.trim()).filter(t => t);
+        if (!confirm('确认重建以下池类型的所有物理表?\n' + types.join('\n') + '\n\n这将删除并重建相关表，数据将丢失！')) return;
+        showLoading(true);
+        try {
+            const res = await fetch(API_BASE + '/rebuild-pool', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ pool_types: types })
+            });
+            const data = await res.json();
+            showLoading(false);
+            if (data.success) {
+                showAlert('success', `✅ 重建完成！共重建 ${data.tables_created || 0} 张表`);
+            } else {
+                showAlert('error', '❌ 重建失败: ' + data.message);
+            }
+            await refreshStats();
+            await loadTables();
+            await loadPoolTypes();
+        } catch (e) {
+            showLoading(false);
+            showAlert('error', '❌ 重建失败: ' + e.message);
+        }
+    }
+
+    async function backfillChinese() {
+        if (!confirm('确认回填 meta_datasets 中缺失的中文列?')) return;
+        showLoading(true);
+        try {
+            const res = await fetch(API_BASE + '/backfill', { method: 'POST' });
+            const data = await res.json();
+            showLoading(false);
+            if (data.success) {
+                const s = data.stats || {};
+                showAlert('success', `✅ 回填完成！work_type_zh: ${s.work_type_zh || 0}, category_zh: ${s.category_zh || 0}, pool_zh: ${s.pool_zh || 0}`);
+            } else {
+                showAlert('error', '❌ 回填失败');
+            }
+            await refreshStats();
+        } catch (e) {
+            showLoading(false);
+            showAlert('error', '❌ 回填失败: ' + e.message);
+        }
+    }
+
+    async function exportSQL() {
+        showLoading(true);
+        try {
+            const res = await fetch(API_BASE + '/export/sql?output_path=exports/schema.sql', { method: 'POST' });
+            const data = await res.json();
+            showLoading(false);
+            if (data.success) {
+                showAlert('success', '✅ SQL 已导出到: ' + data.path);
+            } else {
+                showAlert('error', '❌ 导出失败');
+            }
+        } catch (e) {
+            showLoading(false);
+            showAlert('error', '❌ 导出失败: ' + e.message);
+        }
+    }
+
+    // ================================================================
+    // 虚拟数据生成
+    // ================================================================
+    async function generateMockData() {
+        const rows = prompt('请输入每个表生成的行数（默认 100）:', '100');
+        if (rows === null) return;
+        const rowsNum = parseInt(rows) || 100;
+        const mode = confirm('是否使用覆盖模式（先清空再插入）？\n\n确定 = 覆盖模式\n取消 = 增量模式（已满则跳过）') ? 'overwrite' : 'upsert';
+        showLoading(true);
+        try {
+            const res = await fetch(API_BASE + '/mock/generate-all?rows=' + rowsNum + '&mode=' + mode, { method: 'POST' });
+            const data = await res.json();
+            showLoading(false);
+            if (data.success || data.status === 'started') {
+                showAlert('info', '🎲 ' + data.message);
+                startGenPoll();
+            } else {
+                showAlert('error', '❌ 启动失败: ' + data.message);
+            }
+        } catch (e) {
+            showLoading(false);
+            showAlert('error', '❌ 启动失败: ' + e.message);
+        }
+    }
+
+    function startGenPoll() {
+        if (genPollInterval) clearInterval(genPollInterval);
+        genPollInterval = setInterval(pollGenerationStatus, 2000);
+        pollGenerationStatus();
+    }
+
+    async function pollGenerationStatus() {
+        try {
+            const res = await fetch(API_BASE + '/mock/status');
+            const data = await res.json();
+            genRunning = data.running;
+            const area = document.getElementById('genProgressArea');
+            const spinner = document.getElementById('genSpinner');
+            const text = document.getElementById('genProgressText');
+            const fill = document.getElementById('genProgressFill');
+            const detail = document.getElementById('genProgressDetail');
+            const stats = document.getElementById('genStats');
+            area.style.display = 'block';
+            if (data.running) {
+                spinner.style.display = 'inline-block';
+                text.textContent = `正在生成... ${data.current_table}`;
+                fill.style.width = data.percentage + '%';
+                detail.textContent = `${data.progress} / ${data.total} (${data.percentage}%) - 已运行 ${data.elapsed_seconds}s`;
+                stats.innerHTML = '';
+            } else {
+                spinner.style.display = 'none';
+                fill.style.width = '100%';
+                if (data.result) {
+                    const r = data.result;
+                    text.textContent = r.error ? '❌ 生成失败' : '✅ 生成完成';
+                    detail.textContent = '';
+                    const total = r.total_rows_generated || 0;
+                    const tables = r.tables_with_data || 0;
+                    stats.innerHTML = `
+                        <div class="gen-stat"><div class="label">总表数</div><div class="value" style="color:var(--primary);">${r.total_tables || 0}</div></div>
+                        <div class="gen-stat"><div class="label">已生成</div><div class="value" style="color:var(--success);">${tables}</div></div>
+                        <div class="gen-stat"><div class="label">跳过</div><div class="value" style="color:var(--warning);">${r.tables_skipped || 0}</div></div>
+                        <div class="gen-stat"><div class="label">失败</div><div class="value" style="color:var(--danger);">${r.tables_failed || 0}</div></div>
+                        <div class="gen-stat"><div class="label">总行数</div><div class="value" style="color:#7c3aed;">${formatNumber(total)}</div></div>
+                    `;
+                    // 生成完成后刷新统计和表格
+                    await refreshStats();
+                    await loadTables();
+                    // 3秒后自动隐藏
+                    setTimeout(() => { area.style.display = 'none'; }, 5000);
+                    // 停止轮询
+                    if (genPollInterval) { clearInterval(genPollInterval); genPollInterval = null; }
+                } else {
+                    area.style.display = 'none';
+                }
+            }
+        } catch (e) {
+            console.error('Failed to poll generation status:', e);
+        }
+    }
+
+    // ================================================================
+    // 数据池类型
+    // ================================================================
+    async function loadPoolTypes() {
+        try {
+            const res = await fetch(API_BASE + '/schemas/pool-types');
+            const data = await res.json();
+            const grid = document.getElementById('poolTypeGrid');
+            if (!data.pool_types || data.pool_types.length === 0) {
+                grid.innerHTML = '<div class="empty-state"><div class="icon">🗃️</div>暂无数据</div>';
+                return;
+            }
+            grid.innerHTML = data.pool_types.map(p => `
+                <div class="pool-type-card">
+                    <div class="header">
+                        <span class="icon">${p.icon}</span>
+                        <div>
+                            <div class="name">${esc(p.pool_type)}</div>
+                            <div class="name-zh">${esc(p.pool_type_zh || '')}</div>
+                        </div>
+                    </div>
+                    <div class="meta">
+                        <span>📊 ${p.column_count} 个列</span>
+                    </div>
+                    <div class="columns">
+                        ${(p.columns || []).slice(0, 6).map(c => `<span class="column-tag">${esc(c.name)}</span>`).join('')}
+                        ${p.column_count > 6 ? `<span class="column-tag">+${p.column_count - 6} more</span>` : ''}
+                    </div>
+                </div>
+            `).join('');
+        } catch (e) {
+            console.error('Failed to load pool types:', e);
+        }
+    }
+
+    // ================================================================
+    // 数据表加载与渲染
+    // ================================================================
+    async function loadTables() {
+        try {
+            const poolType = document.getElementById('filterPoolType').value;
+            const workType = document.getElementById('filterWorkType').value;
+            let url = API_BASE + '/tables?';
+            if (poolType) url += 'pool_type=' + encodeURIComponent(poolType) + '&';
+            if (workType) url += 'work_type=' + encodeURIComponent(workType) + '&';
+            const res = await fetch(url);
+            const data = await res.json();
+            currentTables = data.tables || [];
+            renderTables(currentTables);
+        } catch (e) {
+            console.error('Failed to load tables:', e);
+            document.getElementById('tablesBody').innerHTML = '<tr><td colspan="8" class="empty-state">加载失败</td></tr>';
+        }
+    }
+
+    function renderTables(tables) {
+        const tbody = document.getElementById('tablesBody');
+        const searchVal = document.getElementById('searchInput').value.trim().toLowerCase();
+        let filtered = tables;
+        if (searchVal) {
+            filtered = tables.filter(t =>
+                (t.table_name && t.table_name.toLowerCase().includes(searchVal)) ||
+                (t.dataset_zh && t.dataset_zh.toLowerCase().includes(searchVal)) ||
+                (t.pool_type_zh && t.pool_type_zh.toLowerCase().includes(searchVal)) ||
+                (t.work_type && t.work_type.toLowerCase().includes(searchVal))
+            );
+        }
+        if (!filtered || filtered.length === 0) {
+            tbody.innerHTML = `<tr><td colspan="8" class="empty-state">
+                <div class="icon">📋</div>暂无数据表<br>
+                <small style="color:var(--text-muted)">${searchVal ? '搜索无结果，请调整关键词' : '请先初始化数据库并构建表'}</small>
+            </td></tr>`;
+            document.getElementById('paginationInfo').textContent = '';
+            return;
+        }
+        tbody.innerHTML = filtered.map((t, i) => `
+            <tr data-table="${esc(t.table_name)}" title="点击查看表详情和数据预览">
+                <td style="color:var(--text-muted);font-size:0.75rem;">${i + 1}</td>
+                <td><code style="color:var(--primary);font-size:0.8125rem;">${esc(t.table_name || '')}</code></td>
+                <td><span style="font-size:0.8125rem;">${esc(t.work_type || '-')}</span></td>
+                <td><span class="badge-status badge-info">${esc(t.pool_type_zh || t.pool_type || '-')}</span></td>
+                <td><span style="font-size:0.8125rem;">${esc(t.dataset_zh || '-')}</span></td>
+                <td><span class="badge-status ${(t.row_count || 0) > 0 ? 'badge-success' : 'badge-warning'}">${formatNumber(t.row_count || 0)}</span></td>
+                <td><span style="color:var(--text-muted);">${t.column_count || 0}</span></td>
+                <td>
+                    <button class="btn btn-outline btn-sm" data-detail-btn="${esc(t.table_name)}">详情</button>
+                </td>
+            </tr>
+        `).join('');
+        document.getElementById('paginationInfo').textContent =
+            `共 ${filtered.length} 张表${searchVal && filtered.length !== tables.length ? '（已过滤）' : ''}`;
+    }
+
+    // 事件委托：整行点击打开详情
+    document.getElementById('tablesBody').addEventListener('click', function(e) {
+        const btn = e.target.closest('[data-detail-btn]');
+        const tr = e.target.closest('tr[data-table]');
+        if (tr) {
+            const tableName = tr.dataset.table;
+            if (tableName) viewTable(tableName);
+        }
+    });
+
+    // ================================================================
+    // 搜索 / 过滤
+    // ================================================================
+    function filterTables() {
+        renderTables(currentTables);
+    }
+
+    function resetFilters() {
+        document.getElementById('searchInput').value = '';
+        document.getElementById('filterPoolType').value = '';
+        document.getElementById('filterWorkType').value = '';
+        renderTables(currentTables);
+    }
+
+    function debounceFilter() {
+        if (_filterTimer) clearTimeout(_filterTimer);
+        _filterTimer = setTimeout(filterTables, 300);
+    }
+
+    // ================================================================
+    // 表详情弹窗（含真实数据预览）
+    // ================================================================
+    async function viewTable(tableName) {
+        openModal();
+        const modalBody = document.getElementById('modalBody');
+        const modalTitle = document.getElementById('modalTitle');
+        modalTitle.textContent = tableName;
+        modalBody.innerHTML = `<div style="display:flex;align-items:center;gap:0.5rem;padding:2rem;justify-content:center;">
+            <div class="spinner"></div><span style="color:var(--text-muted);">正在加载表 "${esc(tableName)}" 的详情...</span>
+        </div>`;
+        currentSQL = '';
+        try {
+            // 并行加载：表结构 + 表数据
+            const [schemaRes, dataRes] = await Promise.all([
+                fetch(API_BASE + '/tables/' + encodeURIComponent(tableName)),
+                fetch(API_BASE + '/mock/preview/' + encodeURIComponent(tableName) + '?limit=10')
+            ]);
+            const schema = schemaRes.ok ? await schemaRes.json() : {};
+            const data = dataRes.ok ? await dataRes.json() : {};
+            currentSQL = schema.schema_sql || '';
+            modalBody.innerHTML = buildModalContent(schema, data);
+        } catch (e) {
+            modalBody.innerHTML = `<div class="alert alert-error">❌ 加载失败: ${esc(e.message)}</div>`;
+        }
+    }
+
+    function buildModalContent(schema, data) {
+        const hasData = data.success && data.rows && data.rows.length > 0;
+        const totalRows = data.total_rows || schema.row_count || 0;
+        return `
+            <!-- 信息卡片 -->
+            <div class="info-grid">
+                <div class="info-item">
+                    <label>数据集</label>
+                    <div class="value highlight">${esc(schema.dataset_zh || '-')}</div>
+                </div>
+                <div class="info-item">
+                    <label>工种</label>
+                    <div class="value">${esc(schema.work_type || '-')}</div>
+                </div>
+                <div class="info-item">
+                    <label>数据池类型</label>
+                    <div class="value"><span class="badge-status badge-info">${esc(schema.pool_type_zh || schema.pool_type || '-')}</span></div>
+                </div>
+                <div class="info-item">
+                    <label>记录数</label>
+                    <div class="value" style="color:${totalRows > 0 ? 'var(--success)' : 'var(--warning)'};">${formatNumber(totalRows)} 行</div>
+                </div>
+                <div class="info-item">
+                    <label>列数</label>
+                    <div class="value">${(schema.columns || []).length} 列</div>
+                </div>
+                <div class="info-item">
+                    <label>表名</label>
+                    <div class="value" style="font-size:0.8rem;font-family:monospace;">${esc(schema.table_name || '')}</div>
+                </div>
+            </div>
+            <!-- 列定义 -->
+            ${(schema.columns || []).length > 0 ? `
+            <div style="margin-bottom:1rem;">
+                <h4 style="font-size:0.9375rem;font-weight:600;margin-bottom:0.75rem;">📊 列定义 (${schema.columns.length})</h4>
+                <div class="table-wrapper" style="border:1px solid var(--border);border-radius:8px;">
+                    <table style="width:100%;border-collapse:collapse;font-size:0.8125rem;">
+                        <thead>
+                            <tr>
+                                <th style="padding:0.5rem 0.75rem;text-align:left;background:var(--bg);border-bottom:1px solid var(--border);">列名</th>
+                                <th style="padding:0.5rem 0.75rem;text-align:left;background:var(--bg);border-bottom:1px solid var(--border);">类型</th>
+                                <th style="padding:0.5rem 0.75rem;text-align:left;background:var(--bg);border-bottom:1px solid var(--border);">可空</th>
+                                <th style="padding:0.5rem 0.75rem;text-align:left;background:var(--bg);border-bottom:1px solid var(--border);">说明</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            ${schema.columns.map(c => `
+                            <tr>
+                                <td style="padding:0.5rem 0.75rem;border-bottom:1px solid var(--border);"><code style="color:var(--primary);">${esc(c.name)}</code></td>
+                                <td style="padding:0.5rem 0.75rem;border-bottom:1px solid var(--border);color:#7c3aed;font-family:monaco,monospace;font-size:0.75rem;">${esc(c.type)}</td>
+                                <td style="padding:0.5rem 0.75rem;border-bottom:1px solid var(--border);">${c.nullable ? '<span class="badge-status badge-warning">是</span>' : '<span class="badge-status badge-success">否</span>'}</td>
+                                <td style="padding:0.5rem 0.75rem;border-bottom:1px solid var(--border);color:var(--text-muted);">${esc(c.comment || '-')}</td>
+                            </tr>
+                            `).join('')}
+                        </tbody>
+                    </table>
+                </div>
+            </div>` : ''}
+            <!-- 数据预览 -->
+            <div class="data-preview-section">
+                <div class="data-preview-header">
+                    <h4>📈 数据预览 (${hasData ? data.rows.length : 0} 行 / 共 ${formatNumber(totalRows)} 行)</h4>
+                    ${!hasData && totalRows === 0 ? '<span class="badge-status badge-warning">⚠️ 表暂无数据，可点击「生成虚拟数据」</span>' : ''}
+                    ${hasData ? '<span class="badge-status badge-success">✅ 数据已加载</span>' : ''}
+                </div>
+                ${hasData ? `
+                <div class="data-preview-table-wrap">
+                    <table class="data-preview-table">
+                        <thead>
+                            <tr>
+                                ${(data.columns || []).map((col, i) => `<th title="${esc(col)}">${esc(col.length > 20 ? col.slice(0, 20) + '…' : col)}</th>`).join('')}
+                            </tr>
+                        </thead>
+                        <tbody>
+                            ${data.rows.map(row => `
+                            <tr>
+                                ${row.map(cell => {
+                                    if (cell === null || cell === undefined) {
+                                        return '<td class="null-cell">NULL</td>';
+                                    }
+                                    const str = String(cell);
+                                    if (str.startsWith('[') || str.startsWith('{')) {
+                                        return `<td class="json-cell" title="${esc(str)}">${esc(str.length > 60 ? str.slice(0, 60) + '…' : str)}</td>`;
+                                    }
+                                    return `<td title="${esc(str)}">${esc(str.length > 60 ? str.slice(0, 60) + '…' : str)}</td>`;
+                                }).join('')}
+                            </tr>
+                            `).join('')}
+                        </tbody>
+                    </table>
+                </div>
+                ` : `<div class="empty-state" style="padding:2rem;">
+                    <div class="icon">📭</div>
+                    ${totalRows === 0 ? '该表暂无数据<br><small style="color:var(--text-muted)">点击上方「生成虚拟数据」为此表及所有表生成测试数据</small>' : '无法加载数据预览'}
+                </div>`}
+            </div>
+            <!-- 建表 SQL -->
+            <div style="margin-top:1.5rem;">
+                <h4 style="font-size:0.9375rem;font-weight:600;margin-bottom:0.75rem;">📝 建表 SQL</h4>
+                <pre class="code-block">${esc(currentSQL)}</pre>
+            </div>
+        `;
+    }
+
+    // ================================================================
+    // 弹窗控制
+    // ================================================================
+    function openModal() {
+        document.getElementById('tableModal').classList.add('active');
+    }
+
+    function closeModal() {
+        document.getElementById('tableModal').classList.remove('active');
+    }
+
+    document.getElementById('tableModal').addEventListener('click', function(e) {
+        if (e.target === this) closeModal();
+    });
+
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') closeModal();
+    });
+
+    // ================================================================
+    // 复制 SQL
+    // ================================================================
+    function copySQL() {
+        if (!currentSQL) {
+            showAlert('warning', '⚠️ 暂无 SQL 可复制');
+            return;
+        }
+        navigator.clipboard.writeText(currentSQL).then(() => {
+            showAlert('success', '✅ SQL 已复制到剪贴板');
+        }).catch(() => {
+            showAlert('error', '❌ 复制失败，请手动选择复制');
+        });
+    }
+
+    // ================================================================
+    // 工具函数
+    // ================================================================
+    function showAlert(type, message) {
+        const alert = document.createElement('div');
+        const typeClass = type === 'success' ? 'alert-success' : type === 'error' ? 'alert-error' : type === 'warning' ? 'alert-warning' : 'alert-info';
+        alert.className = 'alert ' + typeClass;
+        alert.innerHTML = `<span>${message}</span>`;
+        const container = document.querySelector('.container');
+        container.insertBefore(alert, container.firstChild);
+        setTimeout(() => alert.remove(), 6000);
+    }
+
+    function showLoading(show) {
+        const existing = document.querySelector('.loading-overlay');
+        if (show && !existing) {
+            const overlay = document.createElement('div');
+            overlay.className = 'loading-overlay';
+            overlay.style.cssText = 'position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(255,255,255,0.85);display:flex;align-items:center;justify-content:center;z-index:9999;backdrop-filter:blur(2px);';
+            overlay.innerHTML = '<div style="text-align:center;"><div class="spinner" style="width:2.5rem;height:2.5rem;border-width:3px;margin:0 auto 1rem;"></div><div style="color:var(--text-muted);font-size:0.9375rem;">处理中，请稍候...</div></div>';
+            document.body.appendChild(overlay);
+        } else if (!show && existing) {
+            existing.remove();
+        }
+    }
+
+    // HTML 安全转义
+    function esc(text) {
+        if (text === null || text === undefined) return '';
+        const div = document.createElement('div');
+        div.textContent = String(text);
+        return div.innerHTML;
+    }
+
+    // ================================================================
+    // 启动
+    // ================================================================
+    init();
+    </script>
+</body>
+</html>
