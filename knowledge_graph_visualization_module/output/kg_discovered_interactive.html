@@ -1,0 +1,646 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script src="lib/bindings/utils.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+                <link href="lib/tom-select/tom-select.css" rel="stylesheet">
+                <script src="lib/tom-select/tom-select.complete.min.js"></script>
+            
+        
+<center>
+<h1>GAT-Discovered Hidden Relations - Interactive View</h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1>GAT-Discovered Hidden Relations - Interactive View</h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 900px;
+                 background-color: #1a1a2e;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+                <div id="select-menu" class="card-header">
+                    <div class="row no-gutters">
+                        <div class="col-10 pb-2">
+                            <select
+                            class="form-select"
+                            aria-label="Default select example"
+                            onchange="selectNode([value]);"
+                            id="select-node"
+                            placeholder="Select node..."
+                            >
+                                <option selected>Select a Node by ID</option>
+                                
+                                    <option value="ds_1740">ds_1740</option>
+                                
+                                    <option value="ds_1942">ds_1942</option>
+                                
+                                    <option value="ds_1888">ds_1888</option>
+                                
+                                    <option value="ds_1768">ds_1768</option>
+                                
+                                    <option value="ds_1884">ds_1884</option>
+                                
+                                    <option value="ds_2056">ds_2056</option>
+                                
+                                    <option value="ds_1767">ds_1767</option>
+                                
+                                    <option value="ds_2041">ds_2041</option>
+                                
+                                    <option value="ds_1842">ds_1842</option>
+                                
+                                    <option value="ds_1761">ds_1761</option>
+                                
+                                    <option value="ds_1828">ds_1828</option>
+                                
+                                    <option value="ds_2098">ds_2098</option>
+                                
+                                    <option value="ds_1856">ds_1856</option>
+                                
+                                    <option value="ds_1844">ds_1844</option>
+                                
+                                    <option value="ds_1798">ds_1798</option>
+                                
+                                    <option value="ds_1966">ds_1966</option>
+                                
+                                    <option value="ds_2068">ds_2068</option>
+                                
+                                    <option value="ds_2065">ds_2065</option>
+                                
+                                    <option value="ds_2008">ds_2008</option>
+                                
+                                    <option value="ds_2064">ds_2064</option>
+                                
+                                    <option value="ds_2039">ds_2039</option>
+                                
+                                    <option value="ds_1857">ds_1857</option>
+                                
+                                    <option value="ds_1831">ds_1831</option>
+                                
+                                    <option value="cat_94">cat_94</option>
+                                
+                                    <option value="ds_1760">ds_1760</option>
+                                
+                                    <option value="ds_1958">ds_1958</option>
+                                
+                                    <option value="ds_1948">ds_1948</option>
+                                
+                                    <option value="ds_1847">ds_1847</option>
+                                
+                                    <option value="ds_1874">ds_1874</option>
+                                
+                                    <option value="ds_1969">ds_1969</option>
+                                
+                                    <option value="cat_92">cat_92</option>
+                                
+                                    <option value="ds_2007">ds_2007</option>
+                                
+                                    <option value="ds_1811">ds_1811</option>
+                                
+                                    <option value="ds_1861">ds_1861</option>
+                                
+                                    <option value="ds_2032">ds_2032</option>
+                                
+                                    <option value="ds_2010">ds_2010</option>
+                                
+                                    <option value="ds_1810">ds_1810</option>
+                                
+                                    <option value="ds_1800">ds_1800</option>
+                                
+                                    <option value="ds_1959">ds_1959</option>
+                                
+                                    <option value="ds_1977">ds_1977</option>
+                                
+                                    <option value="ds_1980">ds_1980</option>
+                                
+                                    <option value="ds_1949">ds_1949</option>
+                                
+                                    <option value="ds_1986">ds_1986</option>
+                                
+                                    <option value="ds_1838">ds_1838</option>
+                                
+                                    <option value="ds_1979">ds_1979</option>
+                                
+                                    <option value="ds_2030">ds_2030</option>
+                                
+                                    <option value="ds_1961">ds_1961</option>
+                                
+                                    <option value="ds_2044">ds_2044</option>
+                                
+                                    <option value="ds_2021">ds_2021</option>
+                                
+                                    <option value="ds_1834">ds_1834</option>
+                                
+                                    <option value="ds_2027">ds_2027</option>
+                                
+                                    <option value="ds_2011">ds_2011</option>
+                                
+                                    <option value="ds_2055">ds_2055</option>
+                                
+                                    <option value="ds_1822">ds_1822</option>
+                                
+                                    <option value="ds_1851">ds_1851</option>
+                                
+                                    <option value="ds_2058">ds_2058</option>
+                                
+                                    <option value="ds_1960">ds_1960</option>
+                                
+                                    <option value="ds_1812">ds_1812</option>
+                                
+                                    <option value="ds_2029">ds_2029</option>
+                                
+                                    <option value="ds_1976">ds_1976</option>
+                                
+                                    <option value="ds_2040">ds_2040</option>
+                                
+                                    <option value="ds_1771">ds_1771</option>
+                                
+                                    <option value="ds_1837">ds_1837</option>
+                                
+                                    <option value="ds_1802">ds_1802</option>
+                                
+                                    <option value="ds_2026">ds_2026</option>
+                                
+                                    <option value="ds_1839">ds_1839</option>
+                                
+                                    <option value="ds_1885">ds_1885</option>
+                                
+                                    <option value="ds_1871">ds_1871</option>
+                                
+                                    <option value="ds_1889">ds_1889</option>
+                                
+                                    <option value="ds_1852">ds_1852</option>
+                                
+                                    <option value="ds_2057">ds_2057</option>
+                                
+                                    <option value="ds_1801">ds_1801</option>
+                                
+                                    <option value="ds_2038">ds_2038</option>
+                                
+                                    <option value="ds_1787">ds_1787</option>
+                                
+                                    <option value="ds_1965">ds_1965</option>
+                                
+                                    <option value="ds_1778">ds_1778</option>
+                                
+                                    <option value="ds_1872">ds_1872</option>
+                                
+                                    <option value="ds_2091">ds_2091</option>
+                                
+                                    <option value="ds_2037">ds_2037</option>
+                                
+                                    <option value="ds_1943">ds_1943</option>
+                                
+                                    <option value="ds_1835">ds_1835</option>
+                                
+                                    <option value="ds_1875">ds_1875</option>
+                                
+                                    <option value="ds_1780">ds_1780</option>
+                                
+                                    <option value="ds_1859">ds_1859</option>
+                                
+                                    <option value="ds_1777">ds_1777</option>
+                                
+                                    <option value="ds_1766">ds_1766</option>
+                                
+                                    <option value="ds_1765">ds_1765</option>
+                                
+                                    <option value="ds_2020">ds_2020</option>
+                                
+                                    <option value="ds_1936">ds_1936</option>
+                                
+                                    <option value="ds_2053">ds_2053</option>
+                                
+                                    <option value="ds_1860">ds_1860</option>
+                                
+                                    <option value="ds_2019">ds_2019</option>
+                                
+                                    <option value="ds_1937">ds_1937</option>
+                                
+                                    <option value="ds_1843">ds_1843</option>
+                                
+                                    <option value="ds_2092">ds_2092</option>
+                                
+                                    <option value="ds_1855">ds_1855</option>
+                                
+                                    <option value="ds_1968">ds_1968</option>
+                                
+                                    <option value="ds_1878">ds_1878</option>
+                                
+                                    <option value="ds_1964">ds_1964</option>
+                                
+                                    <option value="ds_1736">ds_1736</option>
+                                
+                                    <option value="ds_1985">ds_1985</option>
+                                
+                                    <option value="ds_1846">ds_1846</option>
+                                
+                                    <option value="ds_2094">ds_2094</option>
+                                
+                                    <option value="ds_2006">ds_2006</option>
+                                
+                                    <option value="ds_1823">ds_1823</option>
+                                
+                                    <option value="ds_1876">ds_1876</option>
+                                
+                                    <option value="ds_2093">ds_2093</option>
+                                
+                                    <option value="ds_2033">ds_2033</option>
+                                
+                                    <option value="ds_1794">ds_1794</option>
+                                
+                                    <option value="ds_1891">ds_1891</option>
+                                
+                                    <option value="ds_1890">ds_1890</option>
+                                
+                                    <option value="ds_1845">ds_1845</option>
+                                
+                                    <option value="ds_2061">ds_2061</option>
+                                
+                                    <option value="ds_1793">ds_1793</option>
+                                
+                                    <option value="ds_1877">ds_1877</option>
+                                
+                                    <option value="ds_2036">ds_2036</option>
+                                
+                                    <option value="ds_1775">ds_1775</option>
+                                
+                                    <option value="ds_1774">ds_1774</option>
+                                
+                                    <option value="ds_2060">ds_2060</option>
+                                
+                                    <option value="ds_1829">ds_1829</option>
+                                
+                                    <option value="ds_1773">ds_1773</option>
+                                
+                                    <option value="ds_1879">ds_1879</option>
+                                
+                                    <option value="ds_1786">ds_1786</option>
+                                
+                                    <option value="ds_2077">ds_2077</option>
+                                
+                                    <option value="ds_1848">ds_1848</option>
+                                
+                                    <option value="ds_1944">ds_1944</option>
+                                
+                                    <option value="ds_1947">ds_1947</option>
+                                
+                                    <option value="ds_1772">ds_1772</option>
+                                
+                                    <option value="ds_1836">ds_1836</option>
+                                
+                                    <option value="cat_95">cat_95</option>
+                                
+                                    <option value="ds_1741">ds_1741</option>
+                                
+                                    <option value="ds_2082">ds_2082</option>
+                                
+                                    <option value="ds_2067">ds_2067</option>
+                                
+                                    <option value="ds_2097">ds_2097</option>
+                                
+                                    <option value="ds_1892">ds_1892</option>
+                                
+                                    <option value="ds_2031">ds_2031</option>
+                                
+                                    <option value="ds_1799">ds_1799</option>
+                                
+                                    <option value="ds_1997">ds_1997</option>
+                                
+                                    <option value="ds_1873">ds_1873</option>
+                                
+                                    <option value="ds_1779">ds_1779</option>
+                                
+                                    <option value="ds_2083">ds_2083</option>
+                                
+                                    <option value="ds_1735">ds_1735</option>
+                                
+                                    <option value="ds_2076">ds_2076</option>
+                                
+                                    <option value="ds_2045">ds_2045</option>
+                                
+                                    <option value="ds_1967">ds_1967</option>
+                                
+                                    <option value="ds_1832">ds_1832</option>
+                                
+                                    <option value="ds_2096">ds_2096</option>
+                                
+                                    <option value="ds_1996">ds_1996</option>
+                                
+                                    <option value="ds_2054">ds_2054</option>
+                                
+                                    <option value="ds_1862">ds_1862</option>
+                                
+                            </select>
+                        </div>
+                        <div class="col-2 pb-2">
+                            <button type="button" class="btn btn-primary btn-block" onclick="neighbourhoodHighlight({nodes: []});">Reset Selection</button>
+                        </div>
+                    </div>
+                </div>
+            
+            
+              <div id="filter-menu" class="card-header">
+                <div class="row no-gutters">
+                  <div class="col-3 pb-2">
+                    <select
+                            class="form-select"
+                            aria-label="Default select example"
+                            onchange="updateFilter(value, 'item')"
+                            id="select-item"
+                        >
+                        <option value="">Select a network item</option>
+                        <option value="edge">edge</option>
+                        <option value="node">node</option>
+                    </select>
+                  </div>
+                  <div class="col-3 pb-2">
+                    <select
+                            class="form-select"
+                            aria-label="Default select example"
+                            onchange="updateFilter(value, 'property')"
+                            id="select-property"
+                        >
+                        <option value="">Select a property...</option>
+                    </select>
+                  </div>
+                  <div class="col-3 pb-2">
+                    <select
+                            class="form-select"
+                            aria-label="Default select example"
+                            id="select-value"
+                        >
+                        <option value="">Select value(s)...</option>
+                    </select>
+                  </div>
+                  <div class="col-1 pb-2">
+                    <button type="button" class="btn btn-primary btn-block" onclick="highlightFilter(filter);">Filter</button>
+                  </div>
+                  <div class="col-2 pb-2">
+                    <button type="button" class="btn btn-primary btn-block" onclick="clearFilter(true)">Reset Selection</button>
+                  </div>
+                </div>
+              </div>
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+                  new TomSelect("#select-node",{
+                      create: false,
+                      sortField: {
+                          field: "text",
+                          direction: "asc"
+                      }
+                  });
+              
+
+              
+                  // explicitly using onItemAdd and this function as we need to save multiple values
+                  let updateValueFilter = function() {
+                      return function () {
+                      filter['value'].push(arguments[0])
+                      }
+                  }
+
+                  let valueControl = new TomSelect("#select-value",{
+                      maxItems: null,
+                      valueField: 'id',
+                      labelField: 'title',
+                      searchField: 'title',
+                      create: false,
+                      sortField: {
+                          field: "text",
+                          direction: "asc"
+                      },
+                      onItemAdd: updateValueFilter()
+                  });
+
+                  let addValues = function() {
+                      return function () {
+                          // clear the current value options and add the selected attribute values
+                          // tom-select handles duplicates
+                          let selectedProperty = arguments[0];
+                          valueControl.clear();
+                          valueControl.clearOptions();
+                          filter['value'] = []
+                          if (filter['item'] === 'node') {
+                              for (let each in allNodes) {
+                                  valueControl.addOption({
+                                      id:allNodes[each][selectedProperty],
+                                      title:allNodes[each][selectedProperty]
+                                  })
+                              }
+                          }
+                          else if (filter['item'] === 'edge') {
+                              for (let each in allEdges) {
+                                  valueControl.addOption({
+                                      id:allEdges[each][selectedProperty],
+                                      title:allEdges[each][selectedProperty]
+                                  })
+                              }
+                          }
+                      }
+                  };
+
+                  let propControl = new TomSelect("#select-property",{
+                      valueField: 'id',
+                      labelField: 'title',
+                      searchField: 'title',
+                      create: false,
+                      sortField: {
+                          field: "text",
+                          direction: "asc"
+                      },
+                      onItemAdd: addValues()
+                  });
+
+                  let addProperties = function() {
+                      return function () {
+                          // loops through the selected network item and adds the attributes to dropdown
+                          // tom-select handles duplicates
+                          clearFilter(false)
+                          if (arguments[0] === 'edge') {
+                              for (let each in allEdges) {
+                                  if (allEdges.hasOwnProperty(each)) {
+                                      for (let eachProp in allEdges[each]) {
+                                          if (allEdges[each].hasOwnProperty(eachProp)) {
+                                              propControl.addOption({id: eachProp, title: eachProp})
+                                          }
+                                      }
+                                  }
+                              }
+                          }
+                          else if (arguments[0] === 'node') {
+                              for (let each in allNodes) {
+                                  if (allNodes.hasOwnProperty(each)) {
+                                      for (let eachProp in allNodes[each]) {
+                                          if (allNodes[each].hasOwnProperty(eachProp)
+                                              && (eachProp !== 'hidden' && eachProp !== 'savedLabel'
+                                                  && eachProp !== 'hiddenLabel')) {
+                                              propControl.addOption({id: eachProp, title: eachProp})
+
+                                          }
+                                      }
+                                  }
+                              }
+                          }
+                      }
+                  };
+
+                  let itemControl = new TomSelect("#select-item",{
+                      create: false,
+                      sortField:{
+                          field: "text",
+                          direction: "asc"
+                      },
+                      onItemAdd: addProperties()
+                  });
+
+                  function clearFilter(reset) {
+                      // utility function to clear all the selected filter options
+                      // if reset is set to true, the existing filter will be removed
+                      // else, only the dropdown options are cleared
+                      propControl.clear();
+                      propControl.clearOptions();
+                      valueControl.clear();
+                      valueControl.clearOptions();
+                      filter = {
+                          item : '',
+                          property : '',
+                          value : []
+                      }
+                      if (reset) {
+                          itemControl.clear();
+                          filterHighlight({nodes: []})
+                      }
+                  }
+
+                  function updateFilter(value, key) {
+                      // key could be 'item' or 'property' and value is as selected in dropdown
+                      filter[key] = value
+                  }
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"borderColor": "#555555", "borderWidth": 1, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_1740", "label": "Temperature of secti..", "shape": "dot", "size": 20, "title": "Temperature of section 1 - 006(210\u00b0) | \u4e00\u6bb5\u6e29\u5ea6-006(210\u00b0) [dataset] \u26a0 ANOMALY score=0.52", "x": -18375.0, "y": 350.0}, {"borderColor": "#555555", "borderWidth": 1, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_1942", "label": "Temperature of furna..", "shape": "dot", "size": 20, "title": "Temperature of furnace lining of section 8 - 012(345\u00b0) | \u7089\u886c\u516b\u6bb5\u6e29\u5ea6-012(345\u00b0) [dataset]", "x": -18125.0, "y": 350.0}, {"borderColor": "#555555", "borderWidth": 1, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_1888", "label": "Temperature of secti..", "shape": "dot", "size": 20, "title": "Temperature of section 17 - 141(135\u00b0) | \u5341\u4e03\u6bb5\u6e29\u5ea6-141(135\u00b0) [dataset]", "x": -17875.0, "y": 350.0}, {"borderColor": "#FF6B35", "borderWidth": 2, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_1768", "label": "Temperature of secti..", "shape": "dot", "size": 20, "title": "Temperature of section 3 - 032(150\u00b0) | \u4e09\u6bb5\u6e29\u5ea6-032(150\u00b0) [dataset]", "x": -17625.0, "y": 350.0}, {"borderColor": "#555555", "borderWidth": 1, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_1884", "label": "Temperature of secti..", "shape": "dot", "size": 20, "title": "Temperature of section 15 - 138(345\u00b0) | \u5341\u4e94\u6bb5\u6e29\u5ea6-138(345\u00b0) [dataset]", "x": -17375.0, "y": 350.0}, {"borderColor": "#FF6B35", "borderWidth": 2, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_2056", "label": "Flow rate of oxygen-..", "shape": "dot", "size": 20, "title": "Flow rate of oxygen-enriched | \u5bcc\u6c27\u6d41\u91cf [dataset]", "x": -17125.0, "y": 350.0}, {"borderColor": "#FF6B35", "borderWidth": 2, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_1767", "label": "Temperature of secti..", "shape": "dot", "size": 20, "title": "Temperature of section 3 - 031(120\u00b0) | \u4e09\u6bb5\u6e29\u5ea6-031(120\u00b0) [dataset]", "x": -16875.0, "y": 350.0}, {"borderColor": "#FF6B35", "borderWidth": 2, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_2041", "label": "Weight of 2# pulveri..", "shape": "dot", "size": 20, "title": "Weight of 2# pulverized coal injection tank | 2#\u7164\u7c89\u55b7\u5439\u7f50\u91cd\u91cf [dataset]", "x": -16625.0, "y": 350.0}, {"borderColor": "#555555", "borderWidth": 1, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_1842", "label": "Temperature of secti..", "shape": "dot", "size": 20, "title": "Temperature of section 12 - 099(45\u00b0) | \u5341\u4e8c\u6bb5\u6e29\u5ea6-099(45\u00b0) [dataset]", "x": -16375.0, "y": 350.0}, {"borderColor": "#FF6B35", "borderWidth": 2, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_1761", "label": "Temperature of secti..", "shape": "dot", "size": 20, "title": "Temperature of section 2 - 026(305\u00b0) | \u4e8c\u6bb5\u6e29\u5ea6-026(305\u00b0) [dataset]", "x": -16125.0, "y": 350.0}, {"borderColor": "#555555", "borderWidth": 1, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_1828", "label": "Temperature of secti..", "shape": "dot", "size": 20, "title": "Temperature of section 10 - 087(325\u00b0) | \u5341\u6bb5\u6e29\u5ea6-087(325\u00b0) [dataset]", "x": -15875.0, "y": 350.0}, {"borderColor": "#FF6B35", "borderWidth": 2, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_2098", "label": "Pressure of main bod..", "shape": "dot", "size": 20, "title": "Pressure of main body expansion tank | \u672c\u4f53\u81a8\u80c0\u7f50\u538b\u529b [dataset]", "x": -15625.0, "y": 350.0}, {"borderColor": "#FF6B35", "borderWidth": 2, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_1856", "label": "Temperature of secti..", "shape": "dot", "size": 20, "title": "Temperature of section 13 - 112(150\u00b0) | \u5341\u4e09\u6bb5\u6e29\u5ea6-112(150\u00b0) [dataset]", "x": -15375.0, "y": 350.0}, {"borderColor": "#FF6B35", "borderWidth": 2, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_1844", "label": "Temperature of secti..", "shape": "dot", "size": 20, "title": "Temperature of section 12 - 101(105\u00b0) | \u5341\u4e8c\u6bb5\u6e29\u5ea6-101(105\u00b0) [dataset]", "x": -15125.0, "y": 350.0}, {"borderColor": "#555555", "borderWidth": 1, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_1798", "label": "Temperature of secti..", "shape": "dot", "size": 20, "title": "Temperature of section 8 - 059(30\u00b0) | \u516b\u6bb5\u6e29\u5ea6-059(30\u00b0) [dataset]", "x": -14875.0, "y": 350.0}, {"borderColor": "#FF6B35", "borderWidth": 2, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_1966", "label": "Temperature of furna..", "shape": "dot", "size": 20, "title": "Temperature of furnace lining of section 12 - 032(245\u00b0) | \u7089\u886c\u5341\u4e8c\u6bb5\u6e29\u5ea6-032(245\u00b0) [dataset]", "x": -14625.0, "y": 350.0}, {"borderColor": "#FF6B35", "borderWidth": 2, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_2068", "label": "2# Hot stove \u2013 Tempe..", "shape": "dot", "size": 20, "title": "2# Hot stove \u2013 Temperature of waste gas | 2HS-\u5e9f\u6c14\u6e29\u5ea6 [dataset]", "x": -14375.0, "y": 350.0}, {"borderColor": "#FF6B35", "borderWidth": 2, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_2065", "label": "2# Hot stove - Dome ..", "shape": "dot", "size": 20, "title": "2# Hot stove - Dome temperature | 2HS-\u62f1\u9876\u6e29\u5ea6 [dataset]", "x": -14125.0, "y": 350.0}, {"borderColor": "#FF6B35", "borderWidth": 2, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_2008", "label": "Current of 1# rotati..", "shape": "dot", "size": 20, "title": "Current of 1# rotating device | 1#\u65cb\u8f6c\u88c5\u7f6e\u7535\u6d41 [dataset]", "x": -13875.0, "y": 350.0}, {"borderColor": "#555555", "borderWidth": 1, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_2064", "label": "1# Hot stove - Dome ..", "shape": "dot", "size": 20, "title": "1# Hot stove - Dome temperature | 1HS-\u62f1\u9876\u6e29\u5ea6 [dataset]", "x": -13625.0, "y": 350.0}, {"borderColor": "#FF6B35", "borderWidth": 2, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_2039", "label": "Lower static pressur..", "shape": "dot", "size": 20, "title": "Lower static pressure differential of furnace body | \u9ad8\u7089\u7089\u8eab\u4e0b\u90e8\u9759\u538b\u5dee [dataset]", "x": -13375.0, "y": 350.0}, {"borderColor": "#FF6B35", "borderWidth": 2, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_1857", "label": "Temperature of secti..", "shape": "dot", "size": 20, "title": "Temperature of section 13 - 113(180\u00b0) | \u5341\u4e09\u6bb5\u6e29\u5ea6-113(180\u00b0) [dataset]", "x": -13125.0, "y": 350.0}, {"borderColor": "#555555", "borderWidth": 1, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_1831", "label": "Temperature of secti..", "shape": "dot", "size": 20, "title": "Temperature of section 11 - 089(45\u00b0) | \u5341\u4e00\u6bb5\u6e29\u5ea6-089(45\u00b0) [dataset]", "x": -12875.0, "y": 350.0}, {"borderColor": "#555555", "borderWidth": 1, "color": "#457B9D", "font": {"color": "white"}, "id": "cat_94", "label": "Blast furnace system..", "shape": "dot", "size": 40, "title": "Blast furnace system - Thermocouple - Furnace lining side wall temperature monitoring | \u9ad8\u7089\u7cfb\u7edf-\u70ed\u7535\u5076-\u7089\u886c\u4fa7\u58c1\u6e29\u5ea6\u76d1\u6d4b [data_category]", "x": -3999.0, "y": 0.0}, {"borderColor": "#555555", "borderWidth": 1, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_1760", "label": "Temperature of secti..", "shape": "dot", "size": 20, "title": "Temperature of section 2 - 025(290\u00b0) | \u4e8c\u6bb5\u6e29\u5ea6-025(290\u00b0) [dataset]", "x": -12625.0, "y": 350.0}, {"borderColor": "#555555", "borderWidth": 1, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_1958", "label": "Temperature of furna..", "shape": "dot", "size": 20, "title": "Temperature of furnace lining of section 11 - 025(180\u00b0) | \u7089\u886c\u5341\u4e00\u6bb5\u6e29\u5ea6-025(180\u00b0) [dataset]", "x": -12375.0, "y": 350.0}, {"borderColor": "#FF6B35", "borderWidth": 2, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_1948", "label": "Average temperature ..", "shape": "dot", "size": 20, "title": "Average temperature of furnace lining of section 9 | \u7089\u886c\u4e5d\u6bb5\u6e29\u5ea6-\u5747\u503c [dataset]", "x": -12125.0, "y": 350.0}, {"borderColor": "#555555", "borderWidth": 1, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_1847", "label": "Temperature of secti..", "shape": "dot", "size": 20, "title": "Temperature of section 12 - 104(210\u00b0) | \u5341\u4e8c\u6bb5\u6e29\u5ea6-104(210\u00b0) [dataset]", "x": -11875.0, "y": 350.0}, {"borderColor": "#FF6B35", "borderWidth": 2, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_1874", "label": "Average temperature ..", "shape": "dot", "size": 20, "title": "Average temperature of section 14 | \u5341\u56db\u6bb5\u6e29\u5ea6-\u5747\u503c [dataset]", "x": -11625.0, "y": 350.0}, {"borderColor": "#FF6B35", "borderWidth": 2, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_1969", "label": "Average temperature ..", "shape": "dot", "size": 20, "title": "Average temperature of furnace lining of section 12 | \u7089\u886c\u5341\u4e8c\u6bb5\u6e29\u5ea6-\u5747\u503c [dataset]", "x": -11375.0, "y": 350.0}, {"borderColor": "#555555", "borderWidth": 1, "color": "#457B9D", "font": {"color": "white"}, "id": "cat_92", "label": "Blast furnace system..", "shape": "dot", "size": 40, "title": "Blast furnace system - Thermocouple - Furnace body cooling stave temperature monitoring | \u9ad8\u7089\u7cfb\u7edf-\u70ed\u7535\u5076-\u7089\u8eab\u51b7\u5374\u58c1\u6e29\u5ea6\u76d1\u6d4b [data_category]", "x": -1333.0, "y": 0.0}, {"borderColor": "#FF6B35", "borderWidth": 2, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_2007", "label": "Temperature differen..", "shape": "dot", "size": 20, "title": "Temperature difference of whole furnace | \u5168\u7089\u6e29\u5dee [dataset]", "x": -11125.0, "y": 350.0}, {"borderColor": "#FF6B35", "borderWidth": 2, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_1811", "label": "Temperature of secti..", "shape": "dot", "size": 20, "title": "Temperature of section 9 - 071(105\u00b0) | \u4e5d\u6bb5\u6e29\u5ea6-071(105\u00b0) [dataset] \u26a0 ANOMALY score=0.64", "x": -10875.0, "y": 350.0}, {"borderColor": "#FF6B35", "borderWidth": 2, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_1861", "label": "Temperature of secti..", "shape": "dot", "size": 20, "title": "Temperature of section 13 - 117(325\u00b0) | \u5341\u4e09\u6bb5\u6e29\u5ea6-117(325\u00b0) [dataset]", "x": -10625.0, "y": 350.0}, {"borderColor": "#FF6B35", "borderWidth": 2, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_2032", "label": "Accumulated volume o..", "shape": "dot", "size": 20, "title": "Accumulated volume of cold air | \u7d2f\u8ba1\u51b7\u98ce\u98ce\u91cf [dataset]", "x": -10375.0, "y": 350.0}, {"borderColor": "#555555", "borderWidth": 1, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_2010", "label": "Material type of hop..", "shape": "dot", "size": 20, "title": "Material type of hopper | \u6599\u6597\u7269\u6599\u79cd\u7c7b [dataset]", "x": -10125.0, "y": 350.0}, {"borderColor": "#555555", "borderWidth": 1, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_1810", "label": "Temperature of secti..", "shape": "dot", "size": 20, "title": "Temperature of section 9 - 070(75\u00b0) | \u4e5d\u6bb5\u6e29\u5ea6-070(75\u00b0) [dataset]", "x": -9875.0, "y": 350.0}, {"borderColor": "#555555", "borderWidth": 1, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_1800", "label": "Temperature of secti..", "shape": "dot", "size": 20, "title": "Temperature of section 8 - 061(105\u00b0) | \u516b\u6bb5\u6e29\u5ea6-061(105\u00b0) [dataset]", "x": -9625.0, "y": 350.0}, {"borderColor": "#FF6B35", "borderWidth": 2, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_1959", "label": "Temperature of furna..", "shape": "dot", "size": 20, "title": "Temperature of furnace lining of section 11 - 026(245\u00b0) | \u7089\u886c\u5341\u4e00\u6bb5\u6e29\u5ea6-026(245\u00b0) [dataset]", "x": -9375.0, "y": 350.0}, {"borderColor": "#FF6B35", "borderWidth": 2, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_1977", "label": "Temperature of furna..", "shape": "dot", "size": 20, "title": "Temperature of furnace lining of section 14 - 041(60\u00b0) | \u7089\u886c\u5341\u56db\u6bb5\u6e29\u5ea6-041(60\u00b0) [dataset]", "x": -9125.0, "y": 350.0}, {"borderColor": "#FF6B35", "borderWidth": 2, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_1980", "label": "Temperature of furna..", "shape": "dot", "size": 20, "title": "Temperature of furnace lining of section 14 - 044(245\u00b0) | \u7089\u886c\u5341\u56db\u6bb5\u6e29\u5ea6-044(245\u00b0) [dataset]", "x": -8875.0, "y": 350.0}, {"borderColor": "#FF6B35", "borderWidth": 2, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_1949", "label": "Temperature of furna..", "shape": "dot", "size": 20, "title": "Temperature of furnace lining of section 10 - 017(60\u00b0) | \u7089\u886c\u5341\u6bb5\u6e29\u5ea6-017(60\u00b0) [dataset]", "x": -8625.0, "y": 350.0}, {"borderColor": "#FF6B35", "borderWidth": 2, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_1986", "label": "Temperature of furna..", "shape": "dot", "size": 20, "title": "Temperature of furnace lining of section 15 - 049(180\u00b0) | \u7089\u886c\u5341\u4e94\u6bb5\u6e29\u5ea6-049(180\u00b0) [dataset]", "x": -8375.0, "y": 350.0}, {"borderColor": "#555555", "borderWidth": 1, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_1838", "label": "Temperature of secti..", "shape": "dot", "size": 20, "title": "Temperature of section 11 - 096(290\u00b0) | \u5341\u4e00\u6bb5\u6e29\u5ea6-096(290\u00b0) [dataset]", "x": -8125.0, "y": 350.0}, {"borderColor": "#555555", "borderWidth": 1, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_1979", "label": "Temperature of furna..", "shape": "dot", "size": 20, "title": "Temperature of furnace lining of section 14 - 043(180\u00b0) | \u7089\u886c\u5341\u56db\u6bb5\u6e29\u5ea6-043(180\u00b0) [dataset]", "x": -7875.0, "y": 350.0}, {"borderColor": "#FF6B35", "borderWidth": 2, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_2030", "label": "Dumping angle", "shape": "dot", "size": 20, "title": "Dumping angle | \u5e03\u6599\u89d2\u5ea6 [dataset]", "x": -7625.0, "y": 350.0}, {"borderColor": "#FF6B35", "borderWidth": 2, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_1961", "label": "Temperature of furna..", "shape": "dot", "size": 20, "title": "Temperature of furnace lining of section 11 - 028(345\u00b0) | \u7089\u886c\u5341\u4e00\u6bb5\u6e29\u5ea6-028(345\u00b0) [dataset]", "x": -7375.0, "y": 350.0}, {"borderColor": "#555555", "borderWidth": 1, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_2044", "label": "CO2 content of coal ..", "shape": "dot", "size": 20, "title": "CO2 content of coal gas | \u7164\u6c14CO2\u542b\u91cf [dataset]", "x": -7125.0, "y": 350.0}, {"borderColor": "#FF6B35", "borderWidth": 2, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_2021", "label": "Pressure of furnace ..", "shape": "dot", "size": 20, "title": "Pressure of furnace top - Southeast | \u7089\u9876\u538b\u529b-\u4e1c\u5357 [dataset]", "x": -6875.0, "y": 350.0}, {"borderColor": "#555555", "borderWidth": 1, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_1834", "label": "Temperature of secti..", "shape": "dot", "size": 20, "title": "Temperature of section 11 - 092(150\u00b0) | \u5341\u4e00\u6bb5\u6e29\u5ea6-092(150\u00b0) [dataset]", "x": -6625.0, "y": 350.0}, {"borderColor": "#FF6B35", "borderWidth": 2, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_2027", "label": "Weight of 2# hoistin..", "shape": "dot", "size": 20, "title": "Weight of 2# hoisting bucket | 2#\u6599\u7f50\u91cd\u91cf [dataset]", "x": -6375.0, "y": 350.0}, {"borderColor": "#FF6B35", "borderWidth": 2, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_2011", "label": "Material type of hoi..", "shape": "dot", "size": 20, "title": "Material type of hoisting bucket | \u6599\u7f50\u7269\u6599\u79cd\u7c7b [dataset]", "x": -6125.0, "y": 350.0}, {"borderColor": "#555555", "borderWidth": 1, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_2055", "label": "Pressure of oxygen-e..", "shape": "dot", "size": 20, "title": "Pressure of oxygen-enriched | \u5bcc\u6c27\u538b\u529b [dataset]", "x": -5875.0, "y": 350.0}, {"borderColor": "#555555", "borderWidth": 1, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_1822", "label": "Temperature of secti..", "shape": "dot", "size": 20, "title": "Temperature of section 10 - 081(105\u00b0) | \u5341\u6bb5\u6e29\u5ea6-081(105\u00b0) [dataset]", "x": -5625.0, "y": 350.0}, {"borderColor": "#555555", "borderWidth": 1, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_1851", "label": "Temperature of secti..", "shape": "dot", "size": 20, "title": "Temperature of section 12 - 108(345\u00b0) | \u5341\u4e8c\u6bb5\u6e29\u5ea6-108(345\u00b0) [dataset]", "x": -5375.0, "y": 350.0}, {"borderColor": "#FF6B35", "borderWidth": 2, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_2058", "label": "Actual blast velocity", "shape": "dot", "size": 20, "title": "Actual blast velocity | \u5b9e\u9645\u98ce\u901f [dataset]", "x": -5125.0, "y": 350.0}, {"borderColor": "#555555", "borderWidth": 1, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_1960", "label": "Temperature of furna..", "shape": "dot", "size": 20, "title": "Temperature of furnace lining of section 11 - 027(305\u00b0) | \u7089\u886c\u5341\u4e00\u6bb5\u6e29\u5ea6-027(305\u00b0) [dataset]", "x": -4875.0, "y": 350.0}, {"borderColor": "#FF6B35", "borderWidth": 2, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_1812", "label": "Temperature of secti..", "shape": "dot", "size": 20, "title": "Temperature of section 9 - 072(150\u00b0) | \u4e5d\u6bb5\u6e29\u5ea6-072(150\u00b0) [dataset]", "x": -4625.0, "y": 350.0}, {"borderColor": "#555555", "borderWidth": 1, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_2029", "label": "Sub-center temperatu..", "shape": "dot", "size": 20, "title": "Sub-center temperature of furnace top cross temperature measurement | \u7089\u9876\u5341\u5b57\u6d4b\u6e29\u6b21\u4e2d\u5fc3\u6e29\u5ea6 [dataset]", "x": -4375.0, "y": 350.0}, {"borderColor": "#555555", "borderWidth": 1, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_1976", "label": "Average temperature ..", "shape": "dot", "size": 20, "title": "Average temperature of furnace lining of section 13 | \u7089\u886c\u5341\u4e09\u6bb5\u6e29\u5ea6-\u5747\u503c [dataset]", "x": -4125.0, "y": 350.0}, {"borderColor": "#555555", "borderWidth": 1, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_2040", "label": "Weight of 1# pulveri..", "shape": "dot", "size": 20, "title": "Weight of 1# pulverized coal injection tank | 1#\u7164\u7c89\u55b7\u5439\u7f50\u91cd\u91cf [dataset]", "x": -3875.0, "y": 350.0}, {"borderColor": "#555555", "borderWidth": 1, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_1771", "label": "Temperature of secti..", "shape": "dot", "size": 20, "title": "Temperature of section 3 - 035(245\u00b0) | \u4e09\u6bb5\u6e29\u5ea6-035(245\u00b0) [dataset]", "x": -3625.0, "y": 350.0}, {"borderColor": "#FF6B35", "borderWidth": 2, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_1837", "label": "Temperature of secti..", "shape": "dot", "size": 20, "title": "Temperature of section 11 - 095(245\u00b0) | \u5341\u4e00\u6bb5\u6e29\u5ea6-095(245\u00b0) [dataset]", "x": -3375.0, "y": 350.0}, {"borderColor": "#FF6B35", "borderWidth": 2, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_1802", "label": "Temperature of secti..", "shape": "dot", "size": 20, "title": "Temperature of section 8 - 063(180\u00b0) | \u516b\u6bb5\u6e29\u5ea6-063(180\u00b0) [dataset]", "x": -3125.0, "y": 350.0}, {"borderColor": "#555555", "borderWidth": 1, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_2026", "label": "Weight of 1# hoistin..", "shape": "dot", "size": 20, "title": "Weight of 1# hoisting bucket | 1#\u6599\u7f50\u91cd\u91cf [dataset]", "x": -2875.0, "y": 350.0}, {"borderColor": "#FF6B35", "borderWidth": 2, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_1839", "label": "Temperature of secti..", "shape": "dot", "size": 20, "title": "Temperature of section 11 - 097(325\u00b0) | \u5341\u4e00\u6bb5\u6e29\u5ea6-097(325\u00b0) [dataset]", "x": -2625.0, "y": 350.0}, {"borderColor": "#FF6B35", "borderWidth": 2, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_1885", "label": "Average temperature ..", "shape": "dot", "size": 20, "title": "Average temperature of section 15 | \u5341\u4e94\u6bb5\u6e29\u5ea6-\u5747\u503c [dataset]", "x": -2375.0, "y": 350.0}, {"borderColor": "#555555", "borderWidth": 1, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_1871", "label": "Temperature of secti..", "shape": "dot", "size": 20, "title": "Temperature of section 14 - 126(275\u00b0) | \u5341\u56db\u6bb5\u6e29\u5ea6-126(275\u00b0) [dataset]", "x": -2125.0, "y": 350.0}, {"borderColor": "#FF6B35", "borderWidth": 2, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_1889", "label": "Temperature of secti..", "shape": "dot", "size": 20, "title": "Temperature of section 17 - 142(180\u00b0) | \u5341\u4e03\u6bb5\u6e29\u5ea6-142(180\u00b0) [dataset]", "x": -1875.0, "y": 350.0}, {"borderColor": "#FF6B35", "borderWidth": 2, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_1852", "label": "Average temperature ..", "shape": "dot", "size": 20, "title": "Average temperature of section 12 | \u5341\u4e8c\u6bb5\u6e29\u5ea6-\u5747\u503c [dataset]", "x": -1625.0, "y": 350.0}, {"borderColor": "#555555", "borderWidth": 1, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_2057", "label": "Standard blast veloc..", "shape": "dot", "size": 20, "title": "Standard blast velocity | \u6807\u51c6\u98ce\u901f [dataset]", "x": -1375.0, "y": 350.0}, {"borderColor": "#FF6B35", "borderWidth": 2, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_1801", "label": "Temperature of secti..", "shape": "dot", "size": 20, "title": "Temperature of section 8 - 062(135\u00b0) | \u516b\u6bb5\u6e29\u5ea6-062(135\u00b0) [dataset]", "x": -1125.0, "y": 350.0}, {"borderColor": "#FF6B35", "borderWidth": 2, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_2038", "label": "Middle static pressu..", "shape": "dot", "size": 20, "title": "Middle static pressure differential of furnace body | \u9ad8\u7089\u7089\u8eab\u4e2d\u90e8\u9759\u538b\u5dee [dataset]", "x": -875.0, "y": 350.0}, {"borderColor": "#FF6B35", "borderWidth": 2, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_1787", "label": "Temperature of secti..", "shape": "dot", "size": 20, "title": "Temperature of section 7 - 049(45\u00b0) | \u4e03\u6bb5\u6e29\u5ea6-049(45\u00b0) [dataset]", "x": -625.0, "y": 350.0}, {"borderColor": "#FF6B35", "borderWidth": 2, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_1965", "label": "Temperature of furna..", "shape": "dot", "size": 20, "title": "Temperature of furnace lining of section 12 - 031(180\u00b0) | \u7089\u886c\u5341\u4e8c\u6bb5\u6e29\u5ea6-031(180\u00b0) [dataset]", "x": -375.0, "y": 350.0}, {"borderColor": "#FF6B35", "borderWidth": 2, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_1778", "label": "Temperature of secti..", "shape": "dot", "size": 20, "title": "Temperature of section 6 - 041(105\u00b0) | \u516d\u6bb5\u6e29\u5ea6-041(105\u00b0) [dataset]", "x": -125.0, "y": 350.0}, {"borderColor": "#FF6B35", "borderWidth": 2, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_1872", "label": "Temperature of secti..", "shape": "dot", "size": 20, "title": "Temperature of section 14 - 127(325\u00b0) | \u5341\u56db\u6bb5\u6e29\u5ea6-127(325\u00b0) [dataset]", "x": 125.0, "y": 350.0}, {"borderColor": "#555555", "borderWidth": 1, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_2091", "label": "Pressure of 1# high-..", "shape": "dot", "size": 20, "title": "Pressure of 1# high-pressure water supply pipe | 1#\u9ad8\u538b\u6c34\u4f9b\u6c34\u7ba1\u538b\u529b [dataset] \u26a0 ANOMALY score=0.60", "x": 375.0, "y": 350.0}, {"borderColor": "#FF6B35", "borderWidth": 2, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_2037", "label": "Upper-middle static ..", "shape": "dot", "size": 20, "title": "Upper-middle static pressure differential of furnace body | \u9ad8\u7089\u7089\u8eab\u4e2d\u4e0a\u90e8\u9759\u538b\u5dee [dataset]", "x": 625.0, "y": 350.0}, {"borderColor": "#FF6B35", "borderWidth": 2, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_1943", "label": "Average temperature ..", "shape": "dot", "size": 20, "title": "Average temperature of furnace lining of section 8 | \u7089\u886c\u516b\u6bb5\u6e29\u5ea6-\u5747\u503c [dataset]", "x": 875.0, "y": 350.0}, {"borderColor": "#FF6B35", "borderWidth": 2, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_1835", "label": "Temperature of secti..", "shape": "dot", "size": 20, "title": "Temperature of section 11 - 093(180\u00b0) | \u5341\u4e00\u6bb5\u6e29\u5ea6-093(180\u00b0) [dataset]", "x": 1125.0, "y": 350.0}, {"borderColor": "#FF6B35", "borderWidth": 2, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_1875", "label": "Temperature of secti..", "shape": "dot", "size": 20, "title": "Temperature of section 15 - 129(45\u00b0) | \u5341\u4e94\u6bb5\u6e29\u5ea6-129(45\u00b0) [dataset]", "x": 1375.0, "y": 350.0}, {"borderColor": "#FF6B35", "borderWidth": 2, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_1780", "label": "Temperature of secti..", "shape": "dot", "size": 20, "title": "Temperature of section 6 - 043(180\u00b0) | \u516d\u6bb5\u6e29\u5ea6-043(180\u00b0) [dataset]", "x": 1625.0, "y": 350.0}, {"borderColor": "#555555", "borderWidth": 1, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_1859", "label": "Temperature of secti..", "shape": "dot", "size": 20, "title": "Temperature of section 13 - 115(245\u00b0) | \u5341\u4e09\u6bb5\u6e29\u5ea6-115(245\u00b0) [dataset]", "x": 1875.0, "y": 350.0}, {"borderColor": "#555555", "borderWidth": 1, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_1777", "label": "Temperature of secti..", "shape": "dot", "size": 20, "title": "Temperature of section 6 - 040(60\u00b0) | \u516d\u6bb5\u6e29\u5ea6-040(60\u00b0) [dataset]", "x": 2125.0, "y": 350.0}, {"borderColor": "#FF6B35", "borderWidth": 2, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_1766", "label": "Temperature of secti..", "shape": "dot", "size": 20, "title": "Temperature of section 3 - 030(75\u00b0) | \u4e09\u6bb5\u6e29\u5ea6-030(75\u00b0) [dataset]", "x": 2375.0, "y": 350.0}, {"borderColor": "#555555", "borderWidth": 1, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_1765", "label": "Temperature of secti..", "shape": "dot", "size": 20, "title": "Temperature of section 3 - 029(30\u00b0) | \u4e09\u6bb5\u6e29\u5ea6-029(30\u00b0) [dataset]", "x": 2625.0, "y": 350.0}, {"borderColor": "#FF6B35", "borderWidth": 2, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_2020", "label": "Temperature of furna..", "shape": "dot", "size": 20, "title": "Temperature of furnace top - Range | \u7089\u9876\u6e29\u5ea6-\u6781\u5dee [dataset] \u26a0 ANOMALY score=0.74", "x": 2875.0, "y": 350.0}, {"borderColor": "#555555", "borderWidth": 1, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_1936", "label": "Temperature of furna..", "shape": "dot", "size": 20, "title": "Temperature of furnace lining of section 7 - 007(275\u00b0) | \u7089\u886c\u4e03\u6bb5\u6e29\u5ea6-007(275\u00b0) [dataset]", "x": 3125.0, "y": 350.0}, {"borderColor": "#555555", "borderWidth": 1, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_2053", "label": "Total count of batch", "shape": "dot", "size": 20, "title": "Total count of batch | \u6599\u6279\u603b\u8ba1\u503c [dataset]", "x": 3375.0, "y": 350.0}, {"borderColor": "#FF6B35", "borderWidth": 2, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_1860", "label": "Temperature of secti..", "shape": "dot", "size": 20, "title": "Temperature of section 13 - 116(290\u00b0) | \u5341\u4e09\u6bb5\u6e29\u5ea6-116(290\u00b0) [dataset]", "x": 3625.0, "y": 350.0}, {"borderColor": "#555555", "borderWidth": 1, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_2019", "label": "Temperature of furna..", "shape": "dot", "size": 20, "title": "Temperature of furnace top - Southwest | \u7089\u9876\u6e29\u5ea6-\u897f\u5357 [dataset]", "x": 3875.0, "y": 350.0}, {"borderColor": "#FF6B35", "borderWidth": 2, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_1937", "label": "Temperature of furna..", "shape": "dot", "size": 20, "title": "Temperature of furnace lining of section 7 - 008(345\u00b0) | \u7089\u886c\u4e03\u6bb5\u6e29\u5ea6-008(345\u00b0) [dataset]", "x": 4125.0, "y": 350.0}, {"borderColor": "#FF6B35", "borderWidth": 2, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_1843", "label": "Temperature of secti..", "shape": "dot", "size": 20, "title": "Temperature of section 12 - 100(75\u00b0) | \u5341\u4e8c\u6bb5\u6e29\u5ea6-100(75\u00b0) [dataset]", "x": 4375.0, "y": 350.0}, {"borderColor": "#FF6B35", "borderWidth": 2, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_2092", "label": "Pressure of 2# high-..", "shape": "dot", "size": 20, "title": "Pressure of 2# high-pressure water supply pipe | 2#\u9ad8\u538b\u6c34\u4f9b\u6c34\u7ba1\u538b\u529b [dataset]", "x": 4625.0, "y": 350.0}, {"borderColor": "#555555", "borderWidth": 1, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_1855", "label": "Temperature of secti..", "shape": "dot", "size": 20, "title": "Temperature of section 13 - 111(105\u00b0) | \u5341\u4e09\u6bb5\u6e29\u5ea6-111(105\u00b0) [dataset]", "x": 4875.0, "y": 350.0}, {"borderColor": "#FF6B35", "borderWidth": 2, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_1968", "label": "Temperature of furna..", "shape": "dot", "size": 20, "title": "Temperature of furnace lining of section 12 - 034(345\u00b0) | \u7089\u886c\u5341\u4e8c\u6bb5\u6e29\u5ea6-034(345\u00b0) [dataset]", "x": 5125.0, "y": 350.0}, {"borderColor": "#FF6B35", "borderWidth": 2, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_1878", "label": "Temperature of secti..", "shape": "dot", "size": 20, "title": "Temperature of section 15 - 132(150\u00b0) | \u5341\u4e94\u6bb5\u6e29\u5ea6-132(150\u00b0) [dataset]", "x": 5375.0, "y": 350.0}, {"borderColor": "#555555", "borderWidth": 1, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_1964", "label": "Temperature of furna..", "shape": "dot", "size": 20, "title": "Temperature of furnace lining of section 12 - 030(120\u00b0) | \u7089\u886c\u5341\u4e8c\u6bb5\u6e29\u5ea6-030(120\u00b0) [dataset]", "x": 5625.0, "y": 350.0}, {"borderColor": "#FF6B35", "borderWidth": 2, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_1736", "label": "Temperature of secti..", "shape": "dot", "size": 20, "title": "Temperature of section 1 - 002(75\u00b0) | \u4e00\u6bb5\u6e29\u5ea6-002(75\u00b0) [dataset] \u26a0 ANOMALY score=0.51", "x": 5875.0, "y": 350.0}, {"borderColor": "#555555", "borderWidth": 1, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_1985", "label": "Temperature of furna..", "shape": "dot", "size": 20, "title": "Temperature of furnace lining of section 15 - 048(120\u00b0) | \u7089\u886c\u5341\u4e94\u6bb5\u6e29\u5ea6-048(120\u00b0) [dataset]", "x": 6125.0, "y": 350.0}, {"borderColor": "#FF6B35", "borderWidth": 2, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_1846", "label": "Temperature of secti..", "shape": "dot", "size": 20, "title": "Temperature of section 12 - 103(180\u00b0) | \u5341\u4e8c\u6bb5\u6e29\u5ea6-103(180\u00b0) [dataset]", "x": 6375.0, "y": 350.0}, {"borderColor": "#FF6B35", "borderWidth": 2, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_2094", "label": "Flow rate of 2# high..", "shape": "dot", "size": 20, "title": "Flow rate of 2# high-pressure water supply pipe | 2#\u9ad8\u538b\u6c34\u4f9b\u6c34\u7ba1\u6d41\u91cf [dataset]", "x": 6625.0, "y": 350.0}, {"borderColor": "#555555", "borderWidth": 1, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_2006", "label": "Height of radar stoc..", "shape": "dot", "size": 20, "title": "Height of radar stock rod | \u96f7\u8fbe\u63a2\u5c3a\u9ad8\u5ea6 [dataset]", "x": 6875.0, "y": 350.0}, {"borderColor": "#FF6B35", "borderWidth": 2, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_1823", "label": "Temperature of secti..", "shape": "dot", "size": 20, "title": "Temperature of section 10 - 082(135\u00b0) | \u5341\u6bb5\u6e29\u5ea6-082(135\u00b0) [dataset]", "x": 7125.0, "y": 350.0}, {"borderColor": "#555555", "borderWidth": 1, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_1876", "label": "Temperature of secti..", "shape": "dot", "size": 20, "title": "Temperature of section 15 - 130(75\u00b0) | \u5341\u4e94\u6bb5\u6e29\u5ea6-130(75\u00b0) [dataset] \u26a0 ANOMALY score=0.59", "x": 7375.0, "y": 350.0}, {"borderColor": "#555555", "borderWidth": 1, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_2093", "label": "Flow rate of 1# high..", "shape": "dot", "size": 20, "title": "Flow rate of 1# high-pressure water supply pipe | 1#\u9ad8\u538b\u6c34\u4f9b\u6c34\u7ba1\u6d41\u91cf [dataset]", "x": 7625.0, "y": 350.0}, {"borderColor": "#FF6B35", "borderWidth": 2, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_2033", "label": "Static pressure of s..", "shape": "dot", "size": 20, "title": "Static pressure of section 15 about furnace body | 15\u6bb5\u7089\u8eab\u9759\u538b\u529b [dataset] \u26a0 ANOMALY score=0.63", "x": 7875.0, "y": 350.0}, {"borderColor": "#FF6B35", "borderWidth": 2, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_1794", "label": "Temperature of secti..", "shape": "dot", "size": 20, "title": "Temperature of section 7 - 056(290\u00b0) | \u4e03\u6bb5\u6e29\u5ea6-056(290\u00b0) [dataset]", "x": 8125.0, "y": 350.0}, {"borderColor": "#555555", "borderWidth": 1, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_1891", "label": "Temperature of secti..", "shape": "dot", "size": 20, "title": "Temperature of section 17 - 144(275\u00b0) | \u5341\u4e03\u6bb5\u6e29\u5ea6-144(275\u00b0) [dataset]", "x": 8375.0, "y": 350.0}, {"borderColor": "#FF6B35", "borderWidth": 2, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_1890", "label": "Temperature of secti..", "shape": "dot", "size": 20, "title": "Temperature of section 17 - 143(225\u00b0) | \u5341\u4e03\u6bb5\u6e29\u5ea6-143(225\u00b0) [dataset]", "x": 8625.0, "y": 350.0}, {"borderColor": "#555555", "borderWidth": 1, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_1845", "label": "Temperature of secti..", "shape": "dot", "size": 20, "title": "Temperature of section 12 - 102(135\u00b0) | \u5341\u4e8c\u6bb5\u6e29\u5ea6-102(135\u00b0) [dataset]", "x": 8875.0, "y": 350.0}, {"borderColor": "#FF6B35", "borderWidth": 2, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_2061", "label": "Temperature of 3# ga..", "shape": "dot", "size": 20, "title": "Temperature of 3# gas-tight box | 3#\u6c14\u5bc6\u7bb1\u6e29\u5ea6 [dataset]", "x": 9125.0, "y": 350.0}, {"borderColor": "#555555", "borderWidth": 1, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_1793", "label": "Temperature of secti..", "shape": "dot", "size": 20, "title": "Temperature of section 7 - 055(245\u00b0) | \u4e03\u6bb5\u6e29\u5ea6-055(245\u00b0) [dataset]", "x": 9375.0, "y": 350.0}, {"borderColor": "#FF6B35", "borderWidth": 2, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_1877", "label": "Temperature of secti..", "shape": "dot", "size": 20, "title": "Temperature of section 15 - 131(105\u00b0) | \u5341\u4e94\u6bb5\u6e29\u5ea6-131(105\u00b0) [dataset]", "x": 9625.0, "y": 350.0}, {"borderColor": "#555555", "borderWidth": 1, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_2036", "label": "Upper static pressur..", "shape": "dot", "size": 20, "title": "Upper static pressure differential of furnace body | \u9ad8\u7089\u7089\u8eab\u4e0a\u90e8\u9759\u538b\u5dee [dataset]", "x": 9875.0, "y": 350.0}, {"borderColor": "#FF6B35", "borderWidth": 2, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_1775", "label": "Average temperature ..", "shape": "dot", "size": 20, "title": "Average temperature of section 3 | \u4e09\u6bb5\u6e29\u5ea6-\u5747\u503c [dataset]", "x": 10125.0, "y": 350.0}, {"borderColor": "#555555", "borderWidth": 1, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_1774", "label": "Temperature of secti..", "shape": "dot", "size": 20, "title": "Temperature of section 3 - 038(345\u00b0) | \u4e09\u6bb5\u6e29\u5ea6-038(345\u00b0) [dataset]", "x": 10375.0, "y": 350.0}, {"borderColor": "#555555", "borderWidth": 1, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_2060", "label": "Temperature of 2# ga..", "shape": "dot", "size": 20, "title": "Temperature of 2# gas-tight box | 2#\u6c14\u5bc6\u7bb1\u6e29\u5ea6 [dataset] \u26a0 ANOMALY score=0.59", "x": 10625.0, "y": 350.0}, {"borderColor": "#FF6B35", "borderWidth": 2, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_1829", "label": "Temperature of secti..", "shape": "dot", "size": 20, "title": "Temperature of section 10 - 088(345\u00b0) | \u5341\u6bb5\u6e29\u5ea6-088(345\u00b0) [dataset] \u26a0 ANOMALY score=0.60", "x": 10875.0, "y": 350.0}, {"borderColor": "#FF6B35", "borderWidth": 2, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_1773", "label": "Temperature of secti..", "shape": "dot", "size": 20, "title": "Temperature of section 3 - 037(325\u00b0) | \u4e09\u6bb5\u6e29\u5ea6-037(325\u00b0) [dataset]", "x": 11125.0, "y": 350.0}, {"borderColor": "#FF6B35", "borderWidth": 2, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_1879", "label": "Temperature of secti..", "shape": "dot", "size": 20, "title": "Temperature of section 15 - 133(180\u00b0) | \u5341\u4e94\u6bb5\u6e29\u5ea6-133(180\u00b0) [dataset]", "x": 11375.0, "y": 350.0}, {"borderColor": "#555555", "borderWidth": 1, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_1786", "label": "Average temperature ..", "shape": "dot", "size": 20, "title": "Average temperature of section 6 | \u516d\u6bb5\u6e29\u5ea6-\u5747\u503c [dataset]", "x": 11625.0, "y": 350.0}, {"borderColor": "#FF6B35", "borderWidth": 2, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_2077", "label": "Temperature of satur..", "shape": "dot", "size": 20, "title": "Temperature of saturated steam | \u9971\u548c\u84b8\u6c7d\u6e29\u5ea6 [dataset]", "x": 11875.0, "y": 350.0}, {"borderColor": "#FF6B35", "borderWidth": 2, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_1848", "label": "Temperature of secti..", "shape": "dot", "size": 20, "title": "Temperature of section 12 - 105(245\u00b0) | \u5341\u4e8c\u6bb5\u6e29\u5ea6-105(245\u00b0) [dataset]", "x": 12125.0, "y": 350.0}, {"borderColor": "#FF6B35", "borderWidth": 2, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_1944", "label": "Temperature of furna..", "shape": "dot", "size": 20, "title": "Temperature of furnace lining of section 9 - 013(90\u00b0) | \u7089\u886c\u4e5d\u6bb5\u6e29\u5ea6-013(90\u00b0) [dataset]", "x": 12375.0, "y": 350.0}, {"borderColor": "#555555", "borderWidth": 1, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_1947", "label": "Temperature of furna..", "shape": "dot", "size": 20, "title": "Temperature of furnace lining of section 9 - 016(345\u00b0) | \u7089\u886c\u4e5d\u6bb5\u6e29\u5ea6-016(345\u00b0) [dataset]", "x": 12625.0, "y": 350.0}, {"borderColor": "#FF6B35", "borderWidth": 2, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_1772", "label": "Temperature of secti..", "shape": "dot", "size": 20, "title": "Temperature of section 3 - 036(290\u00b0) | \u4e09\u6bb5\u6e29\u5ea6-036(290\u00b0) [dataset]", "x": 12875.0, "y": 350.0}, {"borderColor": "#FF6B35", "borderWidth": 2, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_1836", "label": "Temperature of secti..", "shape": "dot", "size": 20, "title": "Temperature of section 11 - 094(210\u00b0) | \u5341\u4e00\u6bb5\u6e29\u5ea6-094(210\u00b0) [dataset]", "x": 13125.0, "y": 350.0}, {"borderColor": "#555555", "borderWidth": 1, "color": "#457B9D", "font": {"color": "white"}, "id": "cat_95", "label": "Blast furnace system..", "shape": "dot", "size": 40, "title": "Blast furnace system - Integrated terminal - Operation monitoring | \u9ad8\u7089\u7cfb\u7edf-\u96c6\u6210\u5f0f\u7ec8\u7aef-\u8fd0\u884c\u76d1\u6d4b [data_category]", "x": 1333.0, "y": 0.0}, {"borderColor": "#FF6B35", "borderWidth": 2, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_1741", "label": "Temperature of secti..", "shape": "dot", "size": 20, "title": "Temperature of section 1 - 007(260\u00b0) | \u4e00\u6bb5\u6e29\u5ea6-007(260\u00b0) [dataset]", "x": 13375.0, "y": 350.0}, {"borderColor": "#555555", "borderWidth": 1, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_2082", "label": "Temperature of 2# wa..", "shape": "dot", "size": 20, "title": "Temperature of 2# water supply pipe | 2#\u4f9b\u6c34\u7ba1\u6e29\u5ea6 [dataset]", "x": 13625.0, "y": 350.0}, {"borderColor": "#555555", "borderWidth": 1, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_2067", "label": "1# Hot stove \u2013 Tempe..", "shape": "dot", "size": 20, "title": "1# Hot stove \u2013 Temperature of waste gas | 1HS-\u5e9f\u6c14\u6e29\u5ea6 [dataset]", "x": 13875.0, "y": 350.0}, {"borderColor": "#FF6B35", "borderWidth": 2, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_2097", "label": "Liquid level of main..", "shape": "dot", "size": 20, "title": "Liquid level of main body expansion tank | \u672c\u4f53\u81a8\u80c0\u7f50\u6df1\u5ea6 [dataset]", "x": 14125.0, "y": 350.0}, {"borderColor": "#FF6B35", "borderWidth": 2, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_1892", "label": "Temperature of secti..", "shape": "dot", "size": 20, "title": "Temperature of section 17 - 145(325\u00b0) | \u5341\u4e03\u6bb5\u6e29\u5ea6-145(325\u00b0) [dataset]", "x": 14375.0, "y": 350.0}, {"borderColor": "#555555", "borderWidth": 1, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_2031", "label": "Number of charging r..", "shape": "dot", "size": 20, "title": "Number of charging rounds | \u5e03\u6599\u5708\u6570 [dataset]", "x": 14625.0, "y": 350.0}, {"borderColor": "#FF6B35", "borderWidth": 2, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_1799", "label": "Temperature of secti..", "shape": "dot", "size": 20, "title": "Temperature of section 8 - 060(60\u00b0) | \u516b\u6bb5\u6e29\u5ea6-060(60\u00b0) [dataset]", "x": 14875.0, "y": 350.0}, {"borderColor": "#FF6B35", "borderWidth": 2, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_1997", "label": "Hot blast pressure", "shape": "dot", "size": 20, "title": "Hot blast pressure | \u70ed\u98ce\u538b\u529b [dataset] \u26a0 ANOMALY score=0.62", "x": 15125.0, "y": 350.0}, {"borderColor": "#555555", "borderWidth": 1, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_1873", "label": "Temperature of secti..", "shape": "dot", "size": 20, "title": "Temperature of section 14 - 128(345\u00b0) | \u5341\u56db\u6bb5\u6e29\u5ea6-128(345\u00b0) [dataset]", "x": 15375.0, "y": 350.0}, {"borderColor": "#555555", "borderWidth": 1, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_1779", "label": "Temperature of secti..", "shape": "dot", "size": 20, "title": "Temperature of section 6 - 042(135\u00b0) | \u516d\u6bb5\u6e29\u5ea6-042(135\u00b0) [dataset]", "x": 15625.0, "y": 350.0}, {"borderColor": "#FF6B35", "borderWidth": 2, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_2083", "label": "Pressure of 1# water..", "shape": "dot", "size": 20, "title": "Pressure of 1# water supply pipe | 1#\u4f9b\u6c34\u7ba1\u538b\u529b [dataset]", "x": 15875.0, "y": 350.0}, {"borderColor": "#555555", "borderWidth": 1, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_1735", "label": "Temperature of secti..", "shape": "dot", "size": 20, "title": "Temperature of section 1 - 001(30\u00b0) | \u4e00\u6bb5\u6e29\u5ea6-001(30\u00b0) [dataset] \u26a0 ANOMALY score=0.51", "x": 16125.0, "y": 350.0}, {"borderColor": "#555555", "borderWidth": 1, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_2076", "label": "Flow rate of main ni..", "shape": "dot", "size": 20, "title": "Flow rate of main nitrogen pipe | \u6c2e\u6c14\u603b\u7ba1\u6d41\u91cf [dataset]", "x": 16375.0, "y": 350.0}, {"borderColor": "#FF6B35", "borderWidth": 2, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_2045", "label": "CO content of coal gas", "shape": "dot", "size": 20, "title": "CO content of coal gas | \u7164\u6c14CO\u542b\u91cf [dataset]", "x": 16625.0, "y": 350.0}, {"borderColor": "#555555", "borderWidth": 1, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_1967", "label": "Temperature of furna..", "shape": "dot", "size": 20, "title": "Temperature of furnace lining of section 12 - 033(290\u00b0) | \u7089\u886c\u5341\u4e8c\u6bb5\u6e29\u5ea6-033(290\u00b0) [dataset]", "x": 16875.0, "y": 350.0}, {"borderColor": "#FF6B35", "borderWidth": 2, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_1832", "label": "Temperature of secti..", "shape": "dot", "size": 20, "title": "Temperature of section 11 - 090(75\u00b0) | \u5341\u4e00\u6bb5\u6e29\u5ea6-090(75\u00b0) [dataset]", "x": 17125.0, "y": 350.0}, {"borderColor": "#555555", "borderWidth": 1, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_2096", "label": "Temperature of 2# hi..", "shape": "dot", "size": 20, "title": "Temperature of 2# high-pressure water supply pipe | 2#\u9ad8\u538b\u6c34\u56de\u6c34\u7ba1\u6e29\u5ea6 [dataset]", "x": 17375.0, "y": 350.0}, {"borderColor": "#555555", "borderWidth": 1, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_1996", "label": "Hot blast temperature", "shape": "dot", "size": 20, "title": "Hot blast temperature | \u70ed\u98ce\u6e29\u5ea6 [dataset]", "x": 17625.0, "y": 350.0}, {"borderColor": "#FF6B35", "borderWidth": 2, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_2054", "label": "Whole furnace temper..", "shape": "dot", "size": 20, "title": "Whole furnace temperature difference of blast furnace | \u9ad8\u7089\u5168\u7089\u6e29\u5dee [dataset]", "x": 17875.0, "y": 350.0}, {"borderColor": "#FF6B35", "borderWidth": 2, "color": "#E9C46A", "font": {"color": "white"}, "id": "ds_1862", "label": "Temperature of secti..", "shape": "dot", "size": 20, "title": "Temperature of section 13 - 118(345\u00b0) | \u5341\u4e09\u6bb5\u6e29\u5ea6-118(345\u00b0) [dataset]", "x": 18125.0, "y": 350.0}]);
+                  edges = new vis.DataSet([{"arrows": "to", "color": "#6C757D", "dashes": false, "from": "ds_1740", "title": "cross_level", "to": "ds_1741", "width": 0.6}, {"arrows": "to", "color": "#6C757D", "dashes": false, "from": "ds_1942", "title": "cross_level", "to": "ds_1943", "width": 0.6}, {"arrows": "to", "color": "#6C757D", "dashes": false, "from": "ds_1888", "title": "cross_level", "to": "ds_1889", "width": 0.6}, {"arrows": "to", "color": "#FF6B35", "dashes": true, "from": "ds_1768", "title": "process_coupling w=0.997", "to": "ds_1968", "width": 2.0}, {"arrows": "to", "color": "#6C757D", "dashes": false, "from": "ds_1884", "title": "cross_level", "to": "ds_1885", "width": 0.6}, {"arrows": "to", "color": "#6C757D", "dashes": false, "from": "ds_2056", "title": "cross_level", "to": "ds_2057", "width": 0.6}, {"arrows": "to", "color": "#FF6B35", "dashes": true, "from": "ds_2056", "title": "process_coupling w=0.997", "to": "ds_2092", "width": 2.0}, {"arrows": "to", "color": "#6C757D", "dashes": false, "from": "ds_1767", "title": "cross_level", "to": "ds_1768", "width": 0.6}, {"arrows": "to", "color": "#FF6B35", "dashes": true, "from": "ds_2041", "title": "process_coupling w=0.997", "to": "ds_1778", "width": 2.0}, {"arrows": "to", "color": "#6C757D", "dashes": false, "from": "ds_1842", "title": "cross_level", "to": "ds_1843", "width": 0.6}, {"arrows": "to", "color": "#6C757D", "dashes": false, "from": "ds_1828", "title": "cross_level", "to": "ds_1829", "width": 0.6}, {"arrows": "to", "color": "#FF6B35", "dashes": true, "from": "ds_2098", "title": "process_coupling w=0.997", "to": "ds_1980", "width": 2.0}, {"arrows": "to", "color": "#6C757D", "dashes": false, "from": "ds_1856", "title": "cross_level", "to": "ds_1857", "width": 0.6}, {"arrows": "to", "color": "#FF6B35", "dashes": true, "from": "ds_1856", "title": "process_coupling w=0.997", "to": "ds_1872", "width": 2.0}, {"arrows": "to", "color": "#6C757D", "dashes": false, "from": "ds_1844", "title": "cross_level", "to": "ds_1845", "width": 0.6}, {"arrows": "to", "color": "#FF6B35", "dashes": true, "from": "ds_1844", "title": "process_coupling w=0.997", "to": "ds_1948", "width": 2.0}, {"arrows": "to", "color": "#6C757D", "dashes": false, "from": "ds_1798", "title": "cross_level", "to": "ds_1799", "width": 0.6}, {"arrows": "to", "color": "#6C757D", "dashes": false, "from": "ds_1966", "title": "cross_level", "to": "ds_1967", "width": 0.6}, {"arrows": "to", "color": "#FF6B35", "dashes": true, "from": "ds_2068", "title": "process_coupling w=0.997", "to": "ds_1773", "width": 2.0}, {"arrows": "to", "color": "#FF6B35", "dashes": true, "from": "ds_2065", "title": "process_coupling w=0.997", "to": "ds_2039", "width": 2.0}, {"arrows": "to", "color": "#FF6B35", "dashes": true, "from": "ds_2008", "title": "process_coupling w=0.997", "to": "ds_1766", "width": 2.0}, {"arrows": "to", "color": "#FF6B35", "dashes": true, "from": "ds_2008", "title": "process_coupling w=0.997", "to": "ds_1837", "width": 2.0}, {"arrows": "to", "color": "#6C757D", "dashes": false, "from": "ds_2064", "title": "cross_level", "to": "ds_2065", "width": 0.6}, {"arrows": "to", "color": "#6C757D", "dashes": false, "from": "ds_2039", "title": "cross_level", "to": "ds_2040", "width": 0.6}, {"arrows": "to", "color": "#6C757D", "dashes": false, "from": "ds_1831", "title": "cross_level", "to": "ds_1832", "width": 0.6}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_94", "title": "hierarchical", "to": "ds_1936", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_94", "title": "hierarchical", "to": "ds_1937", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_94", "title": "hierarchical", "to": "ds_1942", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_94", "title": "hierarchical", "to": "ds_1943", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_94", "title": "hierarchical", "to": "ds_1944", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_94", "title": "hierarchical", "to": "ds_1947", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_94", "title": "hierarchical", "to": "ds_1948", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_94", "title": "hierarchical", "to": "ds_1949", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_94", "title": "hierarchical", "to": "ds_1958", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_94", "title": "hierarchical", "to": "ds_1959", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_94", "title": "hierarchical", "to": "ds_1960", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_94", "title": "hierarchical", "to": "ds_1961", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_94", "title": "hierarchical", "to": "ds_1964", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_94", "title": "hierarchical", "to": "ds_1965", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_94", "title": "hierarchical", "to": "ds_1966", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_94", "title": "hierarchical", "to": "ds_1967", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_94", "title": "hierarchical", "to": "ds_1968", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_94", "title": "hierarchical", "to": "ds_1969", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_94", "title": "hierarchical", "to": "ds_1976", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_94", "title": "hierarchical", "to": "ds_1977", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_94", "title": "hierarchical", "to": "ds_1979", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_94", "title": "hierarchical", "to": "ds_1980", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_94", "title": "hierarchical", "to": "ds_1985", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_94", "title": "hierarchical", "to": "ds_1986", "width": 0.3}, {"arrows": "to", "color": "#6C757D", "dashes": false, "from": "ds_1760", "title": "cross_level", "to": "ds_1761", "width": 0.6}, {"arrows": "to", "color": "#6C757D", "dashes": false, "from": "ds_1958", "title": "cross_level", "to": "ds_1959", "width": 0.6}, {"arrows": "to", "color": "#6C757D", "dashes": false, "from": "ds_1948", "title": "cross_level", "to": "ds_1949", "width": 0.6}, {"arrows": "to", "color": "#6C757D", "dashes": false, "from": "ds_1847", "title": "cross_level", "to": "ds_1848", "width": 0.6}, {"arrows": "to", "color": "#6C757D", "dashes": false, "from": "ds_1874", "title": "cross_level", "to": "ds_1875", "width": 0.6}, {"arrows": "to", "color": "#FF6B35", "dashes": true, "from": "ds_1969", "title": "process_coupling w=0.997", "to": "ds_1767", "width": 2.0}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_92", "title": "hierarchical", "to": "ds_1735", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_92", "title": "hierarchical", "to": "ds_1736", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_92", "title": "hierarchical", "to": "ds_1740", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_92", "title": "hierarchical", "to": "ds_1741", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_92", "title": "hierarchical", "to": "ds_1760", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_92", "title": "hierarchical", "to": "ds_1761", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_92", "title": "hierarchical", "to": "ds_1765", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_92", "title": "hierarchical", "to": "ds_1766", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_92", "title": "hierarchical", "to": "ds_1767", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_92", "title": "hierarchical", "to": "ds_1768", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_92", "title": "hierarchical", "to": "ds_1771", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_92", "title": "hierarchical", "to": "ds_1772", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_92", "title": "hierarchical", "to": "ds_1773", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_92", "title": "hierarchical", "to": "ds_1774", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_92", "title": "hierarchical", "to": "ds_1775", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_92", "title": "hierarchical", "to": "ds_1777", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_92", "title": "hierarchical", "to": "ds_1778", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_92", "title": "hierarchical", "to": "ds_1779", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_92", "title": "hierarchical", "to": "ds_1780", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_92", "title": "hierarchical", "to": "ds_1786", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_92", "title": "hierarchical", "to": "ds_1787", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_92", "title": "hierarchical", "to": "ds_1793", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_92", "title": "hierarchical", "to": "ds_1794", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_92", "title": "hierarchical", "to": "ds_1798", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_92", "title": "hierarchical", "to": "ds_1799", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_92", "title": "hierarchical", "to": "ds_1800", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_92", "title": "hierarchical", "to": "ds_1801", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_92", "title": "hierarchical", "to": "ds_1802", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_92", "title": "hierarchical", "to": "ds_1810", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_92", "title": "hierarchical", "to": "ds_1811", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_92", "title": "hierarchical", "to": "ds_1812", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_92", "title": "hierarchical", "to": "ds_1822", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_92", "title": "hierarchical", "to": "ds_1823", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_92", "title": "hierarchical", "to": "ds_1828", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_92", "title": "hierarchical", "to": "ds_1829", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_92", "title": "hierarchical", "to": "ds_1831", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_92", "title": "hierarchical", "to": "ds_1832", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_92", "title": "hierarchical", "to": "ds_1834", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_92", "title": "hierarchical", "to": "ds_1835", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_92", "title": "hierarchical", "to": "ds_1836", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_92", "title": "hierarchical", "to": "ds_1837", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_92", "title": "hierarchical", "to": "ds_1838", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_92", "title": "hierarchical", "to": "ds_1839", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_92", "title": "hierarchical", "to": "ds_1842", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_92", "title": "hierarchical", "to": "ds_1843", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_92", "title": "hierarchical", "to": "ds_1844", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_92", "title": "hierarchical", "to": "ds_1845", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_92", "title": "hierarchical", "to": "ds_1846", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_92", "title": "hierarchical", "to": "ds_1847", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_92", "title": "hierarchical", "to": "ds_1848", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_92", "title": "hierarchical", "to": "ds_1851", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_92", "title": "hierarchical", "to": "ds_1852", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_92", "title": "hierarchical", "to": "ds_1855", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_92", "title": "hierarchical", "to": "ds_1856", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_92", "title": "hierarchical", "to": "ds_1857", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_92", "title": "hierarchical", "to": "ds_1859", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_92", "title": "hierarchical", "to": "ds_1860", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_92", "title": "hierarchical", "to": "ds_1861", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_92", "title": "hierarchical", "to": "ds_1862", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_92", "title": "hierarchical", "to": "ds_1871", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_92", "title": "hierarchical", "to": "ds_1872", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_92", "title": "hierarchical", "to": "ds_1873", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_92", "title": "hierarchical", "to": "ds_1874", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_92", "title": "hierarchical", "to": "ds_1875", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_92", "title": "hierarchical", "to": "ds_1876", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_92", "title": "hierarchical", "to": "ds_1877", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_92", "title": "hierarchical", "to": "ds_1878", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_92", "title": "hierarchical", "to": "ds_1879", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_92", "title": "hierarchical", "to": "ds_1884", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_92", "title": "hierarchical", "to": "ds_1885", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_92", "title": "hierarchical", "to": "ds_1888", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_92", "title": "hierarchical", "to": "ds_1889", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_92", "title": "hierarchical", "to": "ds_1890", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_92", "title": "hierarchical", "to": "ds_1891", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_92", "title": "hierarchical", "to": "ds_1892", "width": 0.3}, {"arrows": "to", "color": "#6C757D", "dashes": false, "from": "ds_2007", "title": "cross_level", "to": "ds_2008", "width": 0.6}, {"arrows": "to", "color": "#6C757D", "dashes": false, "from": "ds_1811", "title": "cross_level", "to": "ds_1812", "width": 0.6}, {"arrows": "to", "color": "#FF6B35", "dashes": true, "from": "ds_1811", "title": "process_coupling w=0.997", "to": "ds_1890", "width": 2.0}, {"arrows": "to", "color": "#D00000", "dashes": true, "from": "ds_1811", "title": "anomaly_propagation w=0.348", "to": "cat_92", "width": 2.5}, {"arrows": "to", "color": "#6C757D", "dashes": false, "from": "ds_1861", "title": "cross_level", "to": "ds_1862", "width": 0.6}, {"arrows": "to", "color": "#6C757D", "dashes": false, "from": "ds_2032", "title": "cross_level", "to": "ds_2033", "width": 0.6}, {"arrows": "to", "color": "#FF6B35", "dashes": true, "from": "ds_2032", "title": "process_coupling w=0.997", "to": "ds_2011", "width": 2.0}, {"arrows": "to", "color": "#6C757D", "dashes": false, "from": "ds_2010", "title": "cross_level", "to": "ds_2011", "width": 0.6}, {"arrows": "to", "color": "#6C757D", "dashes": false, "from": "ds_1810", "title": "cross_level", "to": "ds_1811", "width": 0.6}, {"arrows": "to", "color": "#6C757D", "dashes": false, "from": "ds_1800", "title": "cross_level", "to": "ds_1801", "width": 0.6}, {"arrows": "to", "color": "#6C757D", "dashes": false, "from": "ds_1959", "title": "cross_level", "to": "ds_1960", "width": 0.6}, {"arrows": "to", "color": "#FF6B35", "dashes": true, "from": "ds_1959", "title": "process_coupling w=0.997", "to": "ds_1780", "width": 2.0}, {"arrows": "to", "color": "#FF6B35", "dashes": true, "from": "ds_1949", "title": "process_coupling w=0.997", "to": "ds_1852", "width": 2.0}, {"arrows": "to", "color": "#FF6B35", "dashes": true, "from": "ds_1986", "title": "process_coupling w=0.997", "to": "ds_1799", "width": 2.0}, {"arrows": "to", "color": "#6C757D", "dashes": false, "from": "ds_1838", "title": "cross_level", "to": "ds_1839", "width": 0.6}, {"arrows": "to", "color": "#6C757D", "dashes": false, "from": "ds_1979", "title": "cross_level", "to": "ds_1980", "width": 0.6}, {"arrows": "to", "color": "#6C757D", "dashes": false, "from": "ds_2030", "title": "cross_level", "to": "ds_2031", "width": 0.6}, {"arrows": "to", "color": "#FF6B35", "dashes": true, "from": "ds_2030", "title": "process_coupling w=0.997", "to": "ds_1736", "width": 2.0}, {"arrows": "to", "color": "#6C757D", "dashes": false, "from": "ds_2044", "title": "cross_level", "to": "ds_2045", "width": 0.6}, {"arrows": "to", "color": "#FF6B35", "dashes": true, "from": "ds_2021", "title": "process_coupling w=0.997", "to": "ds_1835", "width": 2.0}, {"arrows": "to", "color": "#6C757D", "dashes": false, "from": "ds_1834", "title": "cross_level", "to": "ds_1835", "width": 0.6}, {"arrows": "to", "color": "#FF6B35", "dashes": true, "from": "ds_2027", "title": "process_coupling w=0.997", "to": "ds_1839", "width": 2.0}, {"arrows": "to", "color": "#6C757D", "dashes": false, "from": "ds_2055", "title": "cross_level", "to": "ds_2056", "width": 0.6}, {"arrows": "to", "color": "#6C757D", "dashes": false, "from": "ds_1822", "title": "cross_level", "to": "ds_1823", "width": 0.6}, {"arrows": "to", "color": "#6C757D", "dashes": false, "from": "ds_1851", "title": "cross_level", "to": "ds_1852", "width": 0.6}, {"arrows": "to", "color": "#6C757D", "dashes": false, "from": "ds_1960", "title": "cross_level", "to": "ds_1961", "width": 0.6}, {"arrows": "to", "color": "#6C757D", "dashes": false, "from": "ds_2029", "title": "cross_level", "to": "ds_2030", "width": 0.6}, {"arrows": "to", "color": "#6C757D", "dashes": false, "from": "ds_1976", "title": "cross_level", "to": "ds_1977", "width": 0.6}, {"arrows": "to", "color": "#6C757D", "dashes": false, "from": "ds_2040", "title": "cross_level", "to": "ds_2041", "width": 0.6}, {"arrows": "to", "color": "#6C757D", "dashes": false, "from": "ds_1771", "title": "cross_level", "to": "ds_1772", "width": 0.6}, {"arrows": "to", "color": "#6C757D", "dashes": false, "from": "ds_1837", "title": "cross_level", "to": "ds_1838", "width": 0.6}, {"arrows": "to", "color": "#6C757D", "dashes": false, "from": "ds_2026", "title": "cross_level", "to": "ds_2027", "width": 0.6}, {"arrows": "to", "color": "#FF6B35", "dashes": true, "from": "ds_1885", "title": "process_coupling w=0.997", "to": "ds_2008", "width": 2.0}, {"arrows": "to", "color": "#6C757D", "dashes": false, "from": "ds_1871", "title": "cross_level", "to": "ds_1872", "width": 0.6}, {"arrows": "to", "color": "#6C757D", "dashes": false, "from": "ds_1889", "title": "cross_level", "to": "ds_1890", "width": 0.6}, {"arrows": "to", "color": "#FF6B35", "dashes": true, "from": "ds_1889", "title": "process_coupling w=0.997", "to": "ds_2007", "width": 2.0}, {"arrows": "to", "color": "#6C757D", "dashes": false, "from": "ds_2057", "title": "cross_level", "to": "ds_2058", "width": 0.6}, {"arrows": "to", "color": "#6C757D", "dashes": false, "from": "ds_1801", "title": "cross_level", "to": "ds_1802", "width": 0.6}, {"arrows": "to", "color": "#FF6B35", "dashes": true, "from": "ds_1801", "title": "process_coupling w=0.997", "to": "ds_1944", "width": 2.0}, {"arrows": "to", "color": "#6C757D", "dashes": false, "from": "ds_2038", "title": "cross_level", "to": "ds_2039", "width": 0.6}, {"arrows": "to", "color": "#FF6B35", "dashes": true, "from": "ds_2038", "title": "process_coupling w=0.997", "to": "ds_1965", "width": 2.0}, {"arrows": "to", "color": "#FF6B35", "dashes": true, "from": "ds_1787", "title": "process_coupling w=0.997", "to": "ds_1857", "width": 2.0}, {"arrows": "to", "color": "#6C757D", "dashes": false, "from": "ds_1965", "title": "cross_level", "to": "ds_1966", "width": 0.6}, {"arrows": "to", "color": "#6C757D", "dashes": false, "from": "ds_1778", "title": "cross_level", "to": "ds_1779", "width": 0.6}, {"arrows": "to", "color": "#6C757D", "dashes": false, "from": "ds_1872", "title": "cross_level", "to": "ds_1873", "width": 0.6}, {"arrows": "to", "color": "#6C757D", "dashes": false, "from": "ds_2091", "title": "cross_level", "to": "ds_2092", "width": 0.6}, {"arrows": "to", "color": "#D00000", "dashes": true, "from": "ds_2091", "title": "anomaly_propagation w=0.323", "to": "cat_95", "width": 2.5}, {"arrows": "to", "color": "#6C757D", "dashes": false, "from": "ds_2037", "title": "cross_level", "to": "ds_2038", "width": 0.6}, {"arrows": "to", "color": "#FF6B35", "dashes": true, "from": "ds_2037", "title": "process_coupling w=0.997", "to": "ds_2058", "width": 2.0}, {"arrows": "to", "color": "#6C757D", "dashes": false, "from": "ds_1943", "title": "cross_level", "to": "ds_1944", "width": 0.6}, {"arrows": "to", "color": "#FF6B35", "dashes": true, "from": "ds_1943", "title": "process_coupling w=0.997", "to": "ds_1802", "width": 2.0}, {"arrows": "to", "color": "#6C757D", "dashes": false, "from": "ds_1835", "title": "cross_level", "to": "ds_1836", "width": 0.6}, {"arrows": "to", "color": "#6C757D", "dashes": false, "from": "ds_1875", "title": "cross_level", "to": "ds_1876", "width": 0.6}, {"arrows": "to", "color": "#FF6B35", "dashes": true, "from": "ds_1875", "title": "process_coupling w=0.997", "to": "ds_2007", "width": 2.0}, {"arrows": "to", "color": "#6C757D", "dashes": false, "from": "ds_1859", "title": "cross_level", "to": "ds_1860", "width": 0.6}, {"arrows": "to", "color": "#6C757D", "dashes": false, "from": "ds_1777", "title": "cross_level", "to": "ds_1778", "width": 0.6}, {"arrows": "to", "color": "#6C757D", "dashes": false, "from": "ds_1766", "title": "cross_level", "to": "ds_1767", "width": 0.6}, {"arrows": "to", "color": "#6C757D", "dashes": false, "from": "ds_1765", "title": "cross_level", "to": "ds_1766", "width": 0.6}, {"arrows": "to", "color": "#6C757D", "dashes": false, "from": "ds_2020", "title": "cross_level", "to": "ds_2021", "width": 0.6}, {"arrows": "to", "color": "#FF6B35", "dashes": true, "from": "ds_2020", "title": "process_coupling w=0.997", "to": "ds_1823", "width": 2.0}, {"arrows": "to", "color": "#D00000", "dashes": true, "from": "ds_2020", "title": "anomaly_propagation w=0.399", "to": "cat_95", "width": 2.5}, {"arrows": "to", "color": "#6C757D", "dashes": false, "from": "ds_1936", "title": "cross_level", "to": "ds_1937", "width": 0.6}, {"arrows": "to", "color": "#6C757D", "dashes": false, "from": "ds_2053", "title": "cross_level", "to": "ds_2054", "width": 0.6}, {"arrows": "to", "color": "#6C757D", "dashes": false, "from": "ds_1860", "title": "cross_level", "to": "ds_1861", "width": 0.6}, {"arrows": "to", "color": "#6C757D", "dashes": false, "from": "ds_2019", "title": "cross_level", "to": "ds_2020", "width": 0.6}, {"arrows": "to", "color": "#FF6B35", "dashes": true, "from": "ds_1937", "title": "process_coupling w=0.997", "to": "ds_1773", "width": 2.0}, {"arrows": "to", "color": "#6C757D", "dashes": false, "from": "ds_1843", "title": "cross_level", "to": "ds_1844", "width": 0.6}, {"arrows": "to", "color": "#FF6B35", "dashes": true, "from": "ds_1843", "title": "process_coupling w=0.997", "to": "ds_2094", "width": 2.0}, {"arrows": "to", "color": "#6C757D", "dashes": false, "from": "ds_2092", "title": "cross_level", "to": "ds_2093", "width": 0.6}, {"arrows": "to", "color": "#6C757D", "dashes": false, "from": "ds_1855", "title": "cross_level", "to": "ds_1856", "width": 0.6}, {"arrows": "to", "color": "#6C757D", "dashes": false, "from": "ds_1968", "title": "cross_level", "to": "ds_1969", "width": 0.6}, {"arrows": "to", "color": "#FF6B35", "dashes": true, "from": "ds_1968", "title": "process_coupling w=0.997", "to": "ds_1846", "width": 2.0}, {"arrows": "to", "color": "#6C757D", "dashes": false, "from": "ds_1878", "title": "cross_level", "to": "ds_1879", "width": 0.6}, {"arrows": "to", "color": "#6C757D", "dashes": false, "from": "ds_1964", "title": "cross_level", "to": "ds_1965", "width": 0.6}, {"arrows": "to", "color": "#FF6B35", "dashes": true, "from": "ds_1736", "title": "process_coupling w=0.997", "to": "ds_2045", "width": 2.0}, {"arrows": "to", "color": "#6C757D", "dashes": false, "from": "ds_1985", "title": "cross_level", "to": "ds_1986", "width": 0.6}, {"arrows": "to", "color": "#6C757D", "dashes": false, "from": "ds_1846", "title": "cross_level", "to": "ds_1847", "width": 0.6}, {"arrows": "to", "color": "#6C757D", "dashes": false, "from": "ds_2006", "title": "cross_level", "to": "ds_2007", "width": 0.6}, {"arrows": "to", "color": "#FF6B35", "dashes": true, "from": "ds_1823", "title": "process_coupling w=0.997", "to": "ds_1861", "width": 2.0}, {"arrows": "to", "color": "#6C757D", "dashes": false, "from": "ds_1876", "title": "cross_level", "to": "ds_1877", "width": 0.6}, {"arrows": "to", "color": "#D00000", "dashes": true, "from": "ds_1876", "title": "anomaly_propagation w=0.319", "to": "cat_92", "width": 2.5}, {"arrows": "to", "color": "#6C757D", "dashes": false, "from": "ds_2093", "title": "cross_level", "to": "ds_2094", "width": 0.6}, {"arrows": "to", "color": "#D00000", "dashes": true, "from": "ds_2033", "title": "anomaly_propagation w=0.338", "to": "cat_95", "width": 2.5}, {"arrows": "to", "color": "#FF6B35", "dashes": true, "from": "ds_1794", "title": "process_coupling w=0.997", "to": "ds_1961", "width": 2.0}, {"arrows": "to", "color": "#6C757D", "dashes": false, "from": "ds_1891", "title": "cross_level", "to": "ds_1892", "width": 0.6}, {"arrows": "to", "color": "#6C757D", "dashes": false, "from": "ds_1890", "title": "cross_level", "to": "ds_1891", "width": 0.6}, {"arrows": "to", "color": "#6C757D", "dashes": false, "from": "ds_1845", "title": "cross_level", "to": "ds_1846", "width": 0.6}, {"arrows": "to", "color": "#FF6B35", "dashes": true, "from": "ds_2061", "title": "process_coupling w=0.997", "to": "ds_2083", "width": 2.0}, {"arrows": "to", "color": "#6C757D", "dashes": false, "from": "ds_1793", "title": "cross_level", "to": "ds_1794", "width": 0.6}, {"arrows": "to", "color": "#6C757D", "dashes": false, "from": "ds_1877", "title": "cross_level", "to": "ds_1878", "width": 0.6}, {"arrows": "to", "color": "#FF6B35", "dashes": true, "from": "ds_1877", "title": "process_coupling w=0.997", "to": "ds_2037", "width": 2.0}, {"arrows": "to", "color": "#6C757D", "dashes": false, "from": "ds_2036", "title": "cross_level", "to": "ds_2037", "width": 0.6}, {"arrows": "to", "color": "#FF6B35", "dashes": true, "from": "ds_1775", "title": "process_coupling w=0.997", "to": "ds_2033", "width": 2.0}, {"arrows": "to", "color": "#6C757D", "dashes": false, "from": "ds_1774", "title": "cross_level", "to": "ds_1775", "width": 0.6}, {"arrows": "to", "color": "#6C757D", "dashes": false, "from": "ds_2060", "title": "cross_level", "to": "ds_2061", "width": 0.6}, {"arrows": "to", "color": "#D00000", "dashes": true, "from": "ds_2060", "title": "anomaly_propagation w=0.318", "to": "cat_95", "width": 2.5}, {"arrows": "to", "color": "#FF6B35", "dashes": true, "from": "ds_1829", "title": "process_coupling w=0.997", "to": "ds_1761", "width": 2.0}, {"arrows": "to", "color": "#FF6B35", "dashes": true, "from": "ds_1829", "title": "process_coupling w=0.997", "to": "ds_1860", "width": 2.0}, {"arrows": "to", "color": "#D00000", "dashes": true, "from": "ds_1829", "title": "anomaly_propagation w=0.326", "to": "cat_92", "width": 2.5}, {"arrows": "to", "color": "#6C757D", "dashes": false, "from": "ds_1773", "title": "cross_level", "to": "ds_1774", "width": 0.6}, {"arrows": "to", "color": "#FF6B35", "dashes": true, "from": "ds_1879", "title": "process_coupling w=0.997", "to": "ds_1966", "width": 2.0}, {"arrows": "to", "color": "#6C757D", "dashes": false, "from": "ds_1786", "title": "cross_level", "to": "ds_1787", "width": 0.6}, {"arrows": "to", "color": "#FF6B35", "dashes": true, "from": "ds_2077", "title": "process_coupling w=0.997", "to": "ds_1874", "width": 2.0}, {"arrows": "to", "color": "#FF6B35", "dashes": true, "from": "ds_1848", "title": "process_coupling w=0.997", "to": "ds_1878", "width": 2.0}, {"arrows": "to", "color": "#6C757D", "dashes": false, "from": "ds_1947", "title": "cross_level", "to": "ds_1948", "width": 0.6}, {"arrows": "to", "color": "#6C757D", "dashes": false, "from": "ds_1772", "title": "cross_level", "to": "ds_1773", "width": 0.6}, {"arrows": "to", "color": "#6C757D", "dashes": false, "from": "ds_1836", "title": "cross_level", "to": "ds_1837", "width": 0.6}, {"arrows": "to", "color": "#FF6B35", "dashes": true, "from": "ds_1836", "title": "process_coupling w=0.997", "to": "ds_1741", "width": 2.0}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_95", "title": "hierarchical", "to": "ds_1996", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_95", "title": "hierarchical", "to": "ds_1997", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_95", "title": "hierarchical", "to": "ds_2006", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_95", "title": "hierarchical", "to": "ds_2007", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_95", "title": "hierarchical", "to": "ds_2008", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_95", "title": "hierarchical", "to": "ds_2010", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_95", "title": "hierarchical", "to": "ds_2011", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_95", "title": "hierarchical", "to": "ds_2019", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_95", "title": "hierarchical", "to": "ds_2020", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_95", "title": "hierarchical", "to": "ds_2021", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_95", "title": "hierarchical", "to": "ds_2026", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_95", "title": "hierarchical", "to": "ds_2027", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_95", "title": "hierarchical", "to": "ds_2029", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_95", "title": "hierarchical", "to": "ds_2030", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_95", "title": "hierarchical", "to": "ds_2031", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_95", "title": "hierarchical", "to": "ds_2032", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_95", "title": "hierarchical", "to": "ds_2033", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_95", "title": "hierarchical", "to": "ds_2036", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_95", "title": "hierarchical", "to": "ds_2037", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_95", "title": "hierarchical", "to": "ds_2038", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_95", "title": "hierarchical", "to": "ds_2039", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_95", "title": "hierarchical", "to": "ds_2040", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_95", "title": "hierarchical", "to": "ds_2041", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_95", "title": "hierarchical", "to": "ds_2044", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_95", "title": "hierarchical", "to": "ds_2045", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_95", "title": "hierarchical", "to": "ds_2053", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_95", "title": "hierarchical", "to": "ds_2054", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_95", "title": "hierarchical", "to": "ds_2055", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_95", "title": "hierarchical", "to": "ds_2056", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_95", "title": "hierarchical", "to": "ds_2057", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_95", "title": "hierarchical", "to": "ds_2058", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_95", "title": "hierarchical", "to": "ds_2060", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_95", "title": "hierarchical", "to": "ds_2061", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_95", "title": "hierarchical", "to": "ds_2064", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_95", "title": "hierarchical", "to": "ds_2065", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_95", "title": "hierarchical", "to": "ds_2067", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_95", "title": "hierarchical", "to": "ds_2068", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_95", "title": "hierarchical", "to": "ds_2076", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_95", "title": "hierarchical", "to": "ds_2077", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_95", "title": "hierarchical", "to": "ds_2082", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_95", "title": "hierarchical", "to": "ds_2083", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_95", "title": "hierarchical", "to": "ds_2091", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_95", "title": "hierarchical", "to": "ds_2092", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_95", "title": "hierarchical", "to": "ds_2093", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_95", "title": "hierarchical", "to": "ds_2094", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_95", "title": "hierarchical", "to": "ds_2096", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_95", "title": "hierarchical", "to": "ds_2097", "width": 0.3}, {"arrows": "to", "color": "#ADB5BD", "dashes": false, "from": "cat_95", "title": "hierarchical", "to": "ds_2098", "width": 0.3}, {"arrows": "to", "color": "#6C757D", "dashes": false, "from": "ds_2082", "title": "cross_level", "to": "ds_2083", "width": 0.6}, {"arrows": "to", "color": "#6C757D", "dashes": false, "from": "ds_2067", "title": "cross_level", "to": "ds_2068", "width": 0.6}, {"arrows": "to", "color": "#6C757D", "dashes": false, "from": "ds_2097", "title": "cross_level", "to": "ds_2098", "width": 0.6}, {"arrows": "to", "color": "#FF6B35", "dashes": true, "from": "ds_2097", "title": "process_coupling w=0.997", "to": "ds_1862", "width": 2.0}, {"arrows": "to", "color": "#FF6B35", "dashes": true, "from": "ds_2097", "title": "process_coupling w=0.997", "to": "ds_1835", "width": 2.0}, {"arrows": "to", "color": "#FF6B35", "dashes": true, "from": "ds_1892", "title": "process_coupling w=0.997", "to": "ds_1977", "width": 2.0}, {"arrows": "to", "color": "#6C757D", "dashes": false, "from": "ds_2031", "title": "cross_level", "to": "ds_2032", "width": 0.6}, {"arrows": "to", "color": "#6C757D", "dashes": false, "from": "ds_1799", "title": "cross_level", "to": "ds_1800", "width": 0.6}, {"arrows": "to", "color": "#FF6B35", "dashes": true, "from": "ds_1997", "title": "process_coupling w=0.997", "to": "ds_2061", "width": 2.0}, {"arrows": "to", "color": "#D00000", "dashes": true, "from": "ds_1997", "title": "anomaly_propagation w=0.335", "to": "cat_95", "width": 2.5}, {"arrows": "to", "color": "#6C757D", "dashes": false, "from": "ds_1873", "title": "cross_level", "to": "ds_1874", "width": 0.6}, {"arrows": "to", "color": "#6C757D", "dashes": false, "from": "ds_1779", "title": "cross_level", "to": "ds_1780", "width": 0.6}, {"arrows": "to", "color": "#FF6B35", "dashes": true, "from": "ds_2083", "title": "process_coupling w=0.997", "to": "ds_1832", "width": 2.0}, {"arrows": "to", "color": "#6C757D", "dashes": false, "from": "ds_1735", "title": "cross_level", "to": "ds_1736", "width": 0.6}, {"arrows": "to", "color": "#6C757D", "dashes": false, "from": "ds_2076", "title": "cross_level", "to": "ds_2077", "width": 0.6}, {"arrows": "to", "color": "#6C757D", "dashes": false, "from": "ds_1967", "title": "cross_level", "to": "ds_1968", "width": 0.6}, {"arrows": "to", "color": "#FF6B35", "dashes": true, "from": "ds_1832", "title": "process_coupling w=0.997", "to": "ds_1772", "width": 2.0}, {"arrows": "to", "color": "#6C757D", "dashes": false, "from": "ds_2096", "title": "cross_level", "to": "ds_2097", "width": 0.6}, {"arrows": "to", "color": "#6C757D", "dashes": false, "from": "ds_1996", "title": "cross_level", "to": "ds_1997", "width": 0.6}, {"arrows": "to", "color": "#6C757D", "dashes": false, "from": "ds_2054", "title": "cross_level", "to": "ds_2055", "width": 0.6}, {"arrows": "to", "color": "#FF6B35", "dashes": true, "from": "ds_2054", "title": "process_coupling w=0.997", "to": "ds_1812", "width": 2.0}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {"physics": {"enabled": false}, "interaction": {"hover": true, "tooltipDelay": 200, "navigationButtons": true, "keyboard": true}, "edges": {"smooth": false}};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+                    network.on("selectNode", neighbourhoodHighlight);
+                  
+
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    
+    <script>
+    // === GenBFKit patch: disable physics & stabilization for instant render ===
+    (function() {
+        // Wait for the network to be created
+        var origDraw = window.drawGraph;
+        var checkInterval = setInterval(function() {
+            // Try to find the vis network instance
+            var container = document.getElementById('mynetwork');
+            if (container && container.network) {
+                var net = container.network;
+                net.setOptions({ physics: { enabled: false } });
+                net.stabilize(0);
+                clearInterval(checkInterval);
+            }
+        }, 100);
+    })();
+    </script>
+</body>
+</html>
