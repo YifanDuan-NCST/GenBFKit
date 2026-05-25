@@ -1,0 +1,17 @@
+# GenBFKit Extension Interface of Advanced Function
+# 依赖列表
+
+# Core
+numpy>=1.24.0
+pandas>=1.5.0
+
+# ONNX Runtime (模型推理引擎)
+onnx>=1.15.0
+onnxruntime>=1.16.0
+
+# HTTP Client (系统集成)
+httpx>=0.24.0
+
+# Web Server (可选，用于部署 REST API)
+# fastapi>=0.100.0
+# uvicorn>=0.20.0
