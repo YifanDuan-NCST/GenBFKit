@@ -1,0 +1,25 @@
+# GenBFKit Data Preprocessing Module Requirements
+
+# Core Dependencies
+pandas>=2.0.0
+numpy>=1.24.0
+psycopg2-binary>=2.9.0
+
+# Machine Learning & Statistics
+scikit-learn>=1.3.0
+scipy>=1.10.0
+
+# Optional: Advanced ML (uncomment if needed)
+# lightgbm>=4.0.0
+# pyod>=1.1.0
+
+# Data Processing
+python-dateutil>=2.8.0
+pytz>=2023.3
+
+# Logging & Utilities
+python-dotenv>=1.0.0
+
+# Testing (optional)
+# pytest>=7.0.0
+# pytest-cov>=4.0.0
