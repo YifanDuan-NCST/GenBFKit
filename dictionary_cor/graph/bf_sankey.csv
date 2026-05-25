@@ -1,0 +1,2251 @@
+source,target,value
+Slag treating,Slag granulation system - Circulating water pipeline - Operation monitoring,29
+Slag treating,Slag granulation system - Water pump motor - Operation monitoring,41
+Slag treating,Slag granulation system - Cooling tower - Operation monitoring,33
+Hot blast supplying,Blast supply system - Expansion tank - Pressure control,19
+Hot blast supplying,Blast supply system - Valve group - Hot blast control,10
+Hot blast supplying,Hot blast supply system - Combustion air fan - Operation monitoring,48
+Hot blast supplying,Hot blast supply system - Combustion air fan - System configuration,13
+Hot blast supplying,Hot blast supply system - Hydraulic station - Operation monitoring,22
+Hot blast supplying,Hot blast supply system - Hydraulic station - System configuration,12
+Hot blast supplying,Hot blast supply system - Hot blast stove - Operation monitoring,58
+Hot blast supplying,Hot blast supply system - Hot blast stove - System configuration,30
+Hot blast supplying,Hot blast supply system - Hot blast stove - Stove switching operation monitoring,8
+Hot blast supplying,Hot blast supply system - Combustion chamber - Operation monitoring,46
+Hot blast supplying,Hot blast supply system - Combustion chamber - System configuration,71
+Hot blast supplying,Hot blast supply system - Nitrogen main pipe - Operation monitoring,4
+Gas & Dust treating,Gas system - Pressure equalization recoverer - Operation monitoring,54
+Gas & Dust treating,Gas system - Pressure equalization recoverer - Tank body monitoring,16
+Gas & Dust treating,Gas system - Pressure equalization recoverer - System configuration,31
+Gas & Dust treating,Gas system - Purifier - Operation monitoring,20
+Gas & Dust treating,Furnace top system - Dust recovery tank - Operation monitoring,15
+Gas & Dust treating,Furnace top system - Ash discharge valve group - Mode control,6
+Gas & Dust treating,Tapping system - Dust collector - System configuration,33
+Gas & Dust treating,Tapping system - Dust collector - Operation monitoring,33
+Equipment maintaining,Blast supply system - Tuyere equipment - Operation monitoring,5
+Equipment maintaining,Environmental protection system - Monitoring instruments at various emission points - Operation monitoring,24
+Equipment maintaining,Furnace baking system - Taphole - Operation monitoring,5
+Equipment maintaining,Furnace baking system - Hot blast main pipe - Operation monitoring,2
+Equipment maintaining,PLC Inspection system - Instruments & Meters - Operation monitoring,18
+Equipment maintaining,Furnace baking system - Tuyere equipment - Operation monitoring,33
+Cooling monitoring,Soft water circulation system - Flow monitoring instrument - Flow difference monitoring,14
+Cooling monitoring,Soft water circulation system - Cooling stave - Operation monitoring,27
+Cooling monitoring,Soft water circulation system - Return water pipeline - Operation monitoring,7
+Cooling monitoring,Soft water circulation system - Water supply pipeline - Flow monitoring,14
+Cooling monitoring,Hot blast valve cooling system - Cooling pipeline - Operation monitoring,19
+Cooling monitoring,Hot blast valve cooling system - Cooling pipeline - System configuration,23
+Cooling monitoring,Cooling system - Soft water return pipeline - Operation monitoring,27
+Cooling monitoring,Cooling system - Soft water supply pipeline - Operation monitoring,23
+Cooling monitoring,Cooling system - High-pressure industrial water pipeline - Operation monitoring,16
+Burden feeding,Raw material system - Laboratory - Sinter performance testing,5
+Burden feeding,Raw material system - Laboratory - Sinter composition detection,11
+Burden feeding,Raw material system - Laboratory - Pellet performance testing,3
+Burden feeding,Raw material system - Laboratory - Pellet composition detection,11
+Burden feeding,Raw material system - Laboratory - Pulverized coal performance testing,5
+Burden feeding,Raw material system - Laboratory - Pulverized coal composition detection,5
+Burden feeding,Raw material system - Laboratory - Coke performance testing,7
+Burden feeding,Raw material system - Laboratory - Coke composition detection,5
+Burden feeding,Raw material system - Industrial camera - Pellet particle size recognition,9
+Burden feeding,Raw material system - Industrial camera - Coke particle size recognition,8
+Burden feeding,Raw material system - Industrial camera - Mixed ore particle size recognition,9
+Burden feeding,Ore bin system - Hydraulic station - Operation monitoring,7
+Burden feeding,Ore bin system - Airtight box - Operation monitoring,7
+Burden feeding,Ore bin system - Ore hopper - Operation monitoring,17
+Burden feeding,Ore bin system - Coke hopper - Operation monitoring,8
+Burden feeding,Ore bin system - Regulating valve group - Charging mode control,15
+Burden feeding,Charging system - Rotating chute - Operation monitoring,12
+Burden feeding,Charging system - Stock rod - Operation monitoring,9
+Burden feeding,Charging system - Hopper - Ore charging scheme configuration,37
+Burden feeding,Charging system - Hopper - Coke charging scheme configuration,37
+Burden feeding,Charging system - Industrial camera - Stock surface recognition,10
+BF tapping,Tapping system - Hot metal ladle - Operation monitoring,5
+BF tapping,Tapping system - Taphole - Operation monitoring,73
+BF tapping,Tapping system - Laboratory - Hot metal composition detection,10
+BF tapping,Tapping system - Laboratory - Slag composition detection,13
+BF operating,Pulverized coal injection system - Coal injection pipeline - Operation monitoring,38
+BF operating,Pulverized coal injection system - Coal injection pipeline - Pulverized coal flow control,7
+BF operating,Gas system - Gas analyzer - Composition detection,7
+BF operating,Furnace top system - Integrated terminal - Operation monitoring,33
+BF operating,Furnace top system - Steam pipeline - Operation monitoring,5
+BF operating,Furnace top system - Hydraulic station - Operation monitoring,39
+BF operating,Furnace top system - Pressure valve group - Pressure control,16
+BF operating,Furnace top system - Pressure regulator - Operation monitoring,4
+BF operating,Furnace top system - Pressure regulator - System configuration,7
+BF operating,Furnace top system - Ascension pipe - Operation monitoring,7
+BF operating,Furnace top system - Airtight box - Operation monitoring,36
+BF operating,Furnace top system - Throat cross temperature measuring device - Operation monitoring,30
+BF operating,Furnace top system - Furnace top pressure monitor - Operation monitoring,5
+BF operating,Furnace top system - Furnace top pressure valve group - Pressure control,10
+BF operating,Furnace top system - Backblow valve group - Mode control,6
+BF operating,Furnace top system - Main relief valve group - Operation monitoring,22
+BF operating,Furnace top system - Water injection pipeline - Operation monitoring,5
+BF operating,Furnace top system - Water injection valve group - Operation monitoring,12
+BF operating,Furnace top system - Water injection valve group - System configuration,9
+BF operating,Blast furnace system - Pressure monitor - Furnace body pressure difference monitoring,6
+BF operating,Blast furnace system - Pressure monitor - Furnace body static pressure monitoring,17
+BF operating,Blast furnace system - Production daily report - Theoretical material consumption calculation,9
+BF operating,Blast furnace system - Production daily report - Operational material consumption monitoring,11
+BF operating,Blast furnace system - Production daily report - Burden structure operational monitoring,21
+BF operating,Blast furnace system - Production daily report - Key parameter operational monitoring,16
+BF operating,Blast furnace system - Production daily report - Tuyere equipment operational monitoring,97
+BF operating,Blast furnace system - Production daily report - Output index operational monitoring,5
+BF operating,Blast furnace system - Production daily report - Charging system configuration,7
+BF operating,Blast furnace system - Thermocouple - Furnace body cooling stave temperature monitoring,161
+BF operating,Blast furnace system - Thermocouple - Furnace hearth side wall temperature monitoring,33
+BF operating,Blast furnace system - Thermocouple - Furnace lining side wall temperature monitoring,63
+BF operating,Blast furnace system - Integrated terminal - Operation monitoring,117
+BF operating,Oxygen enrichment system - Oxygen enrichment pipeline - Operation monitoring,7
+BF operating,Oxygen enrichment system - Regulating valve group - Flow control,11
+BF operating,Blast supply system - Industrial camera - Tuyere status monitoring,2
+Slag granulation system - Circulating water pipeline - Operation monitoring,Continuous time-series data,20
+Slag granulation system - Circulating water pipeline - Operation monitoring,Discrete time-series data,8
+Slag granulation system - Circulating water pipeline - Operation monitoring,Text data,1
+Slag granulation system - Water pump motor - Operation monitoring,Continuous time-series data,40
+Slag granulation system - Water pump motor - Operation monitoring,Text data,1
+Slag granulation system - Cooling tower - Operation monitoring,Continuous time-series data,32
+Slag granulation system - Cooling tower - Operation monitoring,Text data,1
+Blast supply system - Expansion tank - Pressure control,Binary status data,3
+Blast supply system - Expansion tank - Pressure control,Continuous time-series data,6
+Blast supply system - Expansion tank - Pressure control,Controllable data,9
+Blast supply system - Expansion tank - Pressure control,Text data,1
+Blast supply system - Valve group - Hot blast control,Continuous time-series data,4
+Blast supply system - Valve group - Hot blast control,Controllable data,5
+Blast supply system - Valve group - Hot blast control,Text data,1
+Hot blast supply system - Combustion air fan - Operation monitoring,Continuous time-series data,35
+Hot blast supply system - Combustion air fan - Operation monitoring,Discrete time-series data,12
+Hot blast supply system - Combustion air fan - Operation monitoring,Text data,1
+Hot blast supply system - Combustion air fan - System configuration,Constraint data,12
+Hot blast supply system - Combustion air fan - System configuration,Text data,1
+Hot blast supply system - Hydraulic station - Operation monitoring,Binary status data,14
+Hot blast supply system - Hydraulic station - Operation monitoring,Continuous time-series data,7
+Hot blast supply system - Hydraulic station - Operation monitoring,Text data,1
+Hot blast supply system - Hydraulic station - System configuration,Binary status data,5
+Hot blast supply system - Hydraulic station - System configuration,Constraint data,6
+Hot blast supply system - Hydraulic station - System configuration,Text data,1
+Hot blast supply system - Hot blast stove - Operation monitoring,Binary status data,8
+Hot blast supply system - Hot blast stove - Operation monitoring,Continuous time-series data,40
+Hot blast supply system - Hot blast stove - Operation monitoring,Discrete time-series data,9
+Hot blast supply system - Hot blast stove - Operation monitoring,Text data,1
+Hot blast supply system - Hot blast stove - System configuration,Binary status data,11
+Hot blast supply system - Hot blast stove - System configuration,Constraint data,18
+Hot blast supply system - Hot blast stove - System configuration,Text data,1
+Hot blast supply system - Hot blast stove - Stove switching operation monitoring,Continuous time-series data,7
+Hot blast supply system - Hot blast stove - Stove switching operation monitoring,Text data,1
+Hot blast supply system - Combustion chamber - Operation monitoring,Binary status data,3
+Hot blast supply system - Combustion chamber - Operation monitoring,Continuous time-series data,42
+Hot blast supply system - Combustion chamber - Operation monitoring,Text data,1
+Hot blast supply system - Combustion chamber - System configuration,Constraint data,70
+Hot blast supply system - Combustion chamber - System configuration,Text data,1
+Hot blast supply system - Nitrogen main pipe - Operation monitoring,Continuous time-series data,3
+Hot blast supply system - Nitrogen main pipe - Operation monitoring,Text data,1
+Gas system - Pressure equalization recoverer - Operation monitoring,Continuous time-series data,53
+Gas system - Pressure equalization recoverer - Operation monitoring,Text data,1
+Gas system - Pressure equalization recoverer - Tank body monitoring,Binary status data,11
+Gas system - Pressure equalization recoverer - Tank body monitoring,Discrete time-series data,4
+Gas system - Pressure equalization recoverer - Tank body monitoring,Text data,1
+Gas system - Pressure equalization recoverer - System configuration,Discrete time-series data,15
+Gas system - Pressure equalization recoverer - System configuration,Constraint data,15
+Gas system - Pressure equalization recoverer - System configuration,Text data,1
+Gas system - Purifier - Operation monitoring,Binary status data,11
+Gas system - Purifier - Operation monitoring,Continuous time-series data,8
+Gas system - Purifier - Operation monitoring,Text data,1
+Furnace top system - Dust recovery tank - Operation monitoring,Binary status data,11
+Furnace top system - Dust recovery tank - Operation monitoring,Continuous time-series data,3
+Furnace top system - Dust recovery tank - Operation monitoring,Text data,1
+Furnace top system - Ash discharge valve group - Mode control,Binary status data,5
+Furnace top system - Ash discharge valve group - Mode control,Text data,1
+Tapping system - Dust collector - System configuration,Constraint data,32
+Tapping system - Dust collector - System configuration,Text data,1
+Tapping system - Dust collector - Operation monitoring,Discrete time-series data,32
+Tapping system - Dust collector - Operation monitoring,Text data,1
+Blast supply system - Tuyere equipment - Operation monitoring,Binary status data,2
+Blast supply system - Tuyere equipment - Operation monitoring,Discrete time-series data,2
+Blast supply system - Tuyere equipment - Operation monitoring,Text data,1
+Environmental protection system - Monitoring instruments at various emission points - Operation monitoring,Continuous time-series data,9
+Environmental protection system - Monitoring instruments at various emission points - Operation monitoring,Discrete time-series data,14
+Environmental protection system - Monitoring instruments at various emission points - Operation monitoring,Text data,1
+Furnace baking system - Taphole - Operation monitoring,Continuous time-series data,4
+Furnace baking system - Taphole - Operation monitoring,Text data,1
+Furnace baking system - Hot blast main pipe - Operation monitoring,Continuous time-series data,1
+Furnace baking system - Hot blast main pipe - Operation monitoring,Text data,1
+PLC Inspection system - Instruments & Meters - Operation monitoring,Binary status data,16
+PLC Inspection system - Instruments & Meters - Operation monitoring,Continuous time-series data,1
+PLC Inspection system - Instruments & Meters - Operation monitoring,Text data,1
+Furnace baking system - Tuyere equipment - Operation monitoring,Continuous time-series data,32
+Furnace baking system - Tuyere equipment - Operation monitoring,Text data,1
+Soft water circulation system - Flow monitoring instrument - Flow difference monitoring,Continuous time-series data,13
+Soft water circulation system - Flow monitoring instrument - Flow difference monitoring,Text data,1
+Soft water circulation system - Cooling stave - Operation monitoring,Continuous time-series data,26
+Soft water circulation system - Cooling stave - Operation monitoring,Text data,1
+Soft water circulation system - Return water pipeline - Operation monitoring,Continuous time-series data,6
+Soft water circulation system - Return water pipeline - Operation monitoring,Text data,1
+Soft water circulation system - Water supply pipeline - Flow monitoring,Continuous time-series data,13
+Soft water circulation system - Water supply pipeline - Flow monitoring,Text data,1
+Hot blast valve cooling system - Cooling pipeline - Operation monitoring,Continuous time-series data,18
+Hot blast valve cooling system - Cooling pipeline - Operation monitoring,Text data,1
+Hot blast valve cooling system - Cooling pipeline - System configuration,Constraint data,22
+Hot blast valve cooling system - Cooling pipeline - System configuration,Text data,1
+Cooling system - Soft water return pipeline - Operation monitoring,Continuous time-series data,26
+Cooling system - Soft water return pipeline - Operation monitoring,Text data,1
+Cooling system - Soft water supply pipeline - Operation monitoring,Continuous time-series data,22
+Cooling system - Soft water supply pipeline - Operation monitoring,Text data,1
+Cooling system - High-pressure industrial water pipeline - Operation monitoring,Continuous time-series data,15
+Cooling system - High-pressure industrial water pipeline - Operation monitoring,Text data,1
+Raw material system - Laboratory - Sinter performance testing,Batch time-series data,4
+Raw material system - Laboratory - Sinter performance testing,Text data,1
+Raw material system - Laboratory - Sinter composition detection,Batch time-series data,10
+Raw material system - Laboratory - Sinter composition detection,Text data,1
+Raw material system - Laboratory - Pellet performance testing,Batch time-series data,2
+Raw material system - Laboratory - Pellet performance testing,Text data,1
+Raw material system - Laboratory - Pellet composition detection,Batch time-series data,10
+Raw material system - Laboratory - Pellet composition detection,Text data,1
+Raw material system - Laboratory - Pulverized coal performance testing,Batch time-series data,4
+Raw material system - Laboratory - Pulverized coal performance testing,Text data,1
+Raw material system - Laboratory - Pulverized coal composition detection,Batch time-series data,4
+Raw material system - Laboratory - Pulverized coal composition detection,Text data,1
+Raw material system - Laboratory - Coke performance testing,Batch time-series data,6
+Raw material system - Laboratory - Coke performance testing,Text data,1
+Raw material system - Laboratory - Coke composition detection,Batch time-series data,4
+Raw material system - Laboratory - Coke composition detection,Text data,1
+Raw material system - Industrial camera - Pellet particle size recognition,Continuous time-series data,7
+Raw material system - Industrial camera - Pellet particle size recognition,Image data,1
+Raw material system - Industrial camera - Pellet particle size recognition,Text data,1
+Raw material system - Industrial camera - Coke particle size recognition,Continuous time-series data,6
+Raw material system - Industrial camera - Coke particle size recognition,Image data,1
+Raw material system - Industrial camera - Coke particle size recognition,Text data,1
+Raw material system - Industrial camera - Mixed ore particle size recognition,Continuous time-series data,7
+Raw material system - Industrial camera - Mixed ore particle size recognition,Image data,1
+Raw material system - Industrial camera - Mixed ore particle size recognition,Text data,1
+Ore bin system - Hydraulic station - Operation monitoring,Continuous time-series data,6
+Ore bin system - Hydraulic station - Operation monitoring,Text data,1
+Ore bin system - Airtight box - Operation monitoring,Continuous time-series data,6
+Ore bin system - Airtight box - Operation monitoring,Text data,1
+Ore bin system - Ore hopper - Operation monitoring,Discrete time-series data,16
+Ore bin system - Ore hopper - Operation monitoring,Text data,1
+Ore bin system - Coke hopper - Operation monitoring,Discrete time-series data,7
+Ore bin system - Coke hopper - Operation monitoring,Text data,1
+Ore bin system - Regulating valve group - Charging mode control,Discrete time-series data,5
+Ore bin system - Regulating valve group - Charging mode control,Controllable data,9
+Ore bin system - Regulating valve group - Charging mode control,Text data,1
+Charging system - Rotating chute - Operation monitoring,Binary status data,3
+Charging system - Rotating chute - Operation monitoring,Continuous time-series data,4
+Charging system - Rotating chute - Operation monitoring,Discrete time-series data,4
+Charging system - Rotating chute - Operation monitoring,Text data,1
+Charging system - Stock rod - Operation monitoring,Continuous time-series data,4
+Charging system - Stock rod - Operation monitoring,Discrete time-series data,4
+Charging system - Stock rod - Operation monitoring,Text data,1
+Charging system - Hopper - Ore charging scheme configuration,Constraint data,36
+Charging system - Hopper - Ore charging scheme configuration,Text data,1
+Charging system - Hopper - Coke charging scheme configuration,Constraint data,36
+Charging system - Hopper - Coke charging scheme configuration,Text data,1
+Charging system - Industrial camera - Stock surface recognition,Continuous time-series data,8
+Charging system - Industrial camera - Stock surface recognition,Image data,1
+Charging system - Industrial camera - Stock surface recognition,Text data,1
+Tapping system - Hot metal ladle - Operation monitoring,Discrete time-series data,4
+Tapping system - Hot metal ladle - Operation monitoring,Text data,1
+Tapping system - Taphole - Operation monitoring,Batch time-series data,72
+Tapping system - Taphole - Operation monitoring,Text data,1
+Tapping system - Laboratory - Hot metal composition detection,Batch time-series data,9
+Tapping system - Laboratory - Hot metal composition detection,Text data,1
+Tapping system - Laboratory - Slag composition detection,Batch time-series data,12
+Tapping system - Laboratory - Slag composition detection,Text data,1
+Pulverized coal injection system - Coal injection pipeline - Operation monitoring,Continuous time-series data,37
+Pulverized coal injection system - Coal injection pipeline - Operation monitoring,Text data,1
+Pulverized coal injection system - Coal injection pipeline - Pulverized coal flow control,Continuous time-series data,3
+Pulverized coal injection system - Coal injection pipeline - Pulverized coal flow control,Discrete time-series data,2
+Pulverized coal injection system - Coal injection pipeline - Pulverized coal flow control,Controllable data,1
+Pulverized coal injection system - Coal injection pipeline - Pulverized coal flow control,Text data,1
+Gas system - Gas analyzer - Composition detection,Continuous time-series data,6
+Gas system - Gas analyzer - Composition detection,Text data,1
+Furnace top system - Integrated terminal - Operation monitoring,Continuous time-series data,28
+Furnace top system - Integrated terminal - Operation monitoring,Discrete time-series data,4
+Furnace top system - Integrated terminal - Operation monitoring,Text data,1
+Furnace top system - Steam pipeline - Operation monitoring,Continuous time-series data,4
+Furnace top system - Steam pipeline - Operation monitoring,Text data,1
+Furnace top system - Hydraulic station - Operation monitoring,Binary status data,27
+Furnace top system - Hydraulic station - Operation monitoring,Continuous time-series data,11
+Furnace top system - Hydraulic station - Operation monitoring,Text data,1
+Furnace top system - Pressure valve group - Pressure control,Binary status data,11
+Furnace top system - Pressure valve group - Pressure control,Controllable data,4
+Furnace top system - Pressure valve group - Pressure control,Text data,1
+Furnace top system - Pressure regulator - Operation monitoring,Continuous time-series data,3
+Furnace top system - Pressure regulator - Operation monitoring,Text data,1
+Furnace top system - Pressure regulator - System configuration,Constraint data,6
+Furnace top system - Pressure regulator - System configuration,Text data,1
+Furnace top system - Ascension pipe - Operation monitoring,Continuous time-series data,6
+Furnace top system - Ascension pipe - Operation monitoring,Text data,1
+Furnace top system - Airtight box - Operation monitoring,Binary status data,15
+Furnace top system - Airtight box - Operation monitoring,Continuous time-series data,16
+Furnace top system - Airtight box - Operation monitoring,Discrete time-series data,4
+Furnace top system - Airtight box - Operation monitoring,Text data,1
+Furnace top system - Throat cross temperature measuring device - Operation monitoring,Continuous time-series data,29
+Furnace top system - Throat cross temperature measuring device - Operation monitoring,Text data,1
+Furnace top system - Furnace top pressure monitor - Operation monitoring,Continuous time-series data,4
+Furnace top system - Furnace top pressure monitor - Operation monitoring,Text data,1
+Furnace top system - Furnace top pressure valve group - Pressure control,Discrete time-series data,5
+Furnace top system - Furnace top pressure valve group - Pressure control,Controllable data,4
+Furnace top system - Furnace top pressure valve group - Pressure control,Text data,1
+Furnace top system - Backblow valve group - Mode control,Controllable data,5
+Furnace top system - Backblow valve group - Mode control,Text data,1
+Furnace top system - Main relief valve group - Operation monitoring,Binary status data,15
+Furnace top system - Main relief valve group - Operation monitoring,Continuous time-series data,5
+Furnace top system - Main relief valve group - Operation monitoring,Discrete time-series data,1
+Furnace top system - Main relief valve group - Operation monitoring,Text data,1
+Furnace top system - Water injection pipeline - Operation monitoring,Continuous time-series data,1
+Furnace top system - Water injection pipeline - Operation monitoring,Discrete time-series data,3
+Furnace top system - Water injection pipeline - Operation monitoring,Text data,1
+Furnace top system - Water injection valve group - Operation monitoring,Binary status data,8
+Furnace top system - Water injection valve group - Operation monitoring,Continuous time-series data,3
+Furnace top system - Water injection valve group - Operation monitoring,Text data,1
+Furnace top system - Water injection valve group - System configuration,Binary status data,2
+Furnace top system - Water injection valve group - System configuration,Discrete time-series data,2
+Furnace top system - Water injection valve group - System configuration,Constraint data,4
+Furnace top system - Water injection valve group - System configuration,Text data,1
+Blast furnace system - Pressure monitor - Furnace body pressure difference monitoring,Continuous time-series data,5
+Blast furnace system - Pressure monitor - Furnace body pressure difference monitoring,Text data,1
+Blast furnace system - Pressure monitor - Furnace body static pressure monitoring,Continuous time-series data,16
+Blast furnace system - Pressure monitor - Furnace body static pressure monitoring,Text data,1
+Blast furnace system - Production daily report - Theoretical material consumption calculation,Discrete time-series data,8
+Blast furnace system - Production daily report - Theoretical material consumption calculation,Text data,1
+Blast furnace system - Production daily report - Operational material consumption monitoring,Discrete time-series data,10
+Blast furnace system - Production daily report - Operational material consumption monitoring,Text data,1
+Blast furnace system - Production daily report - Burden structure operational monitoring,Discrete time-series data,20
+Blast furnace system - Production daily report - Burden structure operational monitoring,Text data,1
+Blast furnace system - Production daily report - Key parameter operational monitoring,Discrete time-series data,15
+Blast furnace system - Production daily report - Key parameter operational monitoring,Text data,1
+Blast furnace system - Production daily report - Tuyere equipment operational monitoring,Discrete time-series data,96
+Blast furnace system - Production daily report - Tuyere equipment operational monitoring,Text data,1
+Blast furnace system - Production daily report - Output index operational monitoring,Discrete time-series data,4
+Blast furnace system - Production daily report - Output index operational monitoring,Text data,1
+Blast furnace system - Production daily report - Charging system configuration,Constraint data,6
+Blast furnace system - Production daily report - Charging system configuration,Text data,1
+Blast furnace system - Thermocouple - Furnace body cooling stave temperature monitoring,Continuous time-series data,160
+Blast furnace system - Thermocouple - Furnace body cooling stave temperature monitoring,Text data,1
+Blast furnace system - Thermocouple - Furnace hearth side wall temperature monitoring,Continuous time-series data,32
+Blast furnace system - Thermocouple - Furnace hearth side wall temperature monitoring,Text data,1
+Blast furnace system - Thermocouple - Furnace lining side wall temperature monitoring,Continuous time-series data,62
+Blast furnace system - Thermocouple - Furnace lining side wall temperature monitoring,Text data,1
+Blast furnace system - Integrated terminal - Operation monitoring,Binary status data,4
+Blast furnace system - Integrated terminal - Operation monitoring,Continuous time-series data,104
+Blast furnace system - Integrated terminal - Operation monitoring,Response data,8
+Blast furnace system - Integrated terminal - Operation monitoring,Text data,1
+Oxygen enrichment system - Oxygen enrichment pipeline - Operation monitoring,Binary status data,1
+Oxygen enrichment system - Oxygen enrichment pipeline - Operation monitoring,Continuous time-series data,5
+Oxygen enrichment system - Oxygen enrichment pipeline - Operation monitoring,Text data,1
+Oxygen enrichment system - Regulating valve group - Flow control,Binary status data,5
+Oxygen enrichment system - Regulating valve group - Flow control,Controllable data,5
+Oxygen enrichment system - Regulating valve group - Flow control,Text data,1
+Blast supply system - Industrial camera - Tuyere status monitoring,Image data,1
+Blast supply system - Industrial camera - Tuyere status monitoring,Text data,1
+Continuous time-series data,1# Slag yard - Pressure of 1# filtering branch pipe,1
+Continuous time-series data,1# Slag yard - Pressure of 2# filtering branch pipe,1
+Continuous time-series data,1# Slag yard - Pressure of 1# Slag flushing branch pipe,1
+Continuous time-series data,1# Slag yard - Pressure of 2# Slag flushing branch pipe,1
+Continuous time-series data,1# Slag yard - Temperature of outlet pipe in hot water pump group,1
+Continuous time-series data,1# Slag yard - Pressure of outlet pipe in hot water pump group,1
+Continuous time-series data,1# Slag yard - Flow rate of outlet pipe in hot water pump group,1
+Continuous time-series data,1# Slag yard - Temperature of outlet pipe in slag flushing pump group,1
+Continuous time-series data,1# Slag yard - Pressure of outlet pipe in slag flushing pump group,1
+Continuous time-series data,1# Slag yard - Flow rate of outlet pipe in slag flushing pump group,1
+Continuous time-series data,2# Slag yard - Pressure of 1# filtering branch pipe,1
+Continuous time-series data,2# Slag yard - Pressure of 2# filtering branch pipe,1
+Continuous time-series data,2# Slag yard - Pressure of 1# Slag flushing branch pipe,1
+Continuous time-series data,2# Slag yard - Pressure of 2# Slag flushing branch pipe,1
+Continuous time-series data,2# Slag yard - Temperature of outlet pipe in hot water pump group,1
+Continuous time-series data,2# Slag yard - Pressure of outlet pipe in hot water pump group,1
+Continuous time-series data,2# Slag yard - Flow rate of outlet pipe in hot water pump group,1
+Continuous time-series data,2# Slag yard - Temperature of outlet pipe in slag flushing pump group,1
+Continuous time-series data,2# Slag yard - Pressure of outlet pipe in slag flushing pump group,1
+Continuous time-series data,2# Slag yard - Flow rate of outlet pipe in slag flushing pump group,1
+Discrete time-series data,1# Slag yard - Flow rate of production water,1
+Discrete time-series data,1# Slag yard - Flow rate of concentrated brine,1
+Discrete time-series data,1# Slag yard - Daily accumulated value of flow rate of production water,1
+Discrete time-series data,1# Slag yard - Daily accumulated value of flow rate of concentrated brine,1
+Discrete time-series data,2# Slag yard - Flow rate of production water,1
+Discrete time-series data,2# Slag yard - Flow rate of concentrated brine,1
+Discrete time-series data,2# Slag yard - Daily accumulated value of flow rate of production water,1
+Discrete time-series data,2# Slag yard - Daily accumulated value of flow rate of concentrated brine,1
+Text data,Additional storage templates,98
+Continuous time-series data,1# Slag yard - 1# Pump motor - Temperature of front shaft,1
+Continuous time-series data,1# Slag yard - 1# Pump motor - Temperature of rear shaft,1
+Continuous time-series data,1# Slag Yard - 1# Pump Motor - Temperature of stator A,1
+Continuous time-series data,1# Slag yard - 1# Pump motor - Temperature of stator B,1
+Continuous time-series data,1# Slag yard - 1# Pump motor - Temperature of stator C,1
+Continuous time-series data,1# Slag yard - 2# Pump motor - Temperature of front shaft,1
+Continuous time-series data,1# Slag yard - 2# Pump motor - Temperature of rear shaft,1
+Continuous time-series data,1# Slag Yard - 2# Pump Motor - Temperature of stator A,1
+Continuous time-series data,1# Slag yard - 2# Pump motor - Temperature of stator B,1
+Continuous time-series data,1# Slag yard - 2# Pump motor - Temperature of stator C,1
+Continuous time-series data,1# Slag yard - 3# Pump motor - Temperature of front shaft,1
+Continuous time-series data,1# Slag yard - 3# Pump motor - Temperature of rear shaft,1
+Continuous time-series data,1# Slag Yard - 3# Pump Motor - Temperature of stator A,1
+Continuous time-series data,1# Slag yard - 3# Pump motor - Temperature of stator B,1
+Continuous time-series data,1# Slag yard - 3# Pump motor - Temperature of stator C,1
+Continuous time-series data,1# Slag yard - 4# Pump motor - Temperature of front shaft,1
+Continuous time-series data,1# Slag yard - 4# Pump motor - Temperature of rear shaft,1
+Continuous time-series data,1# Slag Yard - 4# Pump Motor - Temperature of stator A,1
+Continuous time-series data,1# Slag yard - 4# Pump motor - Temperature of stator B,1
+Continuous time-series data,1# Slag yard - 4# Pump motor - Temperature of stator C,1
+Continuous time-series data,2# Slag yard - 1# Pump motor - Temperature of front shaft,1
+Continuous time-series data,2# Slag yard - 1# Pump motor - Temperature of rear shaft,1
+Continuous time-series data,2# Slag Yard - 1# Pump Motor - Temperature of stator A,1
+Continuous time-series data,2# Slag yard - 1# Pump motor - Temperature of stator B,1
+Continuous time-series data,2# Slag yard - 1# Pump motor - Temperature of stator C,1
+Continuous time-series data,2# Slag yard - 2# Pump motor - Temperature of front shaft,1
+Continuous time-series data,2# Slag yard - 2# Pump motor - Temperature of rear shaft,1
+Continuous time-series data,2# Slag Yard - 2# Pump Motor - Temperature of stator A,1
+Continuous time-series data,2# Slag yard - 2# Pump motor - Temperature of stator B,1
+Continuous time-series data,2# Slag yard - 2# Pump motor - Temperature of stator C,1
+Continuous time-series data,2# Slag yard - 3# Pump motor - Temperature of front shaft,1
+Continuous time-series data,2# Slag yard - 3# Pump motor - Temperature of rear shaft,1
+Continuous time-series data,2# Slag Yard - 3# Pump Motor - Temperature of stator A,1
+Continuous time-series data,2# Slag yard - 3# Pump motor - Temperature of stator B,1
+Continuous time-series data,2# Slag yard - 3# Pump motor - Temperature of stator C,1
+Continuous time-series data,2# Slag yard - 4# Pump motor - Temperature of front shaft,1
+Continuous time-series data,2# Slag yard - 4# Pump motor - Temperature of rear shaft,1
+Continuous time-series data,2# Slag Yard - 4# Pump Motor - Temperature of stator A,1
+Continuous time-series data,2# Slag yard - 4# Pump motor - Temperature of stator B,1
+Continuous time-series data,2# Slag yard - 4# Pump motor - Temperature of stator C,1
+Continuous time-series data,1# Slag yard - Temperature of 1# cooling tower,1
+Continuous time-series data,1# Slag yard - Temperature of 2# cooling tower,1
+Continuous time-series data,1# Slag yard - Temperature of 3# cooling tower,1
+Continuous time-series data,1# Slag yard - Temperature of 4# cooling tower,1
+Continuous time-series data,1# Slag yard - Liquid level of 1# cooling tower,1
+Continuous time-series data,1# Slag yard - Liquid level of 2# cooling tower,1
+Continuous time-series data,1# Slag yard - Liquid level of 3# cooling tower,1
+Continuous time-series data,1# Slag yard - Liquid level of 4# cooling tower,1
+Continuous time-series data,1# Slag yard - Flow rate of 1# cooling tower,1
+Continuous time-series data,1# Slag yard - Flow rate of 2# cooling tower,1
+Continuous time-series data,1# Slag yard - Flow rate of 3# cooling tower,1
+Continuous time-series data,1# Slag yard - Flow rate of 4# cooling tower,1
+Continuous time-series data,1# Slag yard - Current of 1# cooling tower,1
+Continuous time-series data,1# Slag yard - Current of 2# cooling tower,1
+Continuous time-series data,1# Slag yard - Current of 3# cooling tower,1
+Continuous time-series data,1# Slag yard - Current of 4# cooling tower,1
+Continuous time-series data,2# Slag yard - Temperature of 1# cooling tower,1
+Continuous time-series data,2# Slag yard - Temperature of 2# cooling tower,1
+Continuous time-series data,2# Slag yard - Temperature of 3# cooling tower,1
+Continuous time-series data,2# Slag yard - Temperature of 4# cooling tower,1
+Continuous time-series data,2# Slag yard - Liquid level of 1# cooling tower,1
+Continuous time-series data,2# Slag yard - Liquid level of 2# cooling tower,1
+Continuous time-series data,2# Slag yard - Liquid level of 3# cooling tower,1
+Continuous time-series data,2# Slag yard - Liquid level of 4# cooling tower,1
+Continuous time-series data,2# Slag yard - Flow rate of 1# cooling tower,1
+Continuous time-series data,2# Slag yard - Flow rate of 2# cooling tower,1
+Continuous time-series data,2# Slag yard - Flow rate of 3# cooling tower,1
+Continuous time-series data,2# Slag yard - Flow rate of 4# cooling tower,1
+Continuous time-series data,2# Slag yard - Current of 1# cooling tower,1
+Continuous time-series data,2# Slag yard - Current of 2# cooling tower,1
+Continuous time-series data,2# Slag yard - Current of 3# cooling tower,1
+Continuous time-series data,2# Slag yard - Current of 4# cooling tower,1
+Binary status data,Blow-off valve,1
+Binary status data,Pressurization valve,1
+Binary status data,Emergency water supply valve,1
+Continuous time-series data,Level of expansion tank,1
+Continuous time-series data,Pressure of expansion tank,1
+Continuous time-series data,Pressure of nitrogen tank,2
+Continuous time-series data,Pressure of supply ring pipe about soft water,1
+Continuous time-series data,Flow rate of emergency water supply pipe,1
+Continuous time-series data,Pressure of emergency water supply pipe,1
+Controllable data,Ultimate upper limit setpoint of level of expansion tank,1
+Controllable data,Upper limit setpoint of level of expansion tank,1
+Controllable data,Lower limit setpoint of level of expansion tank,1
+Controllable data,Ultimate lower limit setpoint of level of expansion tank,1
+Controllable data,Pressure setpoint of supply ring pipe about soft water,1
+Controllable data,Upper limit setpoint of pressure of Blow-Off valve,1
+Controllable data,Lower limit setpoint of pressure of Blow-Off valve,1
+Controllable data,Upper limit setpoint of pressure of pressurization valve,1
+Controllable data,Lower limit setpoint of pressure of pressurization valve,1
+Continuous time-series data,Hot blast temperature - Hot blast stove side,2
+Continuous time-series data,Hot blast temperature - Blast furnace side,1
+Continuous time-series data,Hot blast pressure-Hot blast stove side,1
+Continuous time-series data,Hot blast pressure-Blast furnace side,1
+Controllable data,Lower limit setpoint of opening about cold air flow control valve,1
+Controllable data,Feedback value of opening about cold air flow control valve,1
+Controllable data,Temperature setpoint of mixed air,1
+Controllable data,Feedback value of opening about mixed air valve,1
+Controllable data,Setpoint of opening about mixed air valve,1
+Continuous time-series data,Flow rate of carbon monoxide in 1# heat exchanger outlet,1
+Continuous time-series data,Flow rate of carbon monoxide in 2# heat exchanger outlet,1
+Continuous time-series data,Air main pipe pressure in 1# heat exchanger outlet,1
+Continuous time-series data,Air main pipe pressure in 2# heat exchanger outlet,1
+Continuous time-series data,Pressure of cold air main pipe,1
+Continuous time-series data,Flow rate of cold air main pipe,1
+Continuous time-series data,Temperature of cold air main pipe,1
+Continuous time-series data,Pressure of hot blast main pipe,1
+Continuous time-series data,Pressure of nitrogen main pipe,1
+Continuous time-series data,Temperature of nitrogen main pipe,1
+Continuous time-series data,Flow rate of nitrogen main pipe,1
+Continuous time-series data,Bearing temperature of support end in 1# combustion air fan,1
+Continuous time-series data,Bearing temperature of thrust end in 1# combustion air fan,1
+Continuous time-series data,Bearing temperature of extension end in 1# combustion air fan,1
+Continuous time-series data,Bearing temperature of non-shaft extension end in 1# combustion air fan,1
+Continuous time-series data,Temperature of motor stator U in 1# combustion air fan,1
+Continuous time-series data,Temperature of motor stator V in 1# combustion air fan,1
+Continuous time-series data,Temperature of motor stator W in 1# combustion air fan,1
+Continuous time-series data,X-Direction bearing amplitude of support end in 1# combustion air fan,1
+Continuous time-series data,Y-Direction bearing amplitude of support end in 1# combustion air fan,1
+Continuous time-series data,X-Direction bearing amplitude of thrust end in 1# combustion air fan,1
+Continuous time-series data,Y-Direction bearing amplitude of thrust end in 1# combustion air fan,1
+Continuous time-series data,Current of 1# combustion air fan,1
+Continuous time-series data,Bearing temperature of support end in 2# combustion air fan,1
+Continuous time-series data,Bearing temperature of thrust end in 2# combustion air fan,1
+Continuous time-series data,Bearing temperature of extension end in 2# combustion air fan,1
+Continuous time-series data,Bearing temperature of non-shaft extension end in 2# combustion air fan,1
+Continuous time-series data,Temperature of motor stator U in 2# combustion air fan,1
+Continuous time-series data,Temperature of motor stator V in 2# combustion air fan,1
+Continuous time-series data,Temperature of motor stator W in 2# combustion air fan,1
+Continuous time-series data,X-Direction bearing amplitude of support end in 2# combustion air fan,1
+Continuous time-series data,Y-Direction bearing amplitude of support end in 2# combustion air fan,1
+Continuous time-series data,X-Direction bearing amplitude of thrust end in 2# combustion air fan,1
+Continuous time-series data,Y-Direction bearing amplitude of thrust end in 2# combustion air fan,1
+Continuous time-series data,Current of 2# combustion air fan,1
+Discrete time-series data,Pressure of preheated combustion air,1
+Discrete time-series data,Temperature of preheated combustion air,1
+Discrete time-series data,Pressure of preheated coal gas,1
+Discrete time-series data,Temperature of preheated coal gas,1
+Discrete time-series data,PV value of 1# combustion air fan,1
+Discrete time-series data,VI Value of 1# combustion air fan,1
+Discrete time-series data,SP Value of 1# combustion air fan,1
+Discrete time-series data,CV Value of 1# combustion air fan,1
+Discrete time-series data,PV value of 2# combustion air fan,1
+Discrete time-series data,VI Value of 2# combustion air fan,1
+Discrete time-series data,SP Value of 2# combustion air fan,1
+Discrete time-series data,CV Value of 2# combustion air fan,1
+Constraint data,Upper limit setpoint of bearing temperature of support end,1
+Constraint data,Upper limit setpoint of bearing temperature of thrust end,1
+Constraint data,Upper limit setpoint of bearing temperature of extension end,1
+Constraint data,Upper limit setpoint of bearing temperature of non-shaft extension end,1
+Constraint data,Upper limit setpoint of temperature of motor stator U,1
+Constraint data,Upper limit setpoint of temperature of motor stator V,1
+Constraint data,Upper limit setpoint of temperature of motor stator W,1
+Constraint data,Upper limit setpoint of X-Direction bearing amplitude of support end,1
+Constraint data,Upper limit setpoint of Y-Direction bearing amplitude of support end,1
+Constraint data,Upper limit setpoint of X-Direction bearing amplitude of thrust end,1
+Constraint data,Upper limit setpoint of Y-Direction bearing amplitude of thrust end,1
+Constraint data,Upper limit setpoint of current of combustion air fan,1
+Binary status data,Fault about hydraulic station system,1
+Binary status data,Start about 1# pump oil pump,1
+Binary status data,Start about 2# pump oil pump,1
+Binary status data,Low oil temperature of hydraulic station,1
+Binary status data,High oil temperature of hydraulic station,1
+Binary status data,Motor overload of hydraulic station,1
+Binary status data,High liquid level of hydraulic station,1
+Binary status data,Low liquid level of hydraulic station,1
+Binary status data,Extremely low liquid level of hydraulic station,1
+Binary status data,Extremely high pressure of hydraulic station,1
+Binary status data,Extremely high oil temperature of hydraulic station,1
+Binary status data,Circulation oil filter clogged,1
+Binary status data,1# return oil filter clogged,2
+Binary status data,2# return oil filter clogged,2
+Continuous time-series data,Current of 1# pump,1
+Continuous time-series data,Temperature of 1# pump,1
+Continuous time-series data,Current of 2# pump,1
+Continuous time-series data,Temperature of 2# pump,1
+Continuous time-series data,Oil pressure of hydraulic station,1
+Continuous time-series data,Oil temperature of hydraulic station,1
+Continuous time-series data,Liquid level of hydraulic station,1
+Binary status data,1# Oil pump interlock start,1
+Binary status data,2# Oil pump interlock start,1
+Binary status data,1# Oil pump start,1
+Binary status data,2# Oil pump start,1
+Binary status data,Circulation pump start,1
+Constraint data,Upper limit setpoint of oil temperature about hydraulic station,1
+Constraint data,Lower limit setpoint of oil temperature about hydraulic station,1
+Constraint data,Upper limit setpoint of oil pressure about hydraulic station,1
+Constraint data,Lower limit setpoint of oil pressure about hydraulic station,1
+Constraint data,Upper limit setpoint of Liquid Level about hydraulic station,1
+Constraint data,Lower limit setpoint of Liquid Level about hydraulic station,1
+Binary status data,1#Hot stove - Flame detector fault,2
+Binary status data,2#Hot stove - Flame detector fault,2
+Binary status data,3#Hot stove - Flame detector fault,2
+Binary status data,1#Hot stove - Semiautomatic operation mode activated,1
+Binary status data,2#Hot stove - Semiautomatic operation mode activated,1
+Binary status data,3#Hot stove - Semiautomatic operation mode activated,1
+Binary status data,1# Hydraulic station oil pump start,1
+Binary status data,2# Hydraulic station oil pump start,1
+Continuous time-series data,Pressure of main coal gas pipe before heat exchanger,1
+Continuous time-series data,Pressure of main coal gas pipe after heat exchanger,1
+Continuous time-series data,Pressure of main air gas pipe before heat exchanger,1
+Continuous time-series data,Pressure of main air gas pipe after heat exchanger,1
+Continuous time-series data,Pressure of main flue gas pipe before heat exchanger,1
+Continuous time-series data,Pressure of main flue gas pipe after heat exchanger,1
+Continuous time-series data,Carbon monoxide content of flue gas at heat exchanger waste gas outlet,1
+Continuous time-series data,Temperature of main coal gas pipe before preheating,1
+Continuous time-series data,Temperature of main coal gas pipe after preheating,1
+Continuous time-series data,1#Hot stove - Inlet pressure of main cold air pipe,1
+Continuous time-series data,1#Hot stove - Outlet pressure of main cold air pipe,1
+Continuous time-series data,1#Hot stove - Outlet pressure of main waste gas pipe,1
+Continuous time-series data,1#Hot stove - Inlet temperature of main flue gas pipe,1
+Continuous time-series data,1#Hot stove - Outlet temperature of main flue gas pipe,1
+Continuous time-series data,2#Hot stove - Inlet pressure of main cold air pipe,1
+Continuous time-series data,2#Hot stove - Outlet pressure of main cold air pipe,1
+Continuous time-series data,2#Hot stove - Outlet pressure of main waste gas pipe,1
+Continuous time-series data,2#Hot stove - Inlet temperature of main flue gas pipe,1
+Continuous time-series data,2#Hot stove - Outlet temperature of main flue gas pipe,1
+Continuous time-series data,3#Hot stove - Inlet pressure of main cold air pipe,1
+Continuous time-series data,3#Hot stove - Outlet pressure of main cold air pipe,1
+Continuous time-series data,3#Hot stove - Outlet pressure of main waste gas pipe,1
+Continuous time-series data,3#Hot stove - Inlet temperature of main flue gas pipe,1
+Continuous time-series data,3#Hot stove - Outlet temperature of main flue gas pipe,1
+Continuous time-series data,Temperature of main combustion air pipe before heat exchanger,1
+Continuous time-series data,Pressure of main combustion air pipe before heat exchanger,1
+Continuous time-series data,Temperature of main combustion air pipe after heat exchanger,1
+Continuous time-series data,Pressure of main combustion air pipe after heat exchanger,1
+Continuous time-series data,1#Hot stove - Dome temperature,1
+Continuous time-series data,2#Hot stove - Dome temperature,1
+Continuous time-series data,3#Hot stove - Dome temperature,1
+Continuous time-series data,1#Hot stove - Carbon monoxide content of flue,1
+Continuous time-series data,1#Hot stove - Carbon monoxide content of heat exchanger outlet,1
+Continuous time-series data,1#Hot stove - Oxygen content of flue,1
+Continuous time-series data,2#Hot stove - Carbon monoxide content of flue,1
+Continuous time-series data,2#Hot stove - Carbon monoxide content of heat exchanger outlet,1
+Continuous time-series data,2#Hot stove - Oxygen content of flue,1
+Continuous time-series data,3#Hot stove - Carbon monoxide content of flue,1
+Continuous time-series data,3#Hot stove - Carbon monoxide content of heat exchanger outlet,1
+Continuous time-series data,3#Hot stove - Oxygen content of flue,1
+Discrete time-series data,1#Hot stove - Air supply valve of main cold air pipe,1
+Discrete time-series data,2#Hot stove - Air supply valve of main cold air pipe,1
+Discrete time-series data,3#Hot stove - Air supply valve of main cold air pipe,1
+Discrete time-series data,1#Hot stove - Outlet valve of main waste gas pipe,1
+Discrete time-series data,2#Hot stove - Outlet valve of main waste gas pipe,1
+Discrete time-series data,3#Hot stove - Outlet valve of main waste gas pipe,1
+Discrete time-series data,1#Hot stove - Outlet valve of main flue pipe,1
+Discrete time-series data,2#Hot stove - Outlet valve of main flue pipe,1
+Discrete time-series data,3#Hot stove - Outlet valve of main flue pipe,1
+Binary status data,1#Hot stove - Operation feedback mode,1
+Binary status data,2#Hot stove - Operation feedback mode,1
+Binary status data,3#Hot stove - Operation feedback mode,1
+Binary status data,Setpoint value of hot stove changing time,1
+Binary status data,Interlock mode of air/(coal gas) combustion valve,1
+Binary status data,1#Hot stove - Operating mode selection (Combustion/Braise-oven/Blast),1
+Binary status data,2#Hot stove - Operating mode selection (Combustion/Braise-oven/Blast),1
+Binary status data,3#Hot stove - Operating mode selection (Combustion/Braise-oven/Blast),1
+Constraint data,1#Hot stove - Upper limit setpoint of blast temperature,1
+Constraint data,2#Hot stove - Upper limit setpoint of blast temperature,1
+Constraint data,3#Hot stove - Upper limit setpoint of blast temperature,1
+Constraint data,1#Hot stove - Upper limit setpoint of blast pressure,1
+Constraint data,2#Hot stove - Upper limit setpoint of blast pressure,1
+Constraint data,3#Hot stove - Upper limit setpoint of blast pressure,1
+Constraint data,1#Hot stove - Setpoint of blast temperature,1
+Constraint data,2#Hot stove - Setpoint of blast temperature,1
+Constraint data,3#Hot stove - Setpoint of blast temperature,1
+Constraint data,1#Hot stove - Setpoint of blast time,1
+Constraint data,2#Hot stove - Setpoint of blast time,1
+Constraint data,3#Hot stove - Setpoint of blast time,1
+Constraint data,1#Hot stove - Upper limit value of dome temperature,1
+Constraint data,2#Hot stove - Upper limit value of dome temperature,1
+Constraint data,3#Hot stove - Upper limit value of dome temperature,1
+Constraint data,1#Hot stove - Lower limit value of dome temperature,1
+Constraint data,2#Hot stove - Lower limit value of dome temperature,1
+Constraint data,3#Hot stove - Lower limit value of dome temperature,1
+Continuous time-series data,Hot blast pressure,2
+Continuous time-series data,Hot blast temperature – Blast furnace side,1
+Continuous time-series data,Pressure of main cold air pipe,1
+Continuous time-series data,Flow rate of main cold air pipe,1
+Continuous time-series data,Humidity of main cold air pipe,1
+Continuous time-series data,Temperature of main cold air pipe,1
+Binary status data,1# Hot stove - Combustion mode (Manual/Automatic),1
+Binary status data,2# Hot stove - Combustion mode (Manual/Automatic),1
+Binary status data,3# Hot stove - Combustion mode (Manual/Automatic),1
+Continuous time-series data,1# Hot stove - Air-to-fuel ratio,1
+Continuous time-series data,1# Hot stove - Combustion time,1
+Continuous time-series data,1# Hot stove - Dome temperature,2
+Continuous time-series data,1# Hot stove - Temperature A,1
+Continuous time-series data,1# Hot stove - Temperature B,1
+Continuous time-series data,1# Hot stove - Temperature of flue,1
+Continuous time-series data,1# Hot stove - Oxygen content of flue,1
+Continuous time-series data,1# Hot stove - Temperature A of stove shell,1
+Continuous time-series data,1# Hot stove - Temperature B of stove shell,1
+Continuous time-series data,1# Hot stove - Temperature C of stove shell,1
+Continuous time-series data,1# Hot stove - Temperature of combustion chamber,1
+Continuous time-series data,1# Hot stove - Chequer brick temperature,1
+Continuous time-series data,1# Hot stove - Silica brick temperature,1
+Continuous time-series data,1# Hot stove - Temperature of stove grate,1
+Continuous time-series data,2# Hot stove - Air-to-fuel ratio,1
+Continuous time-series data,2# Hot stove - Combustion time,1
+Continuous time-series data,2# Hot stove - Dome temperature,2
+Continuous time-series data,2# Hot stove - Temperature A,1
+Continuous time-series data,2# Hot stove - Temperature B,1
+Continuous time-series data,2# Hot stove - Temperature of flue,1
+Continuous time-series data,2# Hot stove - Oxygen content of flue,1
+Continuous time-series data,2# Hot stove - Temperature A of stove shell,1
+Continuous time-series data,2# Hot stove - Temperature B of stove shell,1
+Continuous time-series data,2# Hot stove - Temperature C of stove shell,1
+Continuous time-series data,2# Hot stove - Temperature of combustion chamber,1
+Continuous time-series data,2# Hot stove - Chequer brick temperature,1
+Continuous time-series data,2# Hot stove - Silica brick temperature,1
+Continuous time-series data,2# Hot stove - Temperature of stove grate,1
+Continuous time-series data,3# Hot stove - Air-to-fuel ratio,1
+Continuous time-series data,3# Hot stove - Combustion time,1
+Continuous time-series data,3# Hot stove - Dome temperature,2
+Continuous time-series data,3# Hot stove - Temperature A,1
+Continuous time-series data,3# Hot stove - Temperature B,1
+Continuous time-series data,3# Hot stove - Temperature of flue,1
+Continuous time-series data,3# Hot stove - Oxygen content of flue,1
+Continuous time-series data,3# Hot stove - Temperature A of stove shell,1
+Continuous time-series data,3# Hot stove - Temperature B of stove shell,1
+Continuous time-series data,3# Hot stove - Temperature C of stove shell,1
+Continuous time-series data,3# Hot stove - Temperature of combustion chamber,1
+Continuous time-series data,3# Hot stove - Chequer brick temperature,1
+Continuous time-series data,3# Hot stove - Silica brick temperature,1
+Continuous time-series data,3# Hot stove - Temperature of stove grate,1
+Constraint data,Main pipe - Braise-oven - Lower limit setpoint of pressure about coal gas,1
+Constraint data,Main pipe - Lower limit setpoint of pressure about coal gas,1
+Constraint data,Main pipe - Braise-oven - Lower limit setpoint of pressure about air,1
+Constraint data,Main pipe - Lower limit setpoint of pressure about air,1
+Constraint data,Main pipe - Lower limit setpoint of cold air flow,1
+Constraint data,Main pipe - Lower limit setpoint of cold air pressure,1
+Constraint data,Main pipe - Upper limit setpoint of hot blast pressure,1
+Constraint data,Main pipe - Lower limit setpoint of hot blast pressure,1
+Constraint data,Main pipe - Humidified blast off - Lower limit setpoint of hot blast pressure,1
+Constraint data,1#Hot stove - Upper limit setpoint of combustion - Dome temperature,1
+Constraint data,1#Hot stove - Upper limit setpoint of combustion - Temperature of waste gas,1
+Constraint data,1#Hot stove - Lower limit setpoint of combustion - Dome temperature,1
+Constraint data,1#Hot stove - Lower limit setpoint of combustion - Temperature of waste gas,1
+Constraint data,1#Hot stove - Upper limit setpoint of dome temperature,1
+Constraint data,1#Hot stove - Upper limit setpoint of temperature of waste gas,1
+Constraint data,1#Hot stove - Temperature difference setpoint under ignition failure,1
+Constraint data,1#Hot stove - Time difference setpoint under ignition failure,1
+Constraint data,1#Hot stove - Opening time of impact valve,1
+Constraint data,1#Hot stove - Closing time of impact valve,1
+Constraint data,1#Hot stove - Hydraulic setpoint under normal operation,1
+Constraint data,1#Hot stove - Equalizing pressure setpoint under normal operation,1
+Constraint data,1#Hot stove - Nitrogen purging time under “combustion → stop”,1
+Constraint data,1#Hot stove - Nitrogen purging time under “stop → combustion”,1
+Constraint data,1#Hot stove - Nitrogen purging time under ignition failure,1
+Constraint data,1#Hot stove - Ignition angle - Setpoint of air control valve opening,1
+Constraint data,1#Hot stove - Ignition angle - Setpoint of coal gas control valve opening,1
+Constraint data,1#Hot stove - Ignition angle - Delay time for opening gas control valve,1
+Constraint data,1#Hot stove - Lower limit value of air flow under closing coal gas control valve,1
+Constraint data,1#Hot stove - Lower Limit Value of air control valve opening under closing coal gas control valve,1
+Constraint data,2#Hot stove - Upper limit setpoint of combustion - Dome temperature,1
+Constraint data,2#Hot stove - Upper limit setpoint of combustion - Temperature of waste gas,1
+Constraint data,2#Hot stove - Lower limit setpoint of combustion - Dome temperature,1
+Constraint data,2#Hot stove - Lower limit setpoint of combustion - Temperature of waste gas,1
+Constraint data,2#Hot stove - Upper limit setpoint of dome temperature,1
+Constraint data,2#Hot stove - Upper limit setpoint of temperature of waste gas,1
+Constraint data,2#Hot stove - Temperature difference setpoint under ignition failure,1
+Constraint data,2#Hot stove - Time difference setpoint under ignition failure,1
+Constraint data,2#Hot stove - Opening time of impact valve,1
+Constraint data,2#Hot stove - Closing time of impact valve,1
+Constraint data,2#Hot stove - Hydraulic setpoint under normal operation,1
+Constraint data,2#Hot stove - Equalizing pressure setpoint under normal operation,1
+Constraint data,2#Hot stove - Nitrogen purging time under “combustion → stop”,1
+Constraint data,2#Hot stove - Nitrogen purging time under “stop → combustion”,1
+Constraint data,2#Hot stove - Nitrogen purging time under ignition failure,1
+Constraint data,2#Hot stove - Ignition angle - Setpoint of air control valve opening,1
+Constraint data,2#Hot stove - Ignition angle - Setpoint of coal gas control valve opening,1
+Constraint data,2#Hot stove - Ignition angle - Delay time for opening gas control valve,1
+Constraint data,2#Hot stove - Lower limit value of air flow under closing coal gas control valve,1
+Constraint data,2#Hot stove - Lower Limit Value of air control valve opening under closing coal gas control valve,1
+Constraint data,3#Hot stove - Upper limit setpoint of combustion - Dome temperature,1
+Constraint data,3#Hot stove - Upper limit setpoint of combustion - Temperature of waste gas,1
+Constraint data,3#Hot stove - Lower limit setpoint of combustion - Dome temperature,1
+Constraint data,3#Hot stove - Lower limit setpoint of combustion - Temperature of waste gas,1
+Constraint data,3#Hot stove - Upper limit setpoint of dome temperature,1
+Constraint data,3#Hot stove - Upper limit setpoint of temperature of waste gas,1
+Constraint data,3#Hot stove - Temperature difference setpoint under ignition failure,1
+Constraint data,3#Hot stove - Time difference setpoint under ignition failure,1
+Constraint data,3#Hot stove - Opening time of impact valve,1
+Constraint data,3#Hot stove - Closing time of impact valve,1
+Constraint data,3#Hot stove - Hydraulic setpoint under normal operation,1
+Constraint data,3#Hot stove - Equalizing pressure setpoint under normal operation,1
+Constraint data,3#Hot stove - Nitrogen purging time under “combustion → stop”,1
+Constraint data,3#Hot stove - Nitrogen purging time under “stop → combustion”,1
+Constraint data,3#Hot stove - Nitrogen purging time under ignition failure,1
+Constraint data,3#Hot stove - Ignition angle - Setpoint of air control valve opening,1
+Constraint data,3#Hot stove - Ignition angle - Setpoint of coal gas control valve opening,1
+Constraint data,3#Hot stove - Ignition angle - Delay time for opening gas control valve,1
+Constraint data,3#Hot stove - Lower limit value of air flow under closing coal gas control valve,1
+Constraint data,3#Hot stove - Lower Limit Value of air control valve opening under closing coal gas control valve,1
+Constraint data,Material position of desulfurant level,1
+Continuous time-series data,Temperature of main nitrogen pipe,1
+Continuous time-series data,Pressure of main nitrogen pipe,4
+Continuous time-series data,Flow rate of main nitrogen pipe,3
+Continuous time-series data,Dust concentration of large dust hopper outlet,1
+Continuous time-series data,Differential pressure of large dust hopper,1
+Continuous time-series data,Pressure of nitrogen pipe about dust hopper pulse valve,1
+Continuous time-series data,Pressure of pneumatic valve,1
+Continuous time-series data,Flow rate of pneumatic valve,1
+Continuous time-series data,Pressure of pulse blowing,1
+Continuous time-series data,Flow Rate of pulse blowing,1
+Continuous time-series data,Pressure of pneumatic conveying dust,1
+Continuous time-series data,Flow rate of pneumatic conveying dust,1
+Continuous time-series data,Pressure of inlet about raw coal gas,1
+Continuous time-series data,Concentration of inlet about raw coal gas,1
+Continuous time-series data,Temperature of inlet about raw coal gas,1
+Continuous time-series data,Pressure of inlet about clean coal gas,1
+Continuous time-series data,Concentration of inlet about clean coal gas,1
+Continuous time-series data,Temperature of inlet about clean coal gas,1
+Continuous time-series data,Pressure of 1# Box,1
+Continuous time-series data,Temperature of 1# Box,1
+Continuous time-series data,Concentration of 1# Box,1
+Continuous time-series data,Pressure of 2# Box,1
+Continuous time-series data,Temperature of 2# Box,1
+Continuous time-series data,Concentration of 2# Box,1
+Continuous time-series data,Pressure of 3# Box,1
+Continuous time-series data,Temperature of 3# Box,1
+Continuous time-series data,Concentration of 3# Box,1
+Continuous time-series data,Pressure of 4# Box,1
+Continuous time-series data,Temperature of 4# Box,1
+Continuous time-series data,Concentration of 4# Box,1
+Continuous time-series data,Pressure of 5# Box,1
+Continuous time-series data,Temperature of 5# Box,1
+Continuous time-series data,Concentration of 5# Box,1
+Continuous time-series data,Pressure of 6# Box,1
+Continuous time-series data,Temperature of 6# Box,1
+Continuous time-series data,Concentration of 6# Box,1
+Continuous time-series data,Pressure of 7# Box,1
+Continuous time-series data,Temperature of 7# Box,1
+Continuous time-series data,Concentration of 7# Box,1
+Continuous time-series data,Pressure of 8# Box,1
+Continuous time-series data,Temperature of 8# Box,1
+Continuous time-series data,Concentration of 8# Box,1
+Continuous time-series data,Pressure of 9# Box,1
+Continuous time-series data,Temperature of 9# Box,1
+Continuous time-series data,Concentration of 9# Box,1
+Continuous time-series data,Pressure of 10# Box,1
+Continuous time-series data,Temperature of 10# Box,1
+Continuous time-series data,Concentration of 10# Box,1
+Continuous time-series data,Pressure of 11# Box,1
+Continuous time-series data,Temperature of 11# Box,1
+Continuous time-series data,Concentration of 11# Box,1
+Continuous time-series data,Pressure of 12# Box,1
+Continuous time-series data,Temperature of 12# Box,1
+Continuous time-series data,Concentration of 12# Box,1
+Binary status data,Timed back-blowing mode,1
+Binary status data,Differential pressure back-blowing mode,1
+Binary status data,Manual back-blowing mode,1
+Binary status data,Emergency manual back-blowing mode,1
+Binary status data,System idle mode,1
+Binary status data,Automatic back-blowing mode,1
+Binary status data,Timed dust discharge mode,2
+Binary status data,Temperature difference dust discharge mode,2
+Binary status data,Manual dust discharge mode,2
+Binary status data,Emergency manual dust discharge mode,2
+Binary status data,Automatic dust discharge mode,2
+Discrete time-series data,Time of timed back-blowing,1
+Discrete time-series data,Pressure of timed back-blowing,1
+Discrete time-series data,Time of timed dust discharge,1
+Discrete time-series data,Temperature of timed dust discharge,1
+Discrete time-series data,Invoked back-blowing nitrogen consumption per use,1
+Discrete time-series data,Last consumption of invoked back-blowing nitrogen,1
+Discrete time-series data,Back-blowing nitrogen consumption per use,1
+Discrete time-series data,Last consumption of back-blowing nitrogen,1
+Discrete time-series data,Back-blowing nitrogen consumption of current team,1
+Discrete time-series data,Back-blowing nitrogen consumption at 8:00-20:00,1
+Discrete time-series data,Back-blowing nitrogen consumption at 20:00-8:00,1
+Discrete time-series data,Back-blowing nitrogen consumption of current month,1
+Discrete time-series data,Back-blowing nitrogen consumption of last month,1
+Discrete time-series data,Back-blowing nitrogen consumption at yesterday,1
+Discrete time-series data,Nitrogen consumption per use for dust conveying,1
+Discrete time-series data,Last Nitrogen consumption for dust conveying,1
+Discrete time-series data,Nitrogen consumption for dust conveying at today,1
+Discrete time-series data,Nitrogen consumption for dust conveying of current month,1
+Discrete time-series data,Nitrogen consumption for dust conveying of last month,1
+Constraint data,Upper limit setpoint of temperature about raw coal gas,1
+Constraint data,Lower limit setpoint of temperature about raw coal gas,1
+Constraint data,Setpoint value of time about timed back-blowing,1
+Constraint data,Setpoint value of pressure about differential pressure back-blowing,1
+Constraint data,Setpoint value of pulse width,1
+Constraint data,Setpoint value of pulse interval,1
+Constraint data,Setpoint value of box interval,1
+Constraint data,Setpoint value of pressure about high dry nitrogen,1
+Constraint data,Setpoint value of pressure about differential pressure back-blowing of dust hopper,1
+Constraint data,Setpoint value of Time about timed dust discharge,1
+Constraint data,Setpoint value of temperature about temperature difference dust discharge,1
+Constraint data,Setpoint value of nitrogen cannon width,1
+Constraint data,Setpoint value of nitrogen cannon interval,1
+Constraint data,Setpoint value of time about empty hopper,1
+Constraint data,Lower limit value of pressure about dust conveying pipe,1
+Binary status data,Manual valve of main nitrogen pipe,1
+Binary status data,Electric ball valve on nitrogen inlet,1
+Binary status data,Electric ball valve on nitrogen outlet,1
+Binary status data,Electric blind plate valve of nitrogen,1
+Binary status data,Control valve of nitrogen,1
+Binary status data,Start ejector valve,1
+Binary status data,Blind plate valve on coal gas outlet,1
+Binary status data,Butterfly valve on coal gas outlet,1
+Binary status data,Butterfly valve on coal gas inlet,1
+Binary status data,Electric blind plate valve of ejector,1
+Binary status data,Butterfly valve for reducing pressure of coal gas,1
+Continuous time-series data,Temperature of nitrogen outlet,1
+Continuous time-series data,Flow rate of nitrogen outlet,1
+Continuous time-series data,Pressure of nitrogen outlet,1
+Continuous time-series data,Temperature of coal gas before ejector,1
+Continuous time-series data,Pressure of main coal gas pipe,1
+Continuous time-series data,Pressure of clean coal gas,1
+Continuous time-series data,Pressure of ejector,1
+Continuous time-series data,Flow rate of ejector,1
+Binary status data,Blind plate valve for equalizing pressure blow-off,1
+Binary status data,Blow-off valve of main equalizing pressure pipe,1
+Binary status data,Upper blind plate valve of 1# equalizing pressure pipeline,1
+Binary status data,Lower blind plate valve of 1# equalizing pressure pipeline,1
+Binary status data,Upper blind plate valve of 2# equalizing pressure pipeline,1
+Binary status data,Lower blind plate valve of 2# equalizing pressure pipeline,1
+Binary status data,Upper blind plate valve for recovering and relieving pressure,1
+Binary status data,Lower blind plate valve for recovering and relieving pressure,1
+Binary status data,Pressure control valve of steam,1
+Binary status data,Dust discharge valve,1
+Binary status data,Flow control valve of secondary equalizing pressure,1
+Continuous time-series data,Top temperature of box,1
+Continuous time-series data,Center temperature of box,1
+Continuous time-series data,Pressure of tank for discharging dust and relieving pressure,1
+Constraint data,Setpoint value for dedusting valve opening of v1-1 side suction main pipe,1
+Constraint data,Setpoint value for dedusting valve opening of v1-2 slag skimmer,1
+Constraint data,Setpoint value for dedusting valve opening of V1-3 slag skimmer at main iron channel,1
+Constraint data,Setpoint value for dedusting valve opening of v1-4 residual iron channel,1
+Constraint data,Setpoint value for dedusting valve opening of V1-5 swinging spout,1
+Constraint data,Setpoint value for dedusting valve opening of V1-6 swinging spout at main iron channel,1
+Constraint data,Setpoint value for dedusting valve opening of V1-7 swinging spout at main slag channel,1
+Constraint data,Setpoint value for dedusting valve opening of V1-8 top suction swinging spout,1
+Constraint data,Setpoint value for dedusting valve opening of V2-1 side suction main pipe,1
+Constraint data,Setpoint value for dedusting valve opening of V2-2 slag skimmer,1
+Constraint data,Setpoint value for dedusting valve opening of V2-3 slag skimmer at main iron channel,1
+Constraint data,Setpoint value for dedusting valve opening of V2-4 residual iron channel,1
+Constraint data,Setpoint value for dedusting valve opening of V2-5 swinging spout,1
+Constraint data,Setpoint value for dedusting valve opening of V2-6 swinging spout at main iron channel,1
+Constraint data,Setpoint value for dedusting valve opening of V2-7 swinging spout at main slag channel,1
+Constraint data,Setpoint value for dedusting valve opening of V2-8 top suction swinging spout,1
+Constraint data,Setpoint value for dedusting valve opening of V3-1 side suction main pipe,1
+Constraint data,Setpoint value for dedusting valve opening of V3-2 slag skimmer,1
+Constraint data,Setpoint value for dedusting valve opening of V3-3 slag skimmer at main iron channel,1
+Constraint data,Setpoint value for dedusting valve opening of V3-4 residual iron channel,1
+Constraint data,Setpoint value for dedusting valve opening of V3-5 swinging spout,1
+Constraint data,Setpoint value for dedusting valve opening of V3-6 swinging spout at main iron channel,1
+Constraint data,Setpoint value for dedusting valve opening of V3-7 swinging spout at main slag channel,1
+Constraint data,Setpoint value for dedusting valve opening of V3-8 top suction swinging spout,1
+Constraint data,Setpoint value for dedusting valve opening of V4-1 side suction main pipe,1
+Constraint data,Setpoint value for dedusting valve opening of V4-2 slag skimmer,1
+Constraint data,Setpoint value for dedusting valve opening of V4-3 slag skimmer at main iron channel,1
+Constraint data,Setpoint value for dedusting valve opening of V4-4 residual iron channel,1
+Constraint data,Setpoint value for dedusting valve opening of V4-5 swinging spout,1
+Constraint data,Setpoint value for dedusting valve opening of V4-6 swinging spout at main iron channel,1
+Constraint data,Setpoint value for dedusting valve opening of V4-7 swinging spout at main slag channel,1
+Constraint data,Setpoint value for dedusting valve opening of V4-8 top suction swinging spout,1
+Discrete time-series data,Feedback value for dedusting valve opening of v1-1 side suction main pipe,1
+Discrete time-series data,Feedback value for dedusting valve opening of v1-2 slag skimmer,1
+Discrete time-series data,Feedback value for dedusting valve opening of V1-3 slag skimmer at main iron channel,1
+Discrete time-series data,Feedback value for dedusting valve opening of v1-4 residual iron channel,1
+Discrete time-series data,Feedback value for dedusting valve opening of V1-5 swinging spout,1
+Discrete time-series data,Feedback value for dedusting valve opening of V1-6 swinging spout at main iron channel,1
+Discrete time-series data,Feedback value for dedusting valve opening of V1-7 swinging spout at main slag channel,1
+Discrete time-series data,Feedback value for dedusting valve opening of V1-8 top suction swinging spout,1
+Discrete time-series data,Feedback value for dedusting valve opening of V2-1 side suction main pipe,1
+Discrete time-series data,Feedback value for dedusting valve opening of V2-2 slag skimmer,1
+Discrete time-series data,Feedback value for dedusting valve opening of V2-3 slag skimmer at main iron channel,1
+Discrete time-series data,Feedback value for dedusting valve opening of V2-4 residual iron channel,1
+Discrete time-series data,Feedback value for dedusting valve opening of V2-5 swinging spout,1
+Discrete time-series data,Feedback value for dedusting valve opening of V2-6 swinging spout at main iron channel,1
+Discrete time-series data,Feedback value for dedusting valve opening of V2-7 swinging spout at main slag channel,1
+Discrete time-series data,Feedback value for dedusting valve opening of V2-8 top suction swinging spout,1
+Discrete time-series data,Feedback value for dedusting valve opening of V3-1 side suction main pipe,1
+Discrete time-series data,Feedback value for dedusting valve opening of V3-2 slag skimmer,1
+Discrete time-series data,Feedback value for dedusting valve opening of V3-3 slag skimmer at main iron channel,1
+Discrete time-series data,Feedback value for dedusting valve opening of V3-4 residual iron channel,1
+Discrete time-series data,Feedback value for dedusting valve opening of V3-5 swinging spout,1
+Discrete time-series data,Feedback value for dedusting valve opening of V3-6 swinging spout at main iron channel,1
+Discrete time-series data,Feedback value for dedusting valve opening of V3-7 swinging spout at main slag channel,1
+Discrete time-series data,Feedback value for dedusting valve opening of V3-8 top suction swinging spout,1
+Discrete time-series data,Feedback value for dedusting valve opening of V4-1 side suction main pipe,1
+Discrete time-series data,Feedback value for dedusting valve opening of V4-2 slag skimmer,1
+Discrete time-series data,Feedback value for dedusting valve opening of V4-3 slag skimmer at main iron channel,1
+Discrete time-series data,Feedback value for dedusting valve opening of V4-4 residual iron channel,1
+Discrete time-series data,Feedback value for dedusting valve opening of V4-5 swinging spout,1
+Discrete time-series data,Feedback value for dedusting valve opening of V4-6 swinging spout at main iron channel,1
+Discrete time-series data,Feedback value for dedusting valve opening of V4-7 swinging spout at main slag channel,1
+Discrete time-series data,Feedback value for dedusting valve opening of V4-8 top suction swinging spout,1
+Binary status data,Blow-off condition,1
+Binary status data,Operating mode,1
+Discrete time-series data,Accumulated usage days,1
+Discrete time-series data,Last replacement date,1
+Continuous time-series data,Monitored value of carbon monoxide,1
+Continuous time-series data,Converted value of carbon monoxide,1
+Continuous time-series data,Monitored value of oxygen content,1
+Continuous time-series data,Actual value of ammonia gas,1
+Continuous time-series data,Converted value of ammonia gas,1
+Continuous time-series data,Actual value of sulfur dioxide,1
+Continuous time-series data,Converted value of sulfur dioxide,1
+Continuous time-series data,Actual value of flue dust,1
+Continuous time-series data,Converted value of flue dust,1
+Discrete time-series data,Hourly value of carbon monoxide,1
+Discrete time-series data,Hourly converted value of carbon monoxide,1
+Discrete time-series data,Emission standard of carbon monoxide,1
+Discrete time-series data,Hourly value of oxygen content,1
+Discrete time-series data,Emission standard of oxygen content,1
+Discrete time-series data,Hourly value of ammonia gas,1
+Discrete time-series data,Hourly converted value of ammonia gas,1
+Discrete time-series data,Emission standard of ammonia gas,1
+Discrete time-series data,Hourly value of sulfur dioxide,1
+Discrete time-series data,Hourly converted value of sulfur dioxide,1
+Discrete time-series data,Emission standard of sulfur dioxide,1
+Discrete time-series data,Hourly value of flue dust,1
+Discrete time-series data,Hourly converted value of flue dust,1
+Discrete time-series data,Emission standard of flue dust,1
+Continuous time-series data,Bakeout temperature of 1# taphole,1
+Continuous time-series data,Bakeout temperature of 2# taphole,1
+Continuous time-series data,Bakeout temperature of 3# taphole,1
+Continuous time-series data,Bakeout temperature of 4# taphole,1
+Continuous time-series data,Temperature of main hot blast pipe,1
+Binary status data,Fault and alarm about UPS,1
+Binary status data,Low voltage alarm of battery,1
+Binary status data,Power failure alarm,1
+Binary status data,Fault and alarm about rectifier,1
+Binary status data,Alarm about PLC changeover switch,1
+Binary status data,Q1 close of PLC changeover switch,1
+Binary status data,Q2 close of PLC changeover switch,1
+Binary status data,Q1 trip of PLC changeover switch,1
+Binary status data,Q2 trip of PLC changeover switch,1
+Binary status data,Alarm about instrument changeover switch,1
+Binary status data,Q1 close of instrument changeover switch,1
+Binary status data,Q2 close of instrument changeover switch,1
+Binary status data,Q1 trip of instrument changeover switch,1
+Binary status data,Q2 trip of instrument changeover switch,1
+Binary status data,Level-1 alarm about blast furnace main control room,1
+Binary status data,Level-2 alarm about blast furnace main control room,1
+Continuous time-series data,Temperature of Control Cabinet,1
+Continuous time-series data,bakeout temperature of 1# tuyere,1
+Continuous time-series data,bakeout temperature of 2# tuyere,1
+Continuous time-series data,bakeout temperature of 3# tuyere,1
+Continuous time-series data,bakeout temperature of 4# tuyere,1
+Continuous time-series data,bakeout temperature of 5# tuyere,1
+Continuous time-series data,bakeout temperature of 6# tuyere,1
+Continuous time-series data,bakeout temperature of 7# tuyere,1
+Continuous time-series data,bakeout temperature of 8# tuyere,1
+Continuous time-series data,bakeout temperature of 9# tuyere,1
+Continuous time-series data,bakeout temperature of 10# tuyere,1
+Continuous time-series data,bakeout temperature of 11# tuyere,1
+Continuous time-series data,bakeout temperature of 12# tuyere,1
+Continuous time-series data,bakeout temperature of 13# tuyere,1
+Continuous time-series data,bakeout temperature of 14# tuyere,1
+Continuous time-series data,bakeout temperature of 15# tuyere,1
+Continuous time-series data,bakeout temperature of 16# tuyere,1
+Continuous time-series data,bakeout temperature of 17# tuyere,1
+Continuous time-series data,bakeout temperature of 18# tuyere,1
+Continuous time-series data,bakeout temperature of 19# tuyere,1
+Continuous time-series data,bakeout temperature of 20# tuyere,1
+Continuous time-series data,bakeout temperature of 21# tuyere,1
+Continuous time-series data,bakeout temperature of 22# tuyere,1
+Continuous time-series data,bakeout temperature of 23# tuyere,1
+Continuous time-series data,bakeout temperature of 24# tuyere,1
+Continuous time-series data,bakeout temperature of 25# tuyere,1
+Continuous time-series data,bakeout temperature of 26# tuyere,1
+Continuous time-series data,bakeout temperature of 27# tuyere,1
+Continuous time-series data,bakeout temperature of 28# tuyere,1
+Continuous time-series data,bakeout temperature of 29# tuyere,1
+Continuous time-series data,bakeout temperature of 30# tuyere,1
+Continuous time-series data,bakeout temperature of 31# tuyere,1
+Continuous time-series data,bakeout temperature of 32# tuyere,1
+Continuous time-series data,Zone 1 flow difference,1
+Continuous time-series data,Zone 2 flow difference,1
+Continuous time-series data,Zone 3 flow difference,1
+Continuous time-series data,Zone 4 flow difference,1
+Continuous time-series data,Zone 5 flow difference,1
+Continuous time-series data,Zone 6 flow difference,1
+Continuous time-series data,Zone 7 flow difference,1
+Continuous time-series data,Zone 8 flow difference,1
+Continuous time-series data,Zone 9 flow difference,1
+Continuous time-series data,Zone 10 flow difference,1
+Continuous time-series data,Zone 11 flow difference,1
+Continuous time-series data,Zone 12 flow difference,1
+Continuous time-series data,Zone 13 flow difference,1
+Continuous time-series data,Flow rate of return water branch pipe in zone 1,1
+Continuous time-series data,Pressure of return water branch pipe in zone 1,1
+Continuous time-series data,Flow rate of return water branch pipe in zone 2,1
+Continuous time-series data,Pressure of return water branch pipe in zone 2,1
+Continuous time-series data,Flow rate of return water branch pipe in zone 3,1
+Continuous time-series data,Pressure of return water branch pipe in zone 3,1
+Continuous time-series data,Flow rate of return water branch pipe in zone 4,1
+Continuous time-series data,Pressure of return water branch pipe in zone 4,1
+Continuous time-series data,Flow Rate of return water branch pipe in zone 5,1
+Continuous time-series data,Pressure of return water branch pipe in zone 5,1
+Continuous time-series data,Flow rate of return water branch pipe in zone 6,1
+Continuous time-series data,Pressure of return water branch pipe in zone 6,1
+Continuous time-series data,Flow rate of return water branch pipe in zone 7,1
+Continuous time-series data,Pressure of return water branch pipe in zone 7,1
+Continuous time-series data,Flow rate of return water branch pipe in zone 8,1
+Continuous time-series data,Pressure of return water branch pipe in zone 8,1
+Continuous time-series data,Flow rate of return water branch pipe in zone 9,1
+Continuous time-series data,Pressure of return water branch pipe in zone 9,1
+Continuous time-series data,Flow rate of return water branch pipe in zone 10,1
+Continuous time-series data,Pressure of return water branch pipe in zone 10,1
+Continuous time-series data,Flow rate of return water branch pipe in zone 11,1
+Continuous time-series data,Pressure of return water branch pipe in zone 11,1
+Continuous time-series data,Flow rate of return water branch pipe in zone 12,1
+Continuous time-series data,Pressure of return water branch pipe in zone 12,1
+Continuous time-series data,Flow rate of return water branch pipe in zone 13,1
+Continuous time-series data,Pressure of return water branch pipe in zone 13,1
+Continuous time-series data,Flow rate of 1# main return water pipe,1
+Continuous time-series data,Pressure of 1# main return water pipe,1
+Continuous time-series data,Temperature of 1# main return water pipe,2
+Continuous time-series data,Flow rate of 2# main return water pipe,1
+Continuous time-series data,Pressure of 2# main return water pipe,1
+Continuous time-series data,Temperature of 2# main return water pipe,2
+Continuous time-series data,Flow rate of supply water branch pipe in zone 1,1
+Continuous time-series data,Flow rate of supply water branch pipe in zone 2,1
+Continuous time-series data,Flow rate of supply water branch pipe in zone 3,1
+Continuous time-series data,Flow rate of supply water branch pipe in zone 4,1
+Continuous time-series data,Flow rate of supply water branch pipe in zone 5,1
+Continuous time-series data,Flow rate of supply water branch pipe in zone 6,1
+Continuous time-series data,Flow rate of supply water branch pipe in zone 7,1
+Continuous time-series data,Flow rate of supply water branch pipe in zone 8,1
+Continuous time-series data,Flow rate of supply water branch pipe in zone 9,1
+Continuous time-series data,Flow rate of supply water branch pipe in zone 10,1
+Continuous time-series data,Flow rate of supply water branch pipe in zone 11,1
+Continuous time-series data,Flow rate of supply water branch pipe in zone 12,1
+Continuous time-series data,Flow rate of supply water branch pipe in zone 13,1
+Continuous time-series data,Water flow rate of inlet about stop-wind valve,1
+Continuous time-series data,Water flow rate of outlet about stop-wind valve,1
+Continuous time-series data,Water flow rate of inlet about 1# hot blast valve,1
+Continuous time-series data,Water flow rate of outlet about 1# hot blast valve,1
+Continuous time-series data,Water temperature of outlet about 1# hot blast valve,1
+Continuous time-series data,Water flow rate of inlet about 2# hot blast valve,1
+Continuous time-series data,Water flow rate of outlet about 2# hot blast valve,1
+Continuous time-series data,Water temperature of outlet about 2# hot blast valve,1
+Continuous time-series data,Water flow rate of inlet about 3# hot blast valve,1
+Continuous time-series data,Water flow rate of outlet about 3# hot blast valve,1
+Continuous time-series data,Water temperature of outlet about 3# hot blast valve,1
+Continuous time-series data,Temperature of main return water pipe,1
+Continuous time-series data,Flow rate of main return water pipe,1
+Continuous time-series data,Temperature of main supply water pipe,1
+Continuous time-series data,Pressure of main supply water pipe,1
+Continuous time-series data,Flow rate of main supply water pipe,1
+Continuous time-series data,Pressure of booster pump,1
+Continuous time-series data,Flow rate of booster pump,1
+Constraint data,Upper limit setpoint of water flow about main pipe inlet,1
+Constraint data,Lower limit setpoint of water flow about main pipe inlet,1
+Constraint data,Upper limit setpoint of return water flow about main pipe,1
+Constraint data,Lower limit setpoint of return water flow about main pipe,1
+Constraint data,Upper limit setpoint of water pressure about main pipe inlet,1
+Constraint data,Lower limit setpoint of water pressure about main pipe inlet,1
+Constraint data,Upper limit setpoint of water temperature about main pipe inlet,1
+Constraint data,Lower limit setpoint of water temperature about main pipe inlet,1
+Constraint data,Lower limit setpoint of water supply flow about stop-wind valve,1
+Constraint data,Lower limit setpoint of return water flow about stop-wind valve,1
+Constraint data,Lower limit setpoint of water supply flow about 1# hot blast valve,1
+Constraint data,Lower limit setpoint of water supply flow about 2# hot blast valve,1
+Constraint data,Lower limit setpoint of water supply flow about 3# hot blast valve,1
+Constraint data,Lower limit setpoint of return water flow about 1# hot blast valve,1
+Constraint data,Lower limit setpoint of return water flow about 2# hot blast valve,1
+Constraint data,Lower limit setpoint of return water flow about 3# hot blast valve,1
+Constraint data,Upper limit setpoint of return water temperature about 1# hot blast valve,1
+Constraint data,Upper limit setpoint of return water temperature about 2# hot blast valve,1
+Constraint data,Upper limit setpoint of return water temperature about 3# hot blast valve,1
+Constraint data,Upper limit setpoint of pressure about expansion tank,1
+Constraint data,Lower limit setpoint of pressure about expansion tank,1
+Constraint data,Upper limit setpoint of temperature about expansion tank,1
+Continuous time-series data,Temperature of 1# main pipe,2
+Continuous time-series data,Flow rate of 1# main pipe,2
+Continuous time-series data,Pressure of 1# main pipe,1
+Continuous time-series data,Temperature of 2# main pipe,2
+Continuous time-series data,Flow rate of 2# main pipe,2
+Continuous time-series data,Pressure of 2# main pipe,1
+Continuous time-series data,Pressure of return water ring pipe,1
+Continuous time-series data,Temperature of return water ring pipe,1
+Continuous time-series data,Pressure of return water pipe about 1# “tuyere – outer”,1
+Continuous time-series data,Flow rate of return water pipe about 1# “tuyere – outer”,1
+Continuous time-series data,Temperature of return water pipe about 1# “tuyere – outer”,1
+Continuous time-series data,Pressure of return water pipe about 2# “tuyere – outer”,1
+Continuous time-series data,Flow rate of return water pipe about 2# “tuyere – outer”,1
+Continuous time-series data,Temperature of return water pipe about 2# “tuyere – outer”,1
+Continuous time-series data,Pressure of return water pipe about 1# “tuyere – midrange”,1
+Continuous time-series data,Flow rate of return water pipe about 1# “tuyere –midrange”,1
+Continuous time-series data,Temperature of return water pipe about 1# “tuyere –midrange”,1
+Continuous time-series data,Pressure of return water pipe about 2# “tuyere – midrange”,1
+Continuous time-series data,Flow rate of return water pipe about 2# “tuyere –midrange”,1
+Continuous time-series data,Temperature of return water pipe about 2# “tuyere –midrange”,1
+Continuous time-series data,Pressure of return water pipe about 3# “tuyere – midrange”,1
+Continuous time-series data,Flow rate of return water pipe about 3# “tuyere –midrange”,1
+Continuous time-series data,Temperature of return water pipe about 3# “tuyere –midrange”,1
+Continuous time-series data,Pressure of return water pipe about 4# “tuyere – midrange”,1
+Continuous time-series data,Flow rate of return water pipe about 4# “tuyere –midrange”,1
+Continuous time-series data,Temperature of return water pipe about 4# “tuyere –midrange”,1
+Continuous time-series data,Pressure of furnace front water supply pipe,1
+Continuous time-series data,Flow rate of furnace front water supply pipe,1
+Continuous time-series data,Pressure of supply water ring pipe,1
+Continuous time-series data,Temperature of supply water ring pipe,1
+Continuous time-series data,Pressure of furnace bottom water-cooled pipe,1
+Continuous time-series data,Flow rate of furnace bottom water-cooled pipe,1
+Continuous time-series data,Pressure of supply water pipe about 1# “tuyere – outer”,1
+Continuous time-series data,Flow rate of supply water pipe about 1# “tuyere – outer”,1
+Continuous time-series data,Temperature of supply water pipe about 1# “tuyere – outer”,1
+Continuous time-series data,Pressure of supply water pipe about 2# “tuyere – outer”,1
+Continuous time-series data,Flow rate of supply water pipe about 2# “tuyere – outer”,1
+Continuous time-series data,Temperature of supply water pipe about 2# “tuyere – outer”,1
+Continuous time-series data,Flow Rate of 1# bypass pipe,1
+Continuous time-series data,Flow Rate of 2# bypass pipe,1
+Continuous time-series data,Flow rate of supply water pipe about 1# “tuyere –midrange”,1
+Continuous time-series data,Flow rate of supply water pipe about 2# “tuyere –midrange”,1
+Continuous time-series data,Flow rate of supply water pipe about 3# “tuyere –midrange”,1
+Continuous time-series data,Flow rate of supply water pipe about 4# “tuyere –midrange”,1
+Continuous time-series data,Water flow rate of inlet about “1#→8#” tuyere,1
+Continuous time-series data,Water flow rate of inlet about “9#→16#” tuyere,1
+Continuous time-series data,Water flow rate of inlet about “17#→24#” tuyere,1
+Continuous time-series data,Water flow rate of inlet about “25#→32#” tuyere,1
+Continuous time-series data,Pressure of 1# main water supply pipe,1
+Continuous time-series data,Flow rate of 1# main water supply pipe,1
+Continuous time-series data,Temperature of 1# main water supply pipe,1
+Continuous time-series data,Pressure of 2# main water supply pipe,1
+Continuous time-series data,Flow rate of 2# main water supply pipe,1
+Continuous time-series data,Temperature of 2# main water supply pipe,1
+Continuous time-series data,Flow rate of cooling water supply pipe about 1# furnace throat steel brick,1
+Continuous time-series data,Flow rate of cooling water supply pipe about 2# furnace throat steel brick,1
+Continuous time-series data,Flow rate of furnace top water injection,3
+Batch time-series data,Tumbler index,2
+Batch time-series data,Screening index,1
+Batch time-series data,Abrasion index,2
+Batch time-series data,Compressive strength,1
+Batch time-series data,TFe/Iron grade,2
+Batch time-series data,FeO content,3
+Batch time-series data,CaO content,3
+Batch time-series data,MgO content,3
+Batch time-series data,Al2O3 content,3
+Batch time-series data,SiO2 content,3
+Batch time-series data,R2/Binary basicity,3
+Batch time-series data,TiO2 content,3
+Batch time-series data,P content,3
+Batch time-series data,Moisture content,2
+Batch time-series data,Calorific value,1
+Batch time-series data,Mad (Air-dried basis moisture),2
+Batch time-series data,H2O content,2
+Batch time-series data,R200 (Proportion of fine particles),1
+Batch time-series data,Carbon content,2
+Batch time-series data,A (Ash content),2
+Batch time-series data,V (Volatile matter content),2
+Batch time-series data,Sulfur content,2
+Batch time-series data,M40 (Proportion of fine particles),1
+Batch time-series data,M10 (Proportion of fine particles),1
+Batch time-series data,CRI (Reactivity index),1
+Batch time-series data,CSR (Strength after reaction),1
+Continuous time-series data,Proportion of <5mm,2
+Continuous time-series data,Proportion of 5~8mm,1
+Continuous time-series data,Proportion of 8~10mm,1
+Continuous time-series data,Proportion of 10~12.5mm,1
+Continuous time-series data,Proportion of 12.5~16mm,1
+Continuous time-series data,Proportion of >16mm,1
+Continuous time-series data,Average particle size,3
+Image data,Additional storage templates,5
+Continuous time-series data,Proportion of <25mm,1
+Continuous time-series data,Proportion of 25~40mm,2
+Continuous time-series data,Proportion of 40~60mm,1
+Continuous time-series data,Proportion of 60~80mm,1
+Continuous time-series data,Proportion of >80mm,1
+Continuous time-series data,Proportion of 5~10mm,1
+Continuous time-series data,Proportion of 10~16mm,1
+Continuous time-series data,Proportion of 16~25mm,1
+Continuous time-series data,Proportion of >40mm,1
+Continuous time-series data,Pressure of hydraulic station at furnace top,1
+Continuous time-series data,Pressure of hydraulic station at ore hopper,1
+Continuous time-series data,Temperature of upper seal valve,1
+Continuous time-series data,Temperature of lower seal valve,1
+Continuous time-series data,Flow rate of nitrogen about gas-tight box,2
+Continuous time-series data,Temperature of valve box,3
+Continuous time-series data,Liquid level of hydraulic station at furnace top,1
+Continuous time-series data,Liquid level of hydraulic station at ore hopper,1
+Continuous time-series data,Flow rate of circulation water about gas-tight box,1
+Continuous time-series data,Temperature A of gas-tight box,2
+Continuous time-series data,Temperature B of gas-tight box,2
+Continuous time-series data,Temperature C of gas-tight box,2
+Discrete time-series data,Weight of 1# feed bin (Silica stone),1
+Discrete time-series data,Weight of 2# feed bin (Manganese ore),1
+Discrete time-series data,Weight of 3# feed bin (Lump ore),1
+Discrete time-series data,Weight of 4# feed bin (Lump ore),1
+Discrete time-series data,Weight of 5# feed bin (Pellet),1
+Discrete time-series data,Weight of 6# feed bin (Pellet),1
+Discrete time-series data,Weight of 7# feed bin (Pellet),1
+Discrete time-series data,Weight of 8# feed bin (Pellet),1
+Discrete time-series data,Weight of 9# feed bin (Pellet),1
+Discrete time-series data,Weight of 10# feed bin (Pellet),1
+Discrete time-series data,Weight of 11# feed bin (Sinter),1
+Discrete time-series data,Weight of 12# feed bin (Sinter),1
+Discrete time-series data,Weight of 13# feed bin (Sinter),1
+Discrete time-series data,Weight of 14# feed bin (Sinter),1
+Discrete time-series data,Weight of 15# feed bin (Sinter),1
+Discrete time-series data,Weight of 16# feed bin (Sinter),1
+Discrete time-series data,Weight of 1# feed bin,1
+Discrete time-series data,Weight of 2# feed bin,1
+Discrete time-series data,Weight of 3# feed bin,1
+Discrete time-series data,Weight of 4# feed bin,1
+Discrete time-series data,Weight of 5# feed bin,1
+Discrete time-series data,Weight of 6# feed bin,1
+Discrete time-series data,Weight of 7# feed bin (Nut coke),1
+Discrete time-series data,Times of coke insertion per day,1
+Discrete time-series data,Batch loading count of ore,1
+Discrete time-series data,Batch loading count of coke,1
+Discrete time-series data,Delay of ore discharge,1
+Discrete time-series data,Delay of nut coke discharge,1
+Controllable data,Operation mode of charging,1
+Controllable data,Type of central charging - coke,1
+Controllable data,Prohibition mode of coke charging,1
+Controllable data,Prohibition mode of coal insertion,1
+Controllable data,Type of central charging - ore,1
+Controllable data,Prohibition mode of ore charging,1
+Controllable data,Prohibition Mode of materials discharging,1
+Controllable data,Unlock about belt and gate,1
+Controllable data,Furnace top reset,1
+Binary status data,Material-chasing mode at furnace top,1
+Binary status data,Manual mode of material request,1
+Binary status data,Prohibition Mode of materials discharging,1
+Continuous time-series data,Number of charging rounds,2
+Continuous time-series data,Rotation speed of charging rounds,1
+Continuous time-series data,Stepping angle,1
+Continuous time-series data,Reversal batch count,1
+Discrete time-series data,Daily total batch loading count of ore,1
+Discrete time-series data,Previous day total batch loading count of ore,1
+Discrete time-series data,Daily total batch loading count of coke,1
+Discrete time-series data,Previous day total batch loading count of coke,1
+Continuous time-series data,Height of left probe,1
+Continuous time-series data,Height of right probe,1
+Continuous time-series data,Current of left probe,1
+Continuous time-series data,Current of right probe,1
+Discrete time-series data,Upper limit value of height about left probe,1
+Discrete time-series data,Upper limit value of height about right probe,1
+Discrete time-series data,Lower limit value of height about left probe,1
+Discrete time-series data,Lower limit value of height about right probe,1
+Constraint data,Gear of α-1,2
+Constraint data,Gear of α-2,2
+Constraint data,Gear of α-3,2
+Constraint data,Gear of α-4,2
+Constraint data,Gear of α-5,2
+Constraint data,Gear of α-6,2
+Constraint data,Gear of α-7,2
+Constraint data,Gear of α-8,2
+Constraint data,Gear of α-9,2
+Constraint data,Gear of α-10,2
+Constraint data,Gear of α-11,2
+Constraint data,Gear of α-12,2
+Constraint data,Gear of β-1,2
+Constraint data,Gear of β-2,2
+Constraint data,Gear of β-3,2
+Constraint data,Gear of β-4,2
+Constraint data,Gear of β-5,2
+Constraint data,Gear of β-6,2
+Constraint data,Gear of β-7,2
+Constraint data,Gear of β-8,2
+Constraint data,Gear of β-9,2
+Constraint data,Gear of β-10,2
+Constraint data,Gear of β-11,2
+Constraint data,Gear of β-12,2
+Constraint data,Weight of gear 1,2
+Constraint data,Weight of gear 2,2
+Constraint data,Weight of gear 3,2
+Constraint data,Weight of gear 4,2
+Constraint data,Weight of gear 5,2
+Constraint data,Weight of gear 6,2
+Constraint data,Weight of gear 7,2
+Constraint data,Weight of gear 8,2
+Constraint data,Weight of gear 9,2
+Constraint data,Weight of gear 10,2
+Constraint data,Weight of gear 11,2
+Constraint data,Weight of gear 12,2
+Continuous time-series data,1# Ring-Temperature monitoring value - A1,1
+Continuous time-series data,1# Ring-Temperature monitoring value – A2,1
+Continuous time-series data,1# Ring-Temperature monitoring value – A3,1
+Continuous time-series data,1# Ring-Temperature monitoring value – A4,1
+Continuous time-series data,2# Ring-Temperature monitoring value - B1,1
+Continuous time-series data,2# Ring-Temperature monitoring value – B2,1
+Continuous time-series data,2# Ring-Temperature monitoring value – B3,1
+Continuous time-series data,2# Ring-Temperature monitoring value – B4,1
+Discrete time-series data,Temperature of hot metal about 1# taphole,1
+Discrete time-series data,Temperature of hot metal about 2# taphole,1
+Discrete time-series data,Temperature of hot metal about 3# taphole,1
+Discrete time-series data,Temperature of hot metal about 4# taphole,1
+Batch time-series data,Temperature of 1# taphole,1
+Batch time-series data,Temperature of 2# taphole,1
+Batch time-series data,Temperature of 3# taphole,1
+Batch time-series data,Temperature of 4# taphole,1
+Batch time-series data,Opening time of 1# taphole,1
+Batch time-series data,Slag arrival time of 1# taphole,1
+Batch time-series data,blockage time of 1# taphole,1
+Batch time-series data,Slag appearance rate of 1# taphole,1
+Batch time-series data,Physical heat of 1# taphole,1
+Batch time-series data,Total tapping time of 1# taphole,1
+Batch time-series data,Diameter of 1# taphole,1
+Batch time-series data,Angle of 1# taphole,1
+Batch time-series data,Depth of 1# taphole,1
+Batch time-series data,Mud amount injected of 1# taphole,1
+Batch time-series data,Drill bit diameter of 1# taphole,1
+Batch time-series data,Temperature of hot metal at 1# taphole,1
+Batch time-series data,Previous temperature of hot metal at 1# taphole,1
+Batch time-series data,Estimated yield of hot metal about 1# taphole,1
+Batch time-series data,Total weight through the pump at 1# taphole,1
+Batch time-series data,Yield deviation of hot metal at 1# taphole,1
+Batch time-series data,Estimated slag volume about 1# taphole,1
+Batch time-series data,Opening time of 2# taphole,1
+Batch time-series data,Slag arrival time of 2# taphole,1
+Batch time-series data,blockage time of 2# taphole,1
+Batch time-series data,Slag appearance rate of 2# taphole,1
+Batch time-series data,Physical heat of 2# taphole,1
+Batch time-series data,Total tapping time of 2# taphole,1
+Batch time-series data,Diameter of 2# taphole,1
+Batch time-series data,Angle of 2# taphole,1
+Batch time-series data,Depth of 2# taphole,1
+Batch time-series data,Mud amount injected of 2# taphole,1
+Batch time-series data,Drill bit diameter of 2# taphole,1
+Batch time-series data,Temperature of hot metal at 2# taphole,1
+Batch time-series data,Previous temperature of hot metal at 2# taphole,1
+Batch time-series data,Estimated yield of hot metal about 2# taphole,1
+Batch time-series data,Total weight through the pump at 2# taphole,1
+Batch time-series data,Yield deviation of hot metal at 2# taphole,1
+Batch time-series data,Estimated slag volume about 2# taphole,1
+Batch time-series data,Opening time of 3# taphole,1
+Batch time-series data,Slag arrival time of 3# taphole,1
+Batch time-series data,blockage time of 3# taphole,1
+Batch time-series data,Slag appearance rate of 3# taphole,1
+Batch time-series data,Physical heat of 3# taphole,1
+Batch time-series data,Total tapping time of 3# taphole,1
+Batch time-series data,Diameter of 3# taphole,1
+Batch time-series data,Angle of 3# taphole,1
+Batch time-series data,Depth of 3# taphole,1
+Batch time-series data,Mud amount injected of 3# taphole,1
+Batch time-series data,Drill bit diameter of 3# taphole,1
+Batch time-series data,Temperature of hot metal at 3# taphole,1
+Batch time-series data,Previous temperature of hot metal at 3# taphole,1
+Batch time-series data,Estimated yield of hot metal about 3# taphole,1
+Batch time-series data,Total weight through the pump at 3# taphole,1
+Batch time-series data,Yield deviation of hot metal at 3# taphole,1
+Batch time-series data,Estimated slag volume about 3# taphole,1
+Batch time-series data,Opening time of 4# taphole,1
+Batch time-series data,Slag arrival time of 4# taphole,1
+Batch time-series data,blockage time of 4# taphole,1
+Batch time-series data,Slag appearance rate of 4# taphole,1
+Batch time-series data,Physical heat of 4# taphole,1
+Batch time-series data,Total tapping time of 4# taphole,1
+Batch time-series data,Diameter of 4# taphole,1
+Batch time-series data,Angle of 4# taphole,1
+Batch time-series data,Depth of 4# taphole,1
+Batch time-series data,Mud amount injected of 4# taphole,1
+Batch time-series data,Drill bit diameter of 4# taphole,1
+Batch time-series data,Temperature of hot metal at 4# taphole,1
+Batch time-series data,Previous temperature of hot metal at 4# taphole,1
+Batch time-series data,Estimated yield of hot metal about 4# taphole,1
+Batch time-series data,Total weight through the pump at 4# taphole,1
+Batch time-series data,Yield deviation of hot metal at 4# taphole,1
+Batch time-series data,Estimated slag volume about 4# taphole,1
+Batch time-series data,Si content,1
+Batch time-series data,S content,2
+Batch time-series data,Ti content,1
+Batch time-series data,C content,1
+Batch time-series data,V content,1
+Batch time-series data,Cr content,1
+Batch time-series data,Mn content,1
+Batch time-series data,Fe content,1
+Batch time-series data,MnO content,1
+Batch time-series data,R3/Ternary basicity,1
+Batch time-series data,R4/Quaternary basicity,1
+Batch time-series data,Ls (Sulfur partition coefficient),1
+Continuous time-series data,Pressure of 1# pulverized coal injection pipe,1
+Continuous time-series data,Pressure of 2# pulverized coal injection pipe,1
+Continuous time-series data,Pressure of 3# pulverized coal injection pipe,1
+Continuous time-series data,Pressure of 4# pulverized coal injection pipe,1
+Continuous time-series data,Pressure of 5# pulverized coal injection pipe,1
+Continuous time-series data,Pressure of 6# pulverized coal injection pipe,1
+Continuous time-series data,Pressure of 7# pulverized coal injection pipe,1
+Continuous time-series data,Pressure of 8# pulverized coal injection pipe,1
+Continuous time-series data,Pressure of 9# pulverized coal injection pipe,1
+Continuous time-series data,Pressure of 10# pulverized coal injection pipe,1
+Continuous time-series data,Pressure of 11# pulverized coal injection pipe,1
+Continuous time-series data,Pressure of 12# pulverized coal injection pipe,1
+Continuous time-series data,Pressure of 13# pulverized coal injection pipe,1
+Continuous time-series data,Pressure of 14# pulverized coal injection pipe,1
+Continuous time-series data,Pressure of 15# pulverized coal injection pipe,1
+Continuous time-series data,Pressure of 16# pulverized coal injection pipe,1
+Continuous time-series data,Pressure of 17# pulverized coal injection pipe,1
+Continuous time-series data,Pressure of 18# pulverized coal injection pipe,1
+Continuous time-series data,Pressure of 19# pulverized coal injection pipe,1
+Continuous time-series data,Pressure of 20# pulverized coal injection pipe,1
+Continuous time-series data,Pressure of 21# pulverized coal injection pipe,1
+Continuous time-series data,Pressure of 22# pulverized coal injection pipe,1
+Continuous time-series data,Pressure of 23# pulverized coal injection pipe,1
+Continuous time-series data,Pressure of 24# pulverized coal injection pipe,1
+Continuous time-series data,Pressure of 25# pulverized coal injection pipe,1
+Continuous time-series data,Pressure of 26# pulverized coal injection pipe,1
+Continuous time-series data,Pressure of 27# pulverized coal injection pipe,1
+Continuous time-series data,Pressure of 28# pulverized coal injection pipe,1
+Continuous time-series data,Pressure of 29# pulverized coal injection pipe,1
+Continuous time-series data,Pressure of 30# pulverized coal injection pipe,1
+Continuous time-series data,Pressure of 31# pulverized coal injection pipe,1
+Continuous time-series data,Pressure of 32# pulverized coal injection pipe,1
+Continuous time-series data,Pressure of outlet about injection tank,1
+Continuous time-series data,Pressure of main injection pipe,1
+Continuous time-series data,Pressure of distributor - 1,1
+Continuous time-series data,Pressure of distributor - 2,1
+Continuous time-series data,Weight of pulverized coal of 1# injection tank,1
+Continuous time-series data,Weight of pulverized coal of 2# injection tank,1
+Continuous time-series data,Weight of pulverized coal of 3# injection tank,1
+Discrete time-series data,Hourly volume of pulverized coal injection,1
+Discrete time-series data,Flow rate of secondary supplemental air about pulverized coal injection,1
+Controllable data,Weight setpoint value of hourly volume of pulverized coal injection,1
+Continuous time-series data,CO content,1
+Continuous time-series data,CH4 content,1
+Continuous time-series data,H2 content,1
+Continuous time-series data,CO2 content,1
+Continuous time-series data,N2 content,1
+Continuous time-series data,Gas utilization rate,1
+Continuous time-series data,Stockline level,1
+Continuous time-series data,Temperature of upper seal seat ring,1
+Continuous time-series data,Temperature of lower seal seat ring,1
+Continuous time-series data,Liquid level of oil tank in hydraulic station,1
+Continuous time-series data,Temperature of oil tank in hydraulic station,1
+Continuous time-series data,Temperature of secondary equalizing pressure about nitrogen,1
+Continuous time-series data,Temperature of furnace top steam,2
+Continuous time-series data,Weighing net weight,1
+Continuous time-series data,Pressure of secondary equalizing pressure about nitrogen,1
+Continuous time-series data,Pressure of hoisting bucket,1
+Continuous time-series data,Pressure of 1# valve box,1
+Continuous time-series data,Pressure of 2# valve box,1
+Continuous time-series data,Differential pressure of valve box,1
+Continuous time-series data,Pressure of main helium pipe,1
+Continuous time-series data,Pressure of furnace top steam,2
+Continuous time-series data,Flow rate secondary equalizing pressure about nitrogen,1
+Continuous time-series data,Pressure of 1# hoisting bucket,1
+Continuous time-series data,Pressure of 2# hoisting bucket,1
+Continuous time-series data,Pressure of furnace top,4
+Continuous time-series data,Flow rate of nitrogen to gas-tight box,2
+Continuous time-series data,Flow rate of nitrogen to lower seal box,1
+Continuous time-series data,Pressure of nitrogen to gas-tight box,2
+Continuous time-series data,Pressure of nitrogen pipe about lower valve box,1
+Continuous time-series data,Temperature of nitrogen to lower seal box,1
+Discrete time-series data,Daily total batch count of coke,1
+Discrete time-series data,Daily total batch count of ore,1
+Discrete time-series data,Upper limit value of stockline height,1
+Discrete time-series data,Lower limit value of stockline height,1
+Continuous time-series data,Opening of flow control valve for secondary equalizing pressure,1
+Continuous time-series data,Opening of pressure control valve for steam,1
+Binary status data,Enable mode for main pump local control,1
+Binary status data,Enable mode for valve remote control,1
+Binary status data,Ultimate lower limit value of oil level,1
+Binary status data,Lower limit value of oil level,1
+Binary status data,Upper limit value of oil level,1
+Binary status data,1# circulation oil filter clogged,1
+Binary status data,2# circulation oil filter clogged,1
+Binary status data,Ultimate upper limit value of oil temperature,1
+Binary status data,Upper limit value of oil temperature,1
+Binary status data,Lower limit value of oil temperature,1
+Binary status data,Ultimate lower limit value of oil temperature,1
+Binary status data,Fault of hydraulic station,1
+Binary status data,Pump stop due to low level,1
+Binary status data,Pump stop due to high temperature,1
+Binary status data,Pump stop due to low temperature,1
+Binary status data,Pump stop due to high pressure,1
+Binary status data,Pump stop due to low pressure,1
+Binary status data,Low pressure of furnace top accumulator,1
+Binary status data,Low pressure of furnace top nitrogen,1
+Binary status data,Low pressure of blow-off valve accumulator,1
+Binary status data,Low nitrogen pressure A of blow-off valve,1
+Binary status data,Low nitrogen pressure B of blow-off valve,1
+Binary status data,Fault of 1# motor,1
+Binary status data,Fault of 2# motor,1
+Binary status data,Ultimate upper limit value of system pressure,1
+Continuous time-series data,Pressure of accumulator,1
+Continuous time-series data,Pressure of nitrogen,1
+Continuous time-series data,Pressure of blow-off valve accumulator,1
+Continuous time-series data,Nitrogen pressure of 1# blow-off valve,1
+Continuous time-series data,Nitrogen pressure of 2# blow-off valve,1
+Continuous time-series data,System pressure of hydraulic station,1
+Continuous time-series data,Current of 1# motor,1
+Continuous time-series data,Current of 2# motor,1
+Continuous time-series data,Current of motor of circulation pump,1
+Continuous time-series data,Liquid level of hydraulic station oil tank,1
+Continuous time-series data,Temperature of hydraulic station oil tank,1
+Binary status data,Fault of 1# oil pump,1
+Binary status data,Fault of 2# oil pump,1
+Binary status data,Fault of circulation pump,1
+Binary status data,Upper Limit value of pressure of hydraulic station,1
+Binary status data,Lower Limit value of pressure of hydraulic station,1
+Binary status data,Upper Limit value of temperature of hydraulic station,1
+Binary status data,Lower Limit value of temperature of hydraulic station,1
+Binary status data,Lower Limit value of liquid level of hydraulic station,1
+Binary status data,Ultimate lower limit value of liquid level of hydraulic station,1
+Binary status data,Alarm for differential pressure of filter,1
+Binary status data,Alarm for power failure,1
+Controllable data,Running of 1# oil pump,1
+Controllable data,Running of 2# oil pump,1
+Controllable data,Running of circulation pump,1
+Controllable data,Running of heater,1
+Continuous time-series data,System pressure,1
+Continuous time-series data,System liquid level,1
+Continuous time-series data,System temperature,1
+Constraint data,Lower limit setpoint value of pressure,1
+Constraint data,Upper limit setpoint value of pressure,1
+Constraint data,Lower limit setpoint value of temperature,1
+Constraint data,Upper limit setpoint value of temperature,1
+Constraint data,Upper limit setpoint value of liquid level,1
+Constraint data,Lower limit setpoint value of liquid level,1
+Continuous time-series data,Temperature of riser conduit (Southeast),1
+Continuous time-series data,Temperature of riser conduit (Southwest),1
+Continuous time-series data,Temperature of riser conduit (Northwest),1
+Continuous time-series data,Temperature of riser conduit (Northeast),1
+Continuous time-series data,Mean temperature of furnace top,1
+Binary status data,Fault of 1# pump,1
+Binary status data,Fault of 2# pump,1
+Binary status data,Fault of make-up water pump,1
+Binary status data,Emergency stop of ESD,1
+Binary status data,Switch closing of normal power,1
+Binary status data,Switch closing of standby power,1
+Binary status data,Auto mode of 1# make-up water shut-off valve,1
+Binary status data,Auto mode of 2# make-up water shut-off valve,1
+Binary status data,Auto mode of 3# drain ditch shut-off valve,1
+Binary status data,Manual mode of 1# make-up water shut-off valve,1
+Binary status data,Manual mode of 2# make-up water shut-off valve,1
+Binary status data,Manual mode of 3# drain ditch shut-off valve,1
+Binary status data,Alarm for 1# low liquid level,1
+Binary status data,Alarm for 2# low liquid level,1
+Binary status data,Switch of flow,1
+Continuous time-series data,Temperature of nitrogen to gas-tight box,1
+Continuous time-series data,Temperature of water about gearbox outlet,1
+Continuous time-series data,Temperature of heater inlet,1
+Continuous time-series data,Temperature of 1# gas-tight box,2
+Continuous time-series data,Temperature of 2# gas-tight box,2
+Continuous time-series data,Temperature of 3# gas-tight box,2
+Continuous time-series data,Pressure of gas-tight box,1
+Continuous time-series data,Flow rate of return water about soft water-cooling plate,1
+Continuous time-series data,Flow rate of soft water to gas-tight box,1
+Continuous time-series data,Temperature of water about gearbox inlet,1
+Continuous time-series data,pH value of circulation water,1
+Continuous time-series data,Flow rate of soft water make-up,1
+Continuous time-series data,Flow rate of return industrial cooling water,1
+Discrete time-series data,Daily total flow rate of soft water cooling,1
+Discrete time-series data,Monthly total flow rate of soft water cooling,1
+Discrete time-series data,Daily total auto water injection count by make-up shut-off valve,1
+Discrete time-series data,Daily total manual water injection count by make-up shut-off valve,1
+Continuous time-series data,Center temperature-A0,1
+Continuous time-series data,1# Southeast temperature,1
+Continuous time-series data,2# Southeast temperature,1
+Continuous time-series data,3# Southeast temperature,1
+Continuous time-series data,4# Southeast temperature,1
+Continuous time-series data,5# Southeast temperature,1
+Continuous time-series data,6# Southeast temperature,1
+Continuous time-series data,7# Southeast temperature,1
+Continuous time-series data,1# Southwest temperature,1
+Continuous time-series data,2# Southwest temperature,1
+Continuous time-series data,3# Southwest temperature,1
+Continuous time-series data,4# Southwest temperature,1
+Continuous time-series data,5# Southwest temperature,1
+Continuous time-series data,6# Southwest temperature,1
+Continuous time-series data,7# Southwest temperature,1
+Continuous time-series data,1# Northwest temperature,1
+Continuous time-series data,2# Northwest temperature,1
+Continuous time-series data,3# Northwest temperature,1
+Continuous time-series data,4# Northwest temperature,1
+Continuous time-series data,5# Northwest temperature,1
+Continuous time-series data,6# Northwest temperature,1
+Continuous time-series data,7# Northwest temperature,1
+Continuous time-series data,1# Northeast temperature,1
+Continuous time-series data,2# Northeast temperature,1
+Continuous time-series data,3# Northeast temperature,1
+Continuous time-series data,4# Northeast temperature,1
+Continuous time-series data,5# Northeast temperature,1
+Continuous time-series data,6# Northeast temperature,1
+Continuous time-series data,7# Northeast temperature,1
+Continuous time-series data,Southeast pressure,1
+Continuous time-series data,Southwest pressure,1
+Continuous time-series data,Northwest pressure,1
+Continuous time-series data,Northeast pressure,1
+Discrete time-series data,Opening of remote-control valve,1
+Discrete time-series data,Opening of range valve,1
+Discrete time-series data,Opening of automatic valve,1
+Discrete time-series data,Opening of quick-opening valve,1
+Discrete time-series data,Opening of stator vane,1
+Controllable data,Mode of remote-control valve,1
+Controllable data,Mode of range valve,1
+Controllable data,Mode of automatic valve,1
+Controllable data,Mode of quick-opening valve,1
+Controllable data,Mode of timed back-blowing,1
+Controllable data,Mode of differential pressure back-blowing,1
+Controllable data,Mode of manual back-blowing,1
+Controllable data,Mode emergency manual,1
+Controllable data,Mode of system idle,1
+Binary status data,Start of 1# blow-off pipe,1
+Binary status data,Start of 2# blow-off pipe,1
+Binary status data,Start of 3# blow-off pipe,1
+Binary status data,Dedusting valve of furnace top,1
+Binary status data,Start of 250 blow-off pipe,1
+Binary status data,Start of 400 blow-off pipe,1
+Binary status data,Shut-off valve,1
+Binary status data,Running of vibrator,1
+Binary status data,Normal current status of pneumatic valve,1
+Binary status data,Normal status of 1# star valve,1
+Binary status data,Normal status of 2# star valve,1
+Binary status data,Normal status of 1# pneumatic dome valve,1
+Binary status data,Normal status of 2# pneumatic dome valve,1
+Binary status data,Normal status of 1# pneumatic damper valve,1
+Binary status data,Normal status of 2# pneumatic damper valve,1
+Continuous time-series data,Low temperature of lower cone ash level at north side,1
+Continuous time-series data,Low temperature of lower cone ash level at south side,1
+Continuous time-series data,High temperature of lower cone ash level at north side,1
+Continuous time-series data,High temperature of lower cone ash level at south side,1
+Discrete time-series data,Upper limit value of pressure when opening blow-off value,1
+Continuous time-series data,Flow rate of water injection,1
+Discrete time-series data,Flow of accumulated total single water injection,1
+Discrete time-series data,Time of accumulated total single water injection,1
+Discrete time-series data,Accumulated value of daily flow,1
+Binary status data,Summer,1
+Binary status data,Winter,1
+Binary status data,Start of 1# nitrogen valve,1
+Binary status data,Start of 2# nitrogen valve,1
+Binary status data,Start of 1# drain valve,1
+Binary status data,Start of 1# inner ring valve,1
+Binary status data,Start of 2# inner ring valve,1
+Binary status data,Start of main water injection valve,1
+Continuous time-series data,Flow rate of main water injection pipe,1
+Continuous time-series data,Temperature of main water injection pipe,1
+Continuous time-series data,Pressure of main water injection pipe,1
+Binary status data,Start of inner ring,1
+Binary status data,Start of outer ring,1
+Discrete time-series data,Leak detection value of main water injection pipe,1
+Discrete time-series data,Automatic draining time of drain water valve,1
+Constraint data,Single ring setpoint value of water injection for furnace top temperature,1
+Constraint data,Dual ring setpoint value of water injection for furnace top temperature,1
+Constraint data,Setpoint value of Stopping Water Injection,1
+Constraint data,Alarm setpoint value of water injection time,1
+Continuous time-series data,Differential pressure of blast furnace upper section,1
+Continuous time-series data,Differential pressure of blast furnace upper-middle section,1
+Continuous time-series data,Differential pressure of blast furnace middle section,1
+Continuous time-series data,Differential pressure of blast furnace lower section,1
+Continuous time-series data,Whole furnace differential pressure of blast furnace,2
+Continuous time-series data,1# Static pressure of section 11,1
+Continuous time-series data,2# Static pressure of section 11,1
+Continuous time-series data,3# Static pressure of section 11,1
+Continuous time-series data,4# Static pressure of section 11,1
+Continuous time-series data,Static pressure-Average of section 11,1
+Continuous time-series data,1# Static pressure of section 13,1
+Continuous time-series data,2# Static pressure of section 13,1
+Continuous time-series data,3# Static pressure of section 13,1
+Continuous time-series data,4# Static pressure of section 13,1
+Continuous time-series data,Static pressure-Average of section 13,1
+Continuous time-series data,1# Static pressure of section 15,1
+Continuous time-series data,2# Static pressure of section 15,1
+Continuous time-series data,3# Static pressure of section 15,1
+Continuous time-series data,4# Static pressure of section 15,1
+Continuous time-series data,Static pressure-Average of section 15,1
+Discrete time-series data,Theoretical consumption of sinter,1
+Discrete time-series data,Theoretical consumption of basic pellet,1
+Discrete time-series data,Theoretical consumption of acidic pellet,1
+Discrete time-series data,Theoretical consumption of lump ore,1
+Discrete time-series data,Theoretical consumption of hot-pressed lump ore,1
+Discrete time-series data,Ore consumption per ton iron,1
+Discrete time-series data,Theoretical consumption of coke,1
+Discrete time-series data,Theoretical consumption of nut coke,1
+Discrete time-series data,Actual consumption of sinter,1
+Discrete time-series data,Actual consumption of basic pellet,1
+Discrete time-series data,Actual consumption of acidic pellet,1
+Discrete time-series data,Actual consumption of lump ore,1
+Discrete time-series data,Actual consumption of hot-pressed lump ore,1
+Discrete time-series data,Actual ore consumption per ton iron,1
+Discrete time-series data,Actual consumption of coke,1
+Discrete time-series data,Actual consumption of nut coke,1
+Discrete time-series data,Internal control rate,1
+Discrete time-series data,Smelting intensity,1
+Discrete time-series data,Count of batch,1
+Discrete time-series data,Batch weight of coke,1
+Discrete time-series data,Batch weight of ore,1
+Discrete time-series data,Proportion of sinter,1
+Discrete time-series data,Proportion of acidic pellet,1
+Discrete time-series data,Proportion of PB lump ore,1
+Discrete time-series data,Proportion of hot-pressed lump ore,1
+Discrete time-series data,Proportion of stockpile,1
+Discrete time-series data,Smelting cycle,1
+Discrete time-series data,Theoretical content of CaO,1
+Discrete time-series data,Theoretical content of Si,1
+Discrete time-series data,Theoretical value of R2/Basicity,1
+Discrete time-series data,Theoretical value of S load,1
+Discrete time-series data,Theoretical value of coke ratio,1
+Discrete time-series data,Theoretical value of lump coke ratio,1
+Discrete time-series data,Theoretical content of nut coke,1
+Discrete time-series data,Theoretical value of small coke ratio,1
+Discrete time-series data,Theoretical value of coke load,1
+Discrete time-series data,Theoretical value of yield of hot metal per batch,1
+Discrete time-series data,Theoretical value of slag-to-iron ratio,1
+Discrete time-series data,Hourly count of batch,1
+Discrete time-series data,Daily average value of cold air flow,1
+Discrete time-series data,Daily average value of hot blast pressure,1
+Discrete time-series data,Daily average value of whole furnace differential pressure,1
+Discrete time-series data,Daily average value of permeability index,1
+Discrete time-series data,Daily average value of oxygen-enriched volume,1
+Discrete time-series data,Daily average value of hot blast temperature,1
+Discrete time-series data,Daily average value of bag temperature,1
+Discrete time-series data,Daily average value of temperature of furnace top,1
+Discrete time-series data,Daily average value of whole furnace temperature difference,1
+Discrete time-series data,Daily average value of Hourly volume of pulverized coal injection,1
+Discrete time-series data,Daily average value of coal ratio,1
+Discrete time-series data,Daily average value of fuel ratio,1
+Discrete time-series data,Daily average value of H2 content,1
+Discrete time-series data,Daily average value of gas utilization rate,1
+Discrete time-series data,1# Tuyere diameter,1
+Discrete time-series data,2# Tuyere diameter,1
+Discrete time-series data,3# Tuyere diameter,1
+Discrete time-series data,4# Tuyere diameter,1
+Discrete time-series data,5# Tuyere diameter,1
+Discrete time-series data,6# Tuyere diameter,1
+Discrete time-series data,7# Tuyere diameter,1
+Discrete time-series data,8# Tuyere diameter,1
+Discrete time-series data,9# Tuyere diameter,1
+Discrete time-series data,10# Tuyere diameter,1
+Discrete time-series data,11# Tuyere diameter,1
+Discrete time-series data,12# Tuyere diameter,1
+Discrete time-series data,13# Tuyere diameter,1
+Discrete time-series data,14# Tuyere diameter,1
+Discrete time-series data,15# Tuyere diameter,1
+Discrete time-series data,16# Tuyere diameter,1
+Discrete time-series data,17# Tuyere diameter,1
+Discrete time-series data,18# Tuyere diameter,1
+Discrete time-series data,19# Tuyere diameter,1
+Discrete time-series data,20# Tuyere diameter,1
+Discrete time-series data,21# Tuyere diameter,1
+Discrete time-series data,22# Tuyere diameter,1
+Discrete time-series data,23# Tuyere diameter,1
+Discrete time-series data,24# Tuyere diameter,1
+Discrete time-series data,25# Tuyere diameter,1
+Discrete time-series data,26# Tuyere diameter,1
+Discrete time-series data,27# Tuyere diameter,1
+Discrete time-series data,28# Tuyere diameter,1
+Discrete time-series data,29# Tuyere diameter,1
+Discrete time-series data,30# Tuyere diameter,1
+Discrete time-series data,31# Tuyere diameter,1
+Discrete time-series data,32# Tuyere diameter,1
+Discrete time-series data,1# Tuyere length,1
+Discrete time-series data,2# Tuyere length,1
+Discrete time-series data,3# Tuyere length,1
+Discrete time-series data,4# Tuyere length,1
+Discrete time-series data,5# Tuyere length,1
+Discrete time-series data,6# Tuyere length,1
+Discrete time-series data,7# Tuyere length,1
+Discrete time-series data,8# Tuyere length,1
+Discrete time-series data,9# Tuyere length,1
+Discrete time-series data,10# Tuyere length,1
+Discrete time-series data,11# Tuyere length,1
+Discrete time-series data,12# Tuyere length,1
+Discrete time-series data,13# Tuyere length,1
+Discrete time-series data,14# Tuyere length,1
+Discrete time-series data,15# Tuyere length,1
+Discrete time-series data,16# Tuyere length,1
+Discrete time-series data,17# Tuyere length,1
+Discrete time-series data,18# Tuyere length,1
+Discrete time-series data,19# Tuyere length,1
+Discrete time-series data,20# Tuyere length,1
+Discrete time-series data,21# Tuyere length,1
+Discrete time-series data,22# Tuyere length,1
+Discrete time-series data,23# Tuyere length,1
+Discrete time-series data,24# Tuyere length,1
+Discrete time-series data,25# Tuyere length,1
+Discrete time-series data,26# Tuyere length,1
+Discrete time-series data,27# Tuyere length,1
+Discrete time-series data,28# Tuyere length,1
+Discrete time-series data,29# Tuyere length,1
+Discrete time-series data,30# Tuyere length,1
+Discrete time-series data,31# Tuyere length,1
+Discrete time-series data,32# Tuyere length,1
+Discrete time-series data,Service days of 1# tuyere,1
+Discrete time-series data,Service days of 2# tuyere,1
+Discrete time-series data,Service days of 3# tuyere,1
+Discrete time-series data,Service days of 4# tuyere,1
+Discrete time-series data,Service days of 5# tuyere,1
+Discrete time-series data,Service days of 6# tuyere,1
+Discrete time-series data,Service days of 7# tuyere,1
+Discrete time-series data,Service days of 8# tuyere,1
+Discrete time-series data,Service days of 9# tuyere,1
+Discrete time-series data,Service days of 10# tuyere,1
+Discrete time-series data,Service days of 11# tuyere,1
+Discrete time-series data,Service days of 12# tuyere,1
+Discrete time-series data,Service days of 13# tuyere,1
+Discrete time-series data,Service days of 14# tuyere,1
+Discrete time-series data,Service days of 15# tuyere,1
+Discrete time-series data,Service days of 16# tuyere,1
+Discrete time-series data,Service days of 17# tuyere,1
+Discrete time-series data,Service days of 18# tuyere,1
+Discrete time-series data,Service days of 19# tuyere,1
+Discrete time-series data,Service days of 20# tuyere,1
+Discrete time-series data,Service days of 21# tuyere,1
+Discrete time-series data,Service days of 22# tuyere,1
+Discrete time-series data,Service days of 23# tuyere,1
+Discrete time-series data,Service days of 24# tuyere,1
+Discrete time-series data,Service days of 25# tuyere,1
+Discrete time-series data,Service days of 26# tuyere,1
+Discrete time-series data,Service days of 27# tuyere,1
+Discrete time-series data,Service days of 28# tuyere,1
+Discrete time-series data,Service days of 29# tuyere,1
+Discrete time-series data,Service days of 30# tuyere,1
+Discrete time-series data,Service days of 31# tuyere,1
+Discrete time-series data,Service days of 32# tuyere,1
+Discrete time-series data,Theoretical yield of hot metal,1
+Discrete time-series data,Daily inventory,1
+Discrete time-series data,Daily deficiency amount of yield of hot metal,1
+Discrete time-series data,Daily productivity coefficient of blast furnace,1
+Constraint data,Setpoint value of dumping angle - Ore,1
+Constraint data,Setpoint value of number of charging rounds - Ore,1
+Constraint data,Setpoint value of charging proportion - Ore,1
+Constraint data,Setpoint value of dumping angle - Coke,1
+Constraint data,Setpoint value of number of charging rounds - Coke,1
+Constraint data,Setpoint value of charging proportion - Coke,1
+Continuous time-series data,Temperature of section 1 - 001(30°),1
+Continuous time-series data,Temperature of section 1 - 002(75°),1
+Continuous time-series data,Temperature of section 1 - 003(120°),1
+Continuous time-series data,Temperature of section 1 - 004(150°),1
+Continuous time-series data,Temperature of section 1 - 005(180°),1
+Continuous time-series data,Temperature of section 1 - 006(210°),1
+Continuous time-series data,Temperature of section 1 - 007(260°),1
+Continuous time-series data,Temperature of section 1 - 008(290°),1
+Continuous time-series data,Temperature of section 1 - 009(325°),1
+Continuous time-series data,Temperature of section 1 - 010(345°),1
+Continuous time-series data,Average temperature of section 1,1
+Continuous time-series data,Temperature of section 2 - 011(30°),1
+Continuous time-series data,Temperature of section 2 - 012(45°),1
+Continuous time-series data,Temperature of section 2 - 013(60°),1
+Continuous time-series data,Temperature of section 2 - 014(75°),1
+Continuous time-series data,Temperature of section 2 - 015(105°),1
+Continuous time-series data,Temperature of section 2 - 016(120°),1
+Continuous time-series data,Temperature of section 2 - 017(135°),1
+Continuous time-series data,Temperature of section 2 - 018(150°),1
+Continuous time-series data,Temperature of section 2 - 019(180°),1
+Continuous time-series data,Temperature of section 2 - 020(210°),1
+Continuous time-series data,Temperature of section 2 - 021(225°),1
+Continuous time-series data,Temperature of section 2 - 022(245°),1
+Continuous time-series data,Temperature of section 2 - 023(260°),1
+Continuous time-series data,Temperature of section 2 - 024(275°),1
+Continuous time-series data,Temperature of section 2 - 025(290°),1
+Continuous time-series data,Temperature of section 2 - 026(305°),1
+Continuous time-series data,Temperature of section 2 - 027(325°),1
+Continuous time-series data,Temperature of section 2 - 028(345°),1
+Continuous time-series data,Average temperature of section 2,1
+Continuous time-series data,Temperature of section 3 - 029(30°),1
+Continuous time-series data,Temperature of section 3 - 030(75°),1
+Continuous time-series data,Temperature of section 3 - 031(120°),1
+Continuous time-series data,Temperature of section 3 - 032(150°),1
+Continuous time-series data,Temperature of section 3 - 033(180°),1
+Continuous time-series data,Temperature of section 3 - 034(210°),1
+Continuous time-series data,Temperature of section 3 - 035(245°),1
+Continuous time-series data,Temperature of section 3 - 036(290°),1
+Continuous time-series data,Temperature of section 3 - 037(325°),1
+Continuous time-series data,Temperature of section 3 - 038(345°),1
+Continuous time-series data,Average temperature of section 3,1
+Continuous time-series data,Temperature of section 6 - 039(30°),1
+Continuous time-series data,Temperature of section 6 - 040(60°),1
+Continuous time-series data,Temperature of section 6 - 041(105°),1
+Continuous time-series data,Temperature of section 6 - 042(135°),1
+Continuous time-series data,Temperature of section 6 - 043(180°),1
+Continuous time-series data,Temperature of section 6 - 044(210°),1
+Continuous time-series data,Temperature of section 6 - 045(245°),1
+Continuous time-series data,Temperature of section 6 - 046(275°),1
+Continuous time-series data,Temperature of section 6 - 047(325°),1
+Continuous time-series data,Temperature of section 6 - 048(345°),1
+Continuous time-series data,Average temperature of section 6,1
+Continuous time-series data,Temperature of section 7 - 049(45°),1
+Continuous time-series data,Temperature of section 7 - 050(75°),1
+Continuous time-series data,Temperature of section 7 - 051(105°),1
+Continuous time-series data,Temperature of section 7 - 052(150°),1
+Continuous time-series data,Temperature of section 7 - 053(180°),1
+Continuous time-series data,Temperature of section 7 - 054(210°),1
+Continuous time-series data,Temperature of section 7 - 055(245°),1
+Continuous time-series data,Temperature of section 7 - 056(290°),1
+Continuous time-series data,Temperature of section 7 - 057(325°),1
+Continuous time-series data,Temperature of section 7 - 058(345°),1
+Continuous time-series data,Average temperature of section 7,1
+Continuous time-series data,Temperature of section 8 - 059(30°),1
+Continuous time-series data,Temperature of section 8 - 060(60°),1
+Continuous time-series data,Temperature of section 8 - 061(105°),1
+Continuous time-series data,Temperature of section 8 - 062(135°),1
+Continuous time-series data,Temperature of section 8 - 063(180°),1
+Continuous time-series data,Temperature of section 8 - 064(225°),1
+Continuous time-series data,Temperature of section 8 - 065(245°),1
+Continuous time-series data,Temperature of section 8 - 066(275°),1
+Continuous time-series data,Temperature of section 8 - 067(325°),1
+Continuous time-series data,Temperature of section 8 - 068(345°),1
+Continuous time-series data,Average temperature of section 8,1
+Continuous time-series data,Temperature of section 9 - 069(45°),1
+Continuous time-series data,Temperature of section 9 - 070(75°),1
+Continuous time-series data,Temperature of section 9 - 071(105°),1
+Continuous time-series data,Temperature of section 9 - 072(150°),1
+Continuous time-series data,Temperature of section 9 - 073(180°),1
+Continuous time-series data,Temperature of section 9 - 074(210°),1
+Continuous time-series data,Temperature of section 9 - 075(245°),1
+Continuous time-series data,Temperature of section 9 - 076(290°),1
+Continuous time-series data,Temperature of section 9 - 077(325°),1
+Continuous time-series data,Temperature of section 9 - 078(345°),1
+Continuous time-series data,Average temperature of section 9,1
+Continuous time-series data,Temperature of section 10 - 079(30°),1
+Continuous time-series data,Temperature of section 10 - 080(60°),1
+Continuous time-series data,Temperature of section 10 - 081(105°),1
+Continuous time-series data,Temperature of section 10 - 082(135°),1
+Continuous time-series data,Temperature of section 10 - 083(180°),1
+Continuous time-series data,Temperature of section 10 - 084(210°),1
+Continuous time-series data,Temperature of section 10 - 085(245°),1
+Continuous time-series data,Temperature of section 10 - 086(275°),1
+Continuous time-series data,Temperature of section 10 - 087(325°),1
+Continuous time-series data,Temperature of section 10 - 088(345°),1
+Continuous time-series data,Average temperature of section 10,1
+Continuous time-series data,Temperature of section 11 - 089(45°),1
+Continuous time-series data,Temperature of section 11 - 090(75°),1
+Continuous time-series data,Temperature of section 11 - 091(105°),1
+Continuous time-series data,Temperature of section 11 - 092(150°),1
+Continuous time-series data,Temperature of section 11 - 093(180°),1
+Continuous time-series data,Temperature of section 11 - 094(210°),1
+Continuous time-series data,Temperature of section 11 - 095(245°),1
+Continuous time-series data,Temperature of section 11 - 096(290°),1
+Continuous time-series data,Temperature of section 11 - 097(325°),1
+Continuous time-series data,Temperature of section 11 - 098(345°),1
+Continuous time-series data,Average temperature of section 11,1
+Continuous time-series data,Temperature of section 12 - 099(45°),1
+Continuous time-series data,Temperature of section 12 - 100(75°),1
+Continuous time-series data,Temperature of section 12 - 101(105°),1
+Continuous time-series data,Temperature of section 12 - 102(135°),1
+Continuous time-series data,Temperature of section 12 - 103(180°),1
+Continuous time-series data,Temperature of section 12 - 104(210°),1
+Continuous time-series data,Temperature of section 12 - 105(245°),1
+Continuous time-series data,Temperature of section 12 - 106(275°),1
+Continuous time-series data,Temperature of section 12 - 107(325°),1
+Continuous time-series data,Temperature of section 12 - 108(345°),1
+Continuous time-series data,Average temperature of section 12,1
+Continuous time-series data,Temperature of section 13 - 109(45°),1
+Continuous time-series data,Temperature of section 13 - 110(75°),1
+Continuous time-series data,Temperature of section 13 - 111(105°),1
+Continuous time-series data,Temperature of section 13 - 112(150°),1
+Continuous time-series data,Temperature of section 13 - 113(180°),1
+Continuous time-series data,Temperature of section 13 - 114(210°),1
+Continuous time-series data,Temperature of section 13 - 115(245°),1
+Continuous time-series data,Temperature of section 13 - 116(290°),1
+Continuous time-series data,Temperature of section 13 - 117(325°),1
+Continuous time-series data,Temperature of section 13 - 118(345°),1
+Continuous time-series data,Average temperature of section 13,1
+Continuous time-series data,Temperature of section 14 - 119(45°),1
+Continuous time-series data,Temperature of section 14 - 120(75°),1
+Continuous time-series data,Temperature of section 14 - 121(105°),1
+Continuous time-series data,Temperature of section 14 - 122(135°),1
+Continuous time-series data,Temperature of section 14 - 123(180°),1
+Continuous time-series data,Temperature of section 14 - 124(210°),1
+Continuous time-series data,Temperature of section 14 - 125(245°),1
+Continuous time-series data,Temperature of section 14 - 126(275°),1
+Continuous time-series data,Temperature of section 14 - 127(325°),1
+Continuous time-series data,Temperature of section 14 - 128(345°),1
+Continuous time-series data,Average temperature of section 14,1
+Continuous time-series data,Temperature of section 15 - 129(45°),1
+Continuous time-series data,Temperature of section 15 - 130(75°),1
+Continuous time-series data,Temperature of section 15 - 131(105°),1
+Continuous time-series data,Temperature of section 15 - 132(150°),1
+Continuous time-series data,Temperature of section 15 - 133(180°),1
+Continuous time-series data,Temperature of section 15 - 134(210°),1
+Continuous time-series data,Temperature of section 15 - 135(245°),1
+Continuous time-series data,Temperature of section 15 - 136(290°),1
+Continuous time-series data,Temperature of section 15 - 137(325°),1
+Continuous time-series data,Temperature of section 15 - 138(345°),1
+Continuous time-series data,Average temperature of section 15,1
+Continuous time-series data,Temperature of section 17 - 139(45°),1
+Continuous time-series data,Temperature of section 17 - 140(90°),1
+Continuous time-series data,Temperature of section 17 - 141(135°),1
+Continuous time-series data,Temperature of section 17 - 142(180°),1
+Continuous time-series data,Temperature of section 17 - 143(225°),1
+Continuous time-series data,Temperature of section 17 - 144(275°),1
+Continuous time-series data,Temperature of section 17 - 145(325°),1
+Continuous time-series data,Temperature of section 17 - 146(345°),1
+Continuous time-series data,Average temperature of section 17,1
+Continuous time-series data,Temperature of furnace foundation - 001(345°),1
+Continuous time-series data,Average temperature of furnace foundation,1
+Continuous time-series data,Temperature of furnace bottom carbon brick - 002(275°),1
+Continuous time-series data,Temperature of furnace bottom carbon brick - 003(290°),1
+Continuous time-series data,Temperature of furnace bottom carbon brick - 004(305°),1
+Continuous time-series data,Temperature of furnace bottom carbon brick - 005(325°),1
+Continuous time-series data,Temperature of furnace bottom carbon brick - 006(345°),1
+Continuous time-series data,Average temperature of furnace bottom carbon brick,1
+Continuous time-series data,Temperature of furnace hearth shell of section 2 - 001(30°),1
+Continuous time-series data,Temperature of furnace hearth shell of section 2 - 002(45°),1
+Continuous time-series data,Temperature of furnace hearth shell of section 2 - 003(60°),1
+Continuous time-series data,Temperature of furnace hearth shell of section 2 - 004(90°),1
+Continuous time-series data,Temperature of furnace hearth shell of section 2 - 005(105°),1
+Continuous time-series data,Temperature of furnace hearth shell of section 2 - 006(135°),1
+Continuous time-series data,Temperature of furnace hearth shell of section 2 - 007(150°),1
+Continuous time-series data,Temperature of furnace hearth shell of section 2 - 008(180°),1
+Continuous time-series data,Temperature of furnace hearth shell of section 2 - 009(210°),1
+Continuous time-series data,Temperature of furnace hearth shell of section 2 - 010(225°),1
+Continuous time-series data,Temperature of furnace hearth shell of section 2 - 011(245°),1
+Continuous time-series data,Temperature of furnace hearth shell of section 2 - 012(290°),1
+Continuous time-series data,Temperature of furnace hearth shell of section 2 - 013(305°),1
+Continuous time-series data,Temperature of furnace hearth shell of section 2 - 014(325°),1
+Continuous time-series data,Average temperature of furnace hearth shell of section 2,1
+Continuous time-series data,Temperature of furnace hearth shell of section 3 - 015(30°),1
+Continuous time-series data,Temperature of furnace hearth shell of section 3 - 016(75°),1
+Continuous time-series data,Temperature of furnace hearth shell of section 3 - 017(105°),1
+Continuous time-series data,Temperature of furnace hearth shell of section 3 - 018(150°),1
+Continuous time-series data,Temperature of furnace hearth shell of section 3 - 019(210°),1
+Continuous time-series data,Temperature of furnace hearth shell of section 3 - 020(245°),1
+Continuous time-series data,Temperature of furnace hearth shell of section 3 - 021(290°),1
+Continuous time-series data,Temperature of furnace hearth shell of section 3 - 022(345°),1
+Continuous time-series data,Average temperature of furnace hearth shell of section 3,1
+Continuous time-series data,Temperature of furnace lining of section 6 - 001(90°),1
+Continuous time-series data,Temperature of furnace lining of section 6 - 002(180°),1
+Continuous time-series data,Temperature of furnace lining of section 6 - 003(260°),1
+Continuous time-series data,Temperature of furnace lining of section 6 - 004(345°),1
+Continuous time-series data,Average temperature of furnace lining of section 6,1
+Continuous time-series data,Temperature of furnace lining of section 7 - 005(90°),1
+Continuous time-series data,Temperature of furnace lining of section 7 - 006(180°),1
+Continuous time-series data,Temperature of furnace lining of section 7 - 007(275°),1
+Continuous time-series data,Temperature of furnace lining of section 7 - 008(345°),1
+Continuous time-series data,Average temperature of furnace lining of section 7,1
+Continuous time-series data,Temperature of furnace lining of section 8 - 009(90°),1
+Continuous time-series data,Temperature of furnace lining of section 8 - 010(180°),1
+Continuous time-series data,Temperature of furnace lining of section 8 - 011(260°),1
+Continuous time-series data,Temperature of furnace lining of section 8 - 012(345°),1
+Continuous time-series data,Average temperature of furnace lining of section 8,1
+Continuous time-series data,Temperature of furnace lining of section 9 - 013(90°),1
+Continuous time-series data,Temperature of furnace lining of section 9 - 014(180°),1
+Continuous time-series data,Temperature of furnace lining of section 9 - 015(275°),1
+Continuous time-series data,Temperature of furnace lining of section 9 - 016(345°),1
+Continuous time-series data,Average temperature of furnace lining of section 9,1
+Continuous time-series data,Temperature of furnace lining of section 10 - 017(60°),1
+Continuous time-series data,Temperature of furnace lining of section 10 - 018(120°),1
+Continuous time-series data,Temperature of furnace lining of section 10 - 019(180°),1
+Continuous time-series data,Temperature of furnace lining of section 10 - 020(245°),1
+Continuous time-series data,Temperature of furnace lining of section 10 - 021(290°),1
+Continuous time-series data,Temperature of furnace lining of section 10 - 022(345°),1
+Continuous time-series data,Average temperature of furnace lining of section 10,1
+Continuous time-series data,Temperature of furnace lining of section 11 - 023(60°),1
+Continuous time-series data,Temperature of furnace lining of section 11 - 024(120°),1
+Continuous time-series data,Temperature of furnace lining of section 11 - 025(180°),1
+Continuous time-series data,Temperature of furnace lining of section 11 - 026(245°),1
+Continuous time-series data,Temperature of furnace lining of section 11 - 027(305°),1
+Continuous time-series data,Temperature of furnace lining of section 11 - 028(345°),1
+Continuous time-series data,Average temperature of furnace lining of section 11,1
+Continuous time-series data,Temperature of furnace lining of section 12 - 029(60°),1
+Continuous time-series data,Temperature of furnace lining of section 12 - 030(120°),1
+Continuous time-series data,Temperature of furnace lining of section 12 - 031(180°),1
+Continuous time-series data,Temperature of furnace lining of section 12 - 032(245°),1
+Continuous time-series data,Temperature of furnace lining of section 12 - 033(290°),1
+Continuous time-series data,Temperature of furnace lining of section 12 - 034(345°),1
+Continuous time-series data,Average temperature of furnace lining of section 12,1
+Continuous time-series data,Temperature of furnace lining of section 13 - 035(60°),1
+Continuous time-series data,Temperature of furnace lining of section 13 - 036(120°),1
+Continuous time-series data,Temperature of furnace lining of section 13 - 037(180°),1
+Continuous time-series data,Temperature of furnace lining of section 13 - 038(245°),1
+Continuous time-series data,Temperature of furnace lining of section 13 - 039(305°),1
+Continuous time-series data,Temperature of furnace lining of section 13 - 040(345°),1
+Continuous time-series data,Average temperature of furnace lining of section 13,1
+Continuous time-series data,Temperature of furnace lining of section 14 - 041(60°),1
+Continuous time-series data,Temperature of furnace lining of section 14 - 042(120°),1
+Continuous time-series data,Temperature of furnace lining of section 14 - 043(180°),1
+Continuous time-series data,Temperature of furnace lining of section 14 - 044(245°),1
+Continuous time-series data,Temperature of furnace lining of section 14 - 045(290°),1
+Continuous time-series data,Temperature of furnace lining of section 14 - 046(345°),1
+Continuous time-series data,Average temperature of furnace lining of section 14,1
+Continuous time-series data,Temperature of furnace lining of section 15 - 047(60°),1
+Continuous time-series data,Temperature of furnace lining of section 15 - 048(120°),1
+Continuous time-series data,Temperature of furnace lining of section 15 - 049(180°),1
+Continuous time-series data,Temperature of furnace lining of section 15 - 050(245°),1
+Continuous time-series data,Temperature of furnace lining of section 15 - 051(305°),1
+Continuous time-series data,Temperature of furnace lining of section 15 - 052(345°),1
+Continuous time-series data,Average temperature of furnace lining of section 15,1
+Binary status data,Start of furnace top shut-off valve,1
+Binary status data,Start of main belt-remote control valve,1
+Binary status data,Start of mixed air control valve,1
+Binary status data,Start of blow-off valve about cold air,1
+Continuous time-series data,Hot blast temperature,1
+Continuous time-series data,Flow rate of cold air,1
+Continuous time-series data,Pressure of cold air,1
+Continuous time-series data,Humidity of cold air,1
+Continuous time-series data,Temperature of cold air,1
+Continuous time-series data,Material column difference,1
+Continuous time-series data,Stockline height of left probe,1
+Continuous time-series data,Stockline height of right probe,1
+Continuous time-series data,Height of radar stock rod,1
+Continuous time-series data,Temperature difference of whole furnace,1
+Continuous time-series data,Current of 1# rotating device,1
+Continuous time-series data,Current of 2# rotating device,1
+Continuous time-series data,Material type of hopper,1
+Continuous time-series data,Material type of hoisting bucket,1
+Continuous time-series data,Opening value of main belt-remote control valve,1
+Continuous time-series data,Opening value of furnace top shut-off valve,1
+Continuous time-series data,Opening value of mixed air control valve,1
+Continuous time-series data,Opening value of blow-off valve about cold air,1
+Continuous time-series data,Temperature of furnace top - Southeast,1
+Continuous time-series data,Temperature of furnace top - Northwest,1
+Continuous time-series data,Temperature of furnace top - Northeast,1
+Continuous time-series data,Temperature of furnace top - Southwest,1
+Continuous time-series data,Temperature of furnace top - Range,1
+Continuous time-series data,Pressure of furnace top - Southeast,1
+Continuous time-series data,Pressure of furnace top - Northwest,1
+Continuous time-series data,Pressure of furnace top - Northeast,1
+Continuous time-series data,Pressure of furnace top - Southwest,1
+Continuous time-series data,Pressure of furnace top - Range,1
+Continuous time-series data,Weight of 1# hoisting bucket,1
+Continuous time-series data,Weight of 2# hoisting bucket,1
+Continuous time-series data,Center temperature of furnace top cross temperature measurement,1
+Continuous time-series data,Sub-center temperature of furnace top cross temperature measurement,1
+Continuous time-series data,Dumping angle,1
+Continuous time-series data,Accumulated volume of cold air,1
+Continuous time-series data,Static pressure of section 15 about furnace body,1
+Continuous time-series data,Static pressure of section 13 about furnace body,1
+Continuous time-series data,Static pressure of section 11 about furnace body,1
+Continuous time-series data,Upper static pressure differential of furnace body,1
+Continuous time-series data,Upper-middle static pressure differential of furnace body,1
+Continuous time-series data,Middle static pressure differential of furnace body,1
+Continuous time-series data,Lower static pressure differential of furnace body,1
+Continuous time-series data,Weight of 1# pulverized coal injection tank,1
+Continuous time-series data,Weight of 2# pulverized coal injection tank,1
+Continuous time-series data,Weight of 3# pulverized coal injection tank,1
+Continuous time-series data,Hourly total volume of pulverized coal injection,1
+Continuous time-series data,CO2 content of coal gas,1
+Continuous time-series data,CO content of coal gas,1
+Continuous time-series data,H2 content of coal gas,1
+Continuous time-series data,N2 content of coal gas,1
+Continuous time-series data,CH4 content of coal gas,1
+Continuous time-series data,Temperature of bag inlet,1
+Continuous time-series data,Hourly count of batch,1
+Continuous time-series data,Total count of batch,1
+Continuous time-series data,Whole furnace temperature difference of blast furnace,1
+Continuous time-series data,Pressure of oxygen-enriched,1
+Continuous time-series data,Flow rate of oxygen-enriched,2
+Continuous time-series data,Standard blast velocity,1
+Continuous time-series data,Actual blast velocity,1
+Continuous time-series data,Pressure of nitrogen about gas-tight box,1
+Continuous time-series data,1# Hot stove – Temperature of waste gas,1
+Continuous time-series data,2# Hot stove – Temperature of waste gas,1
+Continuous time-series data,3# Hot stove – Temperature of waste gas,1
+Continuous time-series data,Flow rate of return water about hot blast stove,1
+Continuous time-series data,Flow rate of water supply about hot blast stove,1
+Continuous time-series data,Pressure of water supply about hot blast stove,1
+Continuous time-series data,Pressure of expansion tank about hot blast stove,1
+Continuous time-series data,Liquid level of expansion tank about hot blast stove,1
+Continuous time-series data,Temperature of saturated steam,1
+Continuous time-series data,Pressure of compressed air,1
+Continuous time-series data,Flow rate of 1# water supply pipe,1
+Continuous time-series data,Flow rate of 2# water supply pipe,1
+Continuous time-series data,Temperature of 1# water supply pipe,1
+Continuous time-series data,Temperature of 2# water supply pipe,1
+Continuous time-series data,Pressure of 1# water supply pipe,1
+Continuous time-series data,Pressure of 2# water supply pipe,1
+Continuous time-series data,Flow rate of 1# return water pipe,1
+Continuous time-series data,Flow rate of 2# return water pipe,1
+Continuous time-series data,Temperature of 1# return water pipe,1
+Continuous time-series data,Temperature of 2# return water pipe,1
+Continuous time-series data,Pressure of 1# return water pipe,1
+Continuous time-series data,Pressure of 2# return water pipe,1
+Continuous time-series data,Pressure of 1# high-pressure water supply pipe,1
+Continuous time-series data,Pressure of 2# high-pressure water supply pipe,1
+Continuous time-series data,Flow rate of 1# high-pressure water supply pipe,1
+Continuous time-series data,Flow rate of 2# high-pressure water supply pipe,1
+Continuous time-series data,Temperature of 1# high-pressure water supply pipe,1
+Continuous time-series data,Temperature of 2# high-pressure water supply pipe,1
+Continuous time-series data,Liquid level of main body expansion tank,1
+Continuous time-series data,Pressure of main body expansion tank,1
+Response data,Gas utilization rate,1
+Response data,K Value (Evaluation index of blast furnace operation status),1
+Response data,Permeability index,1
+Response data,Bosh gas volume,1
+Response data,Furnace hearth activity,1
+Response data,Rate of Oxygen-Enriched,1
+Response data,Blast kinetic energy,1
+Response data,Theoretical combustion temperature,1
+Binary status data,Start of flow control valve,1
+Continuous time-series data,Opening value of flow control valve,1
+Continuous time-series data,Temperature of oxygen-enriched pipe,1
+Continuous time-series data,Pressure of flow control valve inlet,1
+Continuous time-series data,Pressure of flow control valve outlet,1
+Binary status data,Start of 1# oxygen-enriched manual shut-off valve,1
+Binary status data,Start of 2# oxygen-enriched manual shut-off valve,1
+Binary status data,Start of 1# nitrogen manual shut-off valve,1
+Binary status data,Start of 2# nitrogen manual shut-off valve,1
+Binary status data,Start of 3# nitrogen manual shut-off valve,1
+Controllable data,Opening value of 1# oxygen-enriched manual shut-off valve,1
+Controllable data,Opening value of 2# oxygen-enriched manual shut-off valve,1
+Controllable data,Opening value of 1# nitrogen manual shut-off valve,1
+Controllable data,Opening value of 2# nitrogen manual shut-off valve,1
+Controllable data,Opening value of 3# nitrogen manual shut-off valve,1
